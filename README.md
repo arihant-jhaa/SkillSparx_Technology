@@ -1,4 +1,4 @@
-#SkillSparx Technology — Professional Website
+SkillSparx Technology — Professional Website
 
 A modern, responsive, and professional corporate website developed for SkillSparx Technology. The platform is designed to establish a strong digital presence, showcase the company’s services and expertise, highlight its projects and solutions, and provide visitors with an engaging and seamless user experience.
 
