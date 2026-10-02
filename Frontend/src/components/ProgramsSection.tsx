@@ -15,6 +15,7 @@ const categories = [
 
 export default function ProgramsSection() {
   const [activeCategory, setActiveCategory] = useState("all");
+  const [expanded, setExpanded] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
   const filterId = useId();
 
@@ -24,6 +25,8 @@ export default function ProgramsSection() {
         const catObj = categories.find((cat) => cat.id === activeCategory);
         return catObj?.category ? c.category === catObj.category : true;
       });
+
+  const displayCourses = expanded ? filteredCourses : filteredCourses.slice(0, 5);
 
   return (
     <section id="programs" className="programs-section" aria-labelledby="programs-heading">
@@ -95,7 +98,7 @@ export default function ProgramsSection() {
 
         {/* Programs Grid */}
         <div className="programs-grid">
-          {filteredCourses.map((course) => (
+          {displayCourses.map((course) => (
             <article
               key={course.id}
               className="program-card"
@@ -128,6 +131,26 @@ export default function ProgramsSection() {
             </article>
           ))}
         </div>
+
+        {filteredCourses.length > 5 && (
+          <div className="view-more-wrap" aria-live="polite" aria-atomic="false">
+            <button
+              type="button"
+              className="view-more-btn"
+              onClick={() => setExpanded(!expanded)}
+              aria-expanded={expanded}
+              aria-controls="programs-grid"
+            >
+              <span>{expanded ? "Show Less" : "View More"}</span>
+              <ArrowUpRight
+                size={16}
+                strokeWidth={1.8}
+                className={`view-more-arrow ${expanded ? "is-flipped" : ""}`}
+                aria-hidden="true"
+              />
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Course Detail Modal */}
