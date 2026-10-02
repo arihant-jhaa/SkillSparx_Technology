@@ -7,11 +7,30 @@ export default function ManifestoSection() {
   useGSAP(
     () => {
       const media = gsap.matchMedia();
+      let checkFinalRef: (() => void) | null = null;
+
       media.add("(prefers-reduced-motion: no-preference)", () => {
         const words = gsap.utils.toArray<HTMLElement>(".manifesto-word");
         const timeline = gsap.timeline({
           scrollTrigger: { trigger: sectionRef.current, start: "top 66%", end: "bottom 35%", scrub: 0.6 },
+          onComplete: () => {
+            words.forEach((word) => {
+              gsap.set(word, { opacity: 1, y: 0, filter: "blur(0px)" });
+            });
+          },
         });
+
+        const checkFinal = () => {
+          const rect = sectionRef.current?.getBoundingClientRect();
+          if (rect && rect.bottom < 0) {
+            words.forEach((word) => {
+              gsap.set(word, { opacity: 1, y: 0, filter: "blur(0px)" });
+            });
+            window.removeEventListener("scroll", checkFinal);
+          }
+        };
+        checkFinalRef = checkFinal;
+        window.addEventListener("scroll", checkFinal, { passive: true });
 
         words.forEach((word, index) => {
           timeline.fromTo(word,
@@ -21,7 +40,10 @@ export default function ManifestoSection() {
           );
         });
       });
-      return () => media.revert();
+      return () => {
+        media.revert();
+        if (checkFinalRef) window.removeEventListener("scroll", checkFinalRef);
+      };
     },
     { scope: sectionRef },
   );

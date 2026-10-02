@@ -117,15 +117,13 @@ export default function ProgramsSection() {
                   <span className="meta-tag">{course.level}</span>
                   <span className="meta-tag">{course.lessons} Lessons</span>
                 </div>
-                <div className="program-action-wrapper">
-                  <button
-                    type="button"
-                    className="program-action-btn"
-                    aria-label={`View curriculum for ${course.title}`}
-                  >
-                    View Curriculum <ArrowUpRight size={16} strokeWidth={1.6} aria-hidden="true" />
-                  </button>
-                </div>
+                <button
+                  type="button"
+                  className="program-action-btn program-view-curriculum"
+                  aria-label={`View curriculum for ${course.title}`}
+                >
+                  View Curriculum <ArrowUpRight size={16} strokeWidth={1.6} aria-hidden="true" />
+                </button>
               </div>
             </article>
           ))}

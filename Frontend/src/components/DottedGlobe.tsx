@@ -37,7 +37,7 @@ export default function DottedGlobe({ className = "", color = "17, 16, 22", poin
     const resize = () => {
       const rect = canvas.getBoundingClientRect();
       width = rect.width;
-      height = rect.height;
+      height = rect.width; // Force square / 1:1 aspect ratio for perfect circle
       dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = Math.round(width * dpr);
       canvas.height = Math.round(height * dpr);

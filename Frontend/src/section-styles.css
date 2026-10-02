@@ -217,22 +217,7 @@
 }
 
 .program-action-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: #f4f3ef;
-  color: var(--ink);
-  border: none;
-  transition: all 0.3s var(--ease-out);
-}
-
-.program-card:hover .program-action-btn {
-  background: var(--violet);
-  color: #ffffff;
-  transform: translate(2px, -2px);
+  white-space: nowrap;
 }
 
 /* --------------------------------------------------------------------------

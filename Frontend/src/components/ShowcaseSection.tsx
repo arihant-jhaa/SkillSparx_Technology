@@ -76,7 +76,14 @@ export default function ShowcaseSection() {
                 <span className="course-category">{course.category}</span>
                 <strong className="course-title">{course.title}</strong>
                 <span className="course-description">{course.description}</span>
-                <span className="course-bottom"><span>{course.duration.toUpperCase()} <span className="course-dot" /> {course.level.toUpperCase()}</span><span className="course-arrow"><ArrowUpRight size={20} strokeWidth={1.6} aria-hidden="true" /></span></span>
+                <span className="course-bottom">
+                <span className="course-meta">
+                  {course.duration.toUpperCase()} <span className="course-dot" /> {course.level.toUpperCase()}
+                </span>
+                <span className="course-action">
+                  View Curriculum <ArrowUpRight size={20} strokeWidth={1.6} aria-hidden="true" />
+                </span>
+              </span>
               </span>
             </button>
           ))}
