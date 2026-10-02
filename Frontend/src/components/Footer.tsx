@@ -4,9 +4,9 @@ import Brand from "./Brand";
 import Modal from "./Modal";
 
 const footerGroups = [
-  { title: "PRODUCT", links: [{ label: "The approach", href: "#approach" }, { label: "All classes", href: "#classes" }, { label: "Membership", href: "#membership" }] },
+  { title: "PRODUCT", links: [{ label: "The approach", href: "#approach" }, { label: "All programs", href: "#programs" }, { label: "Pro Packs", href: "#pro-packs" }] },
   { title: "RESOURCES", links: [{ label: "Our story", href: "#manifesto" }, { label: "Maker stories", href: "#stories" }, { label: "Community", href: "#community" }] },
-  { title: "COMPANY", links: [{ label: "About unfold.", href: "#manifesto" }, { label: "Say hello", href: "mailto:hello@unfold.school" }, { label: "Our letter", href: "#newsletter" }] },
+  { title: "COMPANY", links: [{ label: "About SkillSparx", href: "#manifesto" }, { label: "Say hello", href: "mailto:hello@skillsparx.technology" }, { label: "Our letter", href: "#newsletter" }] },
   { title: "SOCIAL", links: [{ label: "Instagram", href: "https://www.instagram.com/" }, { label: "LinkedIn", href: "https://www.linkedin.com/" }, { label: "YouTube", href: "https://www.youtube.com/" }] },
 ];
 
@@ -19,9 +19,9 @@ export default function Footer() {
     event.preventDefault();
     const address = email.trim();
     if (!address) return;
-    const subject = encodeURIComponent("Join the unfold. letter");
-    const body = encodeURIComponent(`Please add ${address} to the unfold. letter.`);
-    window.location.href = `mailto:hello@unfold.school?subject=${subject}&body=${body}`;
+    const subject = encodeURIComponent("Join the SkillSparx Technology letter");
+    const body = encodeURIComponent(`Please add ${address} to the SkillSparx Technology letter.`);
+    window.location.href = `mailto:hello@skillsparx.technology?subject=${subject}&body=${body}`;
     setStatus("Your email app is opening. Send the drafted message to join.");
   };
 
@@ -39,7 +39,7 @@ export default function Footer() {
             <form onSubmit={handleSubscribe}>
               <label htmlFor="newsletter-email" className="sr-only">Your email address</label>
               <input id="newsletter-email" type="email" required autoComplete="email" placeholder="Your email address" value={email} onChange={(event) => setEmail(event.target.value)} />
-              <button type="submit" aria-label="Open email app to join the unfold. letter"><ArrowRight size={22} strokeWidth={1.7} /></button>
+              <button type="submit" aria-label="Open email app to join the SkillSparx Technology letter"><ArrowRight size={22} strokeWidth={1.7} /></button>
             </form>
             {status && <p className="newsletter-status" role="status">{status}</p>}
           </div>
@@ -61,8 +61,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer-giant" aria-hidden="true">unfold<span>.</span></div>
-        <div className="footer-bottom"><span>&copy; {new Date().getFullYear()} unfold. All rights reserved.</span><span>Made for the makers.</span><div><button type="button" onClick={() => setLegal("Terms")}>Terms</button><button type="button" onClick={() => setLegal("Privacy")}>Privacy</button></div></div>
+        <div className="footer-giant" aria-hidden="true">SkillSparx<span>.</span></div>
+        <div className="footer-bottom"><span>&copy; {new Date().getFullYear()} SkillSparx Technology. All rights reserved.</span><span>Made for the makers.</span><div><button type="button" onClick={() => setLegal("Terms")}>Terms</button><button type="button" onClick={() => setLegal("Privacy")}>Privacy</button></div></div>
       </div>
 
       <Modal open={legal !== null} onClose={() => setLegal(null)} labelledBy="legal-dialog-title" className="legal-dialog">
@@ -70,9 +70,9 @@ export default function Footer() {
           <p className="eyebrow eyebrow-purple">THE FINE PRINT</p>
           <h2 id="legal-dialog-title">{legal}</h2>
           {legal === "Privacy" ? (
-            <p>This website does not use tracking cookies or store the email entered in the update form. That form opens your email application with a drafted message, which you choose whether to send. If you have a privacy question, write to hello@unfold.school.</p>
+            <p>This website does not use tracking cookies or store the email entered in the update form. That form opens your email application with a drafted message, which you choose whether to send. If you have a privacy question, write to hello@skillsparx.technology.</p>
           ) : (
-            <p>Class and membership details are presented for exploration. Membership enquiries open your email application, and no payments are collected through this website. Please contact hello@unfold.school with any questions.</p>
+            <p>Class and membership details are presented for exploration. Membership enquiries open your email application, and no payments are collected through this website. Please contact hello@skillsparx.technology with any questions.</p>
           )}
         </div>}
       </Modal>

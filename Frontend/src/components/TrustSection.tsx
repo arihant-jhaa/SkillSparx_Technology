@@ -51,7 +51,7 @@ export default function TrustSection() {
             <h2 id="trust-heading">A community<br />with momentum<span className="purple-period">.</span></h2>
             <p>Different disciplines. Shared curiosity. One place to keep moving forward.</p>
           </div>
-          <div className="trust-stats" aria-label="unfold. community at a glance">
+          <div className="trust-stats" aria-label="SkillSparx Technology community at a glance">
             {stats.map((stat, index) => (
               <div className="trust-stat" key={stat.label} data-reveal style={{ transitionDelay: `${index * 90}ms` }}>
                 <span className="stat-value" data-counter={stat.value} data-suffix={stat.suffix}>{stat.value}{stat.suffix}</span>

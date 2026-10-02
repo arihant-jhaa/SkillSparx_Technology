@@ -16,7 +16,7 @@ export default function LearningSection() {
         </div>
 
         <div className="learning-layout">
-          <div className="feature-list" role="group" aria-label="Explore the unfold. approach" data-reveal>
+          <div className="feature-list" role="group" aria-label="Explore the SkillSparx Technology approach" data-reveal>
             {features.map((item, index) => (
               <button
                 key={item.number}
@@ -35,7 +35,7 @@ export default function LearningSection() {
 
           <div id="learning-preview" className="studio-shell" aria-live="polite" data-reveal="scale">
             <div className="studio-topbar">
-              <div className="studio-topbrand"><span className="studio-mini-mark">u<span>.</span></span><span className="studio-top-divider" /> <span>YOUR STUDIO</span></div>
+              <div className="studio-topbrand"><span className="studio-mini-mark">S<span>.</span></span><span className="studio-top-divider" /> <span>YOUR STUDIO</span></div>
               <div className="studio-top-actions"><span>MY LEARNING</span><span className="studio-avatar">M</span></div>
             </div>
             <div className="studio-layout">

@@ -4,10 +4,10 @@ import { gsap, useGSAP } from "../motion/gsap";
 import { mentors, type Mentor } from "../data/site";
 
 const columns: Mentor[][] = [
-  [mentors[0], mentors[4], mentors[8], mentors[1]],
-  [mentors[2], mentors[6], mentors[10], mentors[3]],
-  [mentors[5], mentors[9], mentors[7], mentors[11]],
-  [mentors[8], mentors[1], mentors[4], mentors[6]],
+  [mentors[0], mentors[4], mentors[2], mentors[1]],
+  [mentors[2], mentors[5], mentors[3], mentors[0]],
+  [mentors[4], mentors[1], mentors[5], mentors[3]],
+  [mentors[2], mentors[4], mentors[0], mentors[5]],
 ];
 
 function MentorCard({ mentor }: { mentor: Mentor }) {
@@ -36,7 +36,8 @@ export default function Hero() {
           .from(".hero-line-inner", { yPercent: 115, duration: 0.95, stagger: 0.1 }, 0.2)
           .from(".hero-description", { y: 20, opacity: 0, duration: 0.6 }, 0.72)
           .from(".hero-actions", { y: 20, opacity: 0, duration: 0.6 }, 0.84)
-          .from(".hero-proof", { y: 20, opacity: 0, duration: 0.6 }, 0.94)
+          .from(".hero-subtle", { y: 10, opacity: 0, duration: 0.4 }, 0.94)
+          .from(".hero-proof", { y: 20, opacity: 0, duration: 0.6 }, 1.1)
           .from(".hero-stage", { opacity: 0, scale: 1.04, duration: 1.1, ease: "power2.out" }, 0.1);
       });
       return () => media.revert();
@@ -74,6 +75,9 @@ export default function Hero() {
           <a className="button button-primary" href="#classes">View courses <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" /></a>
           <a className="button button-ghost-light" href="#approach">Watch preview <Play size={15} fill="currentColor" strokeWidth={0} aria-hidden="true" /></a>
         </div>
+        <p className="hero-subtle" style={{ fontSize: '12px', opacity: 0.7, marginTop: '8px', letterSpacing: '0.1em' }}>
+          Join 500+ founders who've accelerated their careers
+        </p>
         <div className="hero-proof">
           <div className="hero-avatars" aria-hidden="true">
             {mentors.slice(0, 4).map((mentor) => <img key={mentor.name} src={mentor.image} alt="" loading="lazy" />)}

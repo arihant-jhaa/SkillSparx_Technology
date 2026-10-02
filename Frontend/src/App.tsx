@@ -5,6 +5,9 @@ import TrustSection from "./components/TrustSection";
 import ManifestoSection from "./components/ManifestoSection";
 import LearningSection from "./components/LearningSection";
 import ShowcaseSection from "./components/ShowcaseSection";
+import ProgramsSection from "./components/ProgramsSection";
+import AdvancedProgramsSection from "./components/AdvancedProgramsSection";
+import ProPacksSection from "./components/ProPacksSection";
 import StorySection from "./components/StorySection";
 import VoicesSection from "./components/VoicesSection";
 import PricingSection from "./components/PricingSection";
@@ -65,6 +68,9 @@ export default function App() {
         <ManifestoSection />
         <LearningSection />
         <ShowcaseSection />
+        <ProgramsSection />
+        <AdvancedProgramsSection />
+        <ProPacksSection />
         <StorySection />
         <VoicesSection />
         <PricingSection />

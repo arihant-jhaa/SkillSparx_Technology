@@ -33,7 +33,7 @@ export default function ShowcaseSection() {
           invalidateOnRefresh: true,
           onUpdate: (self) => {
             if (progressRef.current) progressRef.current.style.transform = `scaleX(${self.progress})`;
-            if (currentRef.current) currentRef.current.textContent = String(Math.min(courses.length, Math.floor(self.progress * courses.length) + 1)).padStart(2, "0");
+            if (currentRef.current) currentRef.current.textContent = String(Math.min(6, Math.floor(self.progress * 6) + 1)).padStart(2, "0");
           },
         },
       });
@@ -61,17 +61,17 @@ export default function ShowcaseSection() {
       <div className="page-container showcase-intro">
         <div className="chapter-topline chapter-topline-dark"><span className="eyebrow eyebrow-purple">03 / THE CLASSES</span><span className="chapter-rule" /></div>
         <div className="section-intro">
-          <h2 id="showcase-heading" data-reveal>Find your thing.<br />Then take it further<span className="purple-period">.</span></h2>
-          <p data-reveal>From your first experiment to your next big move, there's a place to begin.</p>
+          <h2 id="showcase-heading" data-reveal>Featured.<br />Start your journey<span className="purple-period">.</span></h2>
+          <p data-reveal>Explore our most popular programs handpicked by industry experts.</p>
         </div>
       </div>
 
       <div ref={viewportRef} className="showcase-viewport">
         <div className="showcase-top-note page-container"><span>EXPLORE THE COLLECTION</span><span className="showcase-scroll-note">SCROLL TO DISCOVER <MoveRight size={17} strokeWidth={1.4} aria-hidden="true" /></span><span className="showcase-swipe-note">SWIPE TO DISCOVER <MoveRight size={17} strokeWidth={1.4} aria-hidden="true" /></span></div>
         <div ref={trackRef} className="showcase-track">
-          {courses.map((course, index) => (
+          {courses.slice(0, 6).map((course, index) => (
             <button className="course-card" key={course.id} type="button" onClick={() => setSelectedCourse(course)} onFocus={(event) => { if (event.currentTarget.matches(":focus-visible")) focusCourse(index); }} aria-label={`Explore ${course.title} class`}>
-              <span className="course-image-wrap"><img src={course.image} alt={course.imageAlt} loading="lazy" /><span className="course-number">{course.number} / 04</span></span>
+              <span className="course-image-wrap"><img src={course.image} alt={course.imageAlt} loading="lazy" /><span className="course-number">{course.number} / 06</span></span>
               <span className="course-content">
                 <span className="course-category">{course.category}</span>
                 <strong className="course-title">{course.title}</strong>
@@ -81,7 +81,7 @@ export default function ShowcaseSection() {
             </button>
           ))}
         </div>
-        <div className="showcase-bottom page-container"><span><span ref={currentRef}>01</span> <span className="showcase-pagination-slash">/</span> 04</span><span className="showcase-progress"><span ref={progressRef} /></span><span>CURATED FOR THE CURIOUS</span></div>
+        <div className="showcase-bottom page-container"><span><span ref={currentRef}>01</span> <span className="showcase-pagination-slash">/</span> 06</span><span className="showcase-progress"><span ref={progressRef} /></span><span>CURATED FOR THE CURIOUS</span></div>
       </div>
 
       <Modal open={selectedCourse !== null} onClose={() => setSelectedCourse(null)} labelledBy="course-dialog-title" className="course-dialog">

@@ -36,7 +36,7 @@ export default function ManifestoSection() {
           <span className="manifesto-word">Become<span className="purple-period">.</span></span>
         </h2>
         <div className="manifesto-bottom">
-          <span className="manifesto-index">THE UNFOLD WAY&nbsp; / &nbsp;01-03</span>
+          <span className="manifesto-index">THE SKILLSPARX WAY&nbsp; / &nbsp;01-03</span>
           <p>Because the best way to find out what you're capable of is to make something you care about.</p>
         </div>
       </div>

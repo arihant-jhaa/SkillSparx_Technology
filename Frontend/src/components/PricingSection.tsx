@@ -21,7 +21,7 @@ export default function PricingSection() {
 
         <div className="pricing-grid">
           <article className="plan-card" data-reveal>
-            <div className="plan-top"><span className="plan-index">01 / FIND YOUR FEET</span><span className="plan-symbol">u.</span></div>
+            <div className="plan-top"><span className="plan-index">01 / FIND YOUR FEET</span><span className="plan-symbol">S.</span></div>
             <div className="plan-info"><h3>Explorer</h3><p>For the curious who are ready to begin.</p></div>
             <div className="plan-price"><strong>$0</strong><span>/ forever</span></div>
             <p className="plan-billing-note">No card needed. Just curiosity.</p>
@@ -37,7 +37,7 @@ export default function PricingSection() {
             <div className="plan-info"><h3>Studio</h3><p>For the maker who wants room to grow.</p></div>
             <div className="plan-price"><strong>${billing === "monthly" ? "29" : "24"}</strong><span>/ month</span></div>
             <p className="plan-billing-note">{billing === "monthly" ? "Billed monthly. Change your mind anytime." : "$288 billed yearly. Change your mind anytime."}</p>
-            <a className="button button-primary plan-featured-cta" href="mailto:hello@unfold.school?subject=Studio%20membership%20enquiry">Ask about Studio <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" /></a>
+            <a className="button button-primary plan-featured-cta" href="mailto:hello@skillsparx.technology?subject=Studio%20membership%20enquiry">Ask about Studio <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" /></a>
             <div className="plan-details"><span>EVERYTHING IN EXPLORER, PLUS</span><ul>
               <li><Check size={17} strokeWidth={1.8} aria-hidden="true" />The complete class library</li>
               <li><Check size={17} strokeWidth={1.8} aria-hidden="true" />Guided projects and workbooks</li>
