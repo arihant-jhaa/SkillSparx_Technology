@@ -114,9 +114,69 @@ img { display: block; max-width: 100%; }
   transform: rotate(180deg) translate(3px, 3px);
 }
 
+/* --------------------------------------------------------------------------
+   Program Card Footer Action Button
+   -------------------------------------------------------------------------- */
+.program-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid #f0eee9;
+  margin-top: auto;
+}
+
+.program-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  background: var(--violet);
+  color: #fff;
+  border: 1px solid var(--violet);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.3s var(--ease-out), border-color 0.3s, color 0.3s, transform 0.3s var(--ease-out), box-shadow 0.3s;
+}
+
+.program-card-action:hover {
+  background: var(--violet-deep);
+  border-color: var(--violet-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(118, 84, 230, 0.25);
+}
+
+.program-card-action:hover svg {
+  transform: translate(2px, -2px);
+}
+
+.program-card-action:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(118, 84, 230, 0.18);
+}
+
+.program-card-action:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(118, 84, 230, 0.12);
+}
+
+.program-card-action svg {
+  flex: none;
+  transition: transform 0.3s var(--ease-out);
+}
+
 @media (max-width: 640px) {
   .view-more-wrap { margin-top: 40px; }
   .view-more-btn { padding: 10px 24px; font-size: 12px; }
+  .program-card-footer { flex-wrap: wrap; gap: 12px; }
+  .program-card-action { padding: 7px 14px; font-size: 11px; }
 }
 
 section[id] { scroll-margin-top: 75px; }
@@ -218,8 +278,22 @@ section[id] { scroll-margin-top: 75px; }
 .brand-large .brand-symbol { width: 39px; height: 39px; }
 .brand-large .brand-text span:first-child { font-size: 1.2em; }
 .brand-large .brand-technology { font-size: 0.9em; }
-.brand-symbol { width: 29px; height: 29px; flex: none; color: var(--violet); transition: transform 0.5s var(--ease-out); }
-.brand:hover .brand-symbol { transform: rotate(-12deg); }
+.brand-symbol-img {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: transparent;
+  flex: none;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  filter: none;
+  image-rendering: auto;
+}
+.brand-large .brand-symbol-img { width: 39px; height: 39px; }
+.brand:hover .brand-symbol-img { opacity: 0.92; transition: opacity 0.3s var(--ease-out); }
 .brand-dot { color: var(--violet); }
 .brand-light { color: #fff; --brand-cut: #100f13; }
 .brand-large { font-size: 41px; }

@@ -122,10 +122,11 @@ export default function ProgramsSection() {
                 </div>
                 <button
                   type="button"
-                  className="program-action-btn program-view-curriculum"
-                  aria-label={`View curriculum for ${course.title}`}
+                  className="program-card-action"
+                  aria-label={`View ${course.title}`}
+                  onClick={(e) => { e.stopPropagation(); setSelectedCourse(course); }}
                 >
-                  View Curriculum <ArrowUpRight size={16} strokeWidth={1.6} aria-hidden="true" />
+                  View <ArrowUpRight size={14} strokeWidth={1.8} aria-hidden="true" />
                 </button>
               </div>
             </article>
