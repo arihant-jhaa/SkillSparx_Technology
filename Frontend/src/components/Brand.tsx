@@ -11,7 +11,7 @@ export default function Brand({ light = false, large = false, onClick }: BrandPr
         src="/SkillSparx_Logo.png"
         alt="SkillSparx Technology"
         className="brand-symbol brand-symbol-img"
-        style={{ display: "block", width: 85, height: 85, borderRadius: 6, objectFit: "contain", background: "transparent", flexShrink: 0, border: "none", padding: 0 }}
+        style={{ display: "block", width: 70,marginTop: 8, height: 70, borderRadius: 6, objectFit: "contain", background: "transparent", flexShrink: 0, border: "none", padding: 0 }}
       />
       <div className="brand-text">
         <span>SkillSparx</span>

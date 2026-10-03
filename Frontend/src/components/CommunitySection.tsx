@@ -35,7 +35,7 @@ export default function CommunitySection() {
         <p className="eyebrow community-chip" data-reveal><GraduationCap size={15} strokeWidth={1.8} aria-hidden="true" /> Community</p>
         <h2 id="community-heading" data-reveal>Join our community<br />where creativity thrives<span className="purple-period">.</span></h2>
         <p className="community-description" data-reveal>Unlock the benefits of a global network of makers, growing your skills and building real connections.</p>
-        <a className="button button-primary community-cta" href="#membership" data-reveal>View courses <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" /></a>
+        <a className="button button-primary community-cta" href="#membership" data-reveal>View benefits <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" /></a>
       </div>
     </section>
   );
