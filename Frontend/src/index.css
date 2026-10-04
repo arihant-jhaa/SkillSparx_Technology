@@ -3146,9 +3146,15 @@ section[id] {
     padding-right: clamp(20px, 5vw, 60px);
   }
   .hero-title {
-    font-size: clamp(3.2rem, 9.5vw, 6rem);
+    font-size: clamp(2.8rem, 8.5vw, 4rem);
     max-width: 100%;
-    word-wrap: break-word;
+    word-wrap: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+  .hero-line-inner {
+    width: auto !important;
+    display: block;
   }
 
   .trust-section {
