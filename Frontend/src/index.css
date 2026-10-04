@@ -2841,6 +2841,35 @@ section[id] {
   }
 }
 
+@media (max-width: 900px) and (min-width: 768px) {
+  /* TABLET HEADER: Allow wrapping and adjust spacing */
+  .desktop-nav {
+    flex-wrap: wrap;
+    gap: clamp(6px, 1vw, 16px);
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding: calc(var(--spacing-2) * 0.3) 0;
+    font-size: var(--text-sm);
+  }
+
+  .nav-cta {
+    margin-top: 12px;
+    padding: calc(var(--spacing-2) * 0.4) calc(var(--spacing-3) * 0.7)
+           calc(var(--spacing-2) * 0.4) calc(var(--spacing-3) * 0.8);
+    font-size: var(--text-xs);
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Keep logo and basic structure intact */
+  .nav-inner {
+    height: auto;
+    min-height: 70px;
+  }
+}
+
 @media (max-width: 900px) {
   .nav-inner,
   .is-scrolled .nav-inner {
