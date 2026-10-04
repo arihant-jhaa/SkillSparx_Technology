@@ -2529,11 +2529,12 @@ section[id] {
   transform: translateX(3px);
 }
 .footer-giant {
-  width: max-content;
+  width: 100%;
   margin: 0 0 -0.045em -0.055em;
   color: #3d3942;
   font-family: "Manrope", Arial, sans-serif;
-  font-size: clamp(5rem, 14vw, 8.5rem);
+  /* Scales with viewport width; cap at 8.5rem keeps it inside the page-container at all breakpoints */
+  font-size: clamp(1.8rem, 8.5vw, 8.5rem);
   line-height: 0.84;
   font-weight: 800;
   letter-spacing: -0.11em;
@@ -3625,9 +3626,7 @@ section[id] {
   .footer-link-group a {
     font-size: 13px;
   }
-  .footer-giant {
-    font-size: 28vw;
-  }
+  /* .footer-giant font-size is handled by clamp() in the base rule — no override needed here */
   .footer-bottom {
     align-items: flex-start;
     flex-wrap: wrap;

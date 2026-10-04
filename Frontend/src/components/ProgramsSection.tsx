@@ -72,22 +72,6 @@ export default function ProgramsSection() {
           ))}
         </div>
 
-        {/* Enhanced Program Categories Section */}
-        <div className="programs-categories-section" data-reveal>
-          <div className="section-intro">
-            <h2 id="programs-heading" data-reveal>
-              Comprehensive Curriculum<span className="purple-period">.</span>
-            </h2>
-            <p data-reveal>
-              Explore 27 specialized tracks across high-growth domains, crafted for foundational mastery and industry readiness.
-            </p>
-            <div className="programs-stats-pill" data-reveal>
-              <Sparkles size={16} className="text-violet-500" aria-hidden="true" />
-              <span>27 Industry Programs &middot; 6 Domains</span>
-            </div>
-          </div>
-        </div>
-
         {/* Anchors for direct navbar jumps */}
         <div id="tech-data" className="category-anchor" />
         <div id="mechanics" className="category-anchor" />
