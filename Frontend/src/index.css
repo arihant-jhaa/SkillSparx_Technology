@@ -666,6 +666,30 @@ section[id] {
 .menu-toggle {
   display: none;
 }
+.mobile-login-btn {
+  display: none;
+  padding: 10px 16px;
+  background: #1d1b20;
+  border: 1px solid #1d1b20;
+  border-radius: 3px;
+  color: white;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    transform 0.3s;
+}
+.mobile-login-btn:hover {
+  background: var(--violet);
+  border-color: var(--violet);
+  transform: translateY(-2px);
+}
+.mobile-controls {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
 .mobile-nav {
   display: none;
   visibility: hidden;
@@ -688,6 +712,22 @@ section[id] {
   color: #17151c;
 }
 .site-header:not(.is-scrolled) .nav-cta:hover {
+  background: var(--violet);
+  border-color: var(--violet);
+  color: #fff;
+}
+.site-header:not(.is-scrolled) .menu-toggle {
+  border-color: rgba(255, 255, 255, 0.42);
+}
+.site-header:not(.is-scrolled) .menu-toggle span {
+  background: #fff;
+}
+.site-header:not(.is-scrolled) .mobile-login-btn {
+  background: #fff;
+  border-color: #fff;
+  color: #17151c;
+}
+.site-header:not(.is-scrolled) .mobile-login-btn:hover {
   background: var(--violet);
   border-color: var(--violet);
   color: #fff;
@@ -2866,6 +2906,17 @@ section[id] {
   .nav-cta {
     display: none;
   }
+  .mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .mobile-login-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+  }
   .menu-toggle {
     display: flex;
     width: 44px;
@@ -2986,15 +3037,30 @@ section[id] {
   }
 }
 
-/* MOBILE: below 768px — same compact approach */
+/* MOBILE: below 768px — compact mobile header */
 @media (max-width: 767px) {
   .nav-inner,
   .is-scrolled .nav-inner {
     height: 75px;
-    grid-template-columns: 1fr auto;
+    padding: 0 16px;
   }
   .is-scrolled .nav-inner {
     height: 70px;
+  }
+  .brand {
+    font-size: 20px;
+    gap: 8px;
+  }
+  .brand-symbol-img {
+    width: 38px !important;
+    height: 38px !important;
+    margin-top: 0 !important;
+  }
+  .brand-text span:first-child {
+    font-size: 1em;
+  }
+  .brand-technology {
+    font-size: 0.7em;
   }
   .desktop-nav {
     display: none;
@@ -3002,10 +3068,22 @@ section[id] {
   .nav-cta {
     display: none;
   }
+  .mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .mobile-login-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    font-size: 11px;
+  }
   .menu-toggle {
     display: flex;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;

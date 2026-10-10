@@ -150,20 +150,25 @@ export default function Navbar() {
             );
           })}
         </nav>
-        <a className="nav-cta" href="#classes">
-          Find your class <ArrowUpRight size={16} strokeWidth={1.9} aria-hidden="true" />
+        <a className="nav-cta" href="#login">
+          Login
         </a>
-        <button
-          className={`menu-toggle ${menuOpen ? "is-open" : ""}`}
-          type="button"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          aria-controls="mobile-navigation"
-          onClick={() => setMenuOpen((value) => !value)}
-        >
-          <span />
-          <span />
-        </button>
+        <div className="mobile-controls">
+          <button className="mobile-login-btn" type="button" aria-label="Login">
+            Login
+          </button>
+          <button
+            className={`menu-toggle ${menuOpen ? "is-open" : ""}`}
+            type="button"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMenuOpen((value) => !value)}
+          >
+            <span />
+            <span />
+          </button>
+        </div>
       </div>
       <nav id="mobile-navigation" className={`mobile-nav ${menuOpen ? "is-open" : ""}`} aria-label="Mobile navigation" aria-hidden={!menuOpen}>
         <div className="page-container mobile-nav-inner">

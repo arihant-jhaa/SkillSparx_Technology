@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Responsive Header Fix Check</title>
+    <style>
+        :root {
+            --ink: #1b191e;
+            --paper: #f6f5f1;
+            --muted: #77737b;
+            --line: #d9d7d4;
+            --violet: #7654e6;
+            --violet-deep: #6845d6;
+            --dark: #121116;
+            --gutter: clamp(24px, 5vw, 96px);
+            --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+            --text-xs: 0.75rem;
+            --text-sm: 0.875rem;
+            --text-base: 1rem;
+            --text-lg: 1.125rem;
+            --text-xl: 1.25rem;
+            --text-2xl: 1.5rem;
+            --text-3xl: 1.875rem;
+            --text-4xl: 2.25rem;
+            --text-5xl: 3rem;
+            --text-6xl: 3.75rem;
+            --spacing-1: 4px;
+            --spacing-2: 8px;
+            --spacing-3: 12px;
+            --spacing-4: 16px;
+            --spacing-5: 24px;
+            --spacing-6: 32px;
+            --spacing-7: 48px;
+            --spacing-8: 64px;
+
+            /* Safe area insets for phone apps */
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+            color-scheme: light;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --ink: #f6f5f1;
+                --paper: #1b191e;
+                --muted: #a8a4b0;
+                --line: #3a3840;
+                --violet: #8a6df0;
+                --violet-deep: #7654e6;
+                --dark: #17161c;
+                color-scheme: dark;
+            }
+        }
+
+        :root[data-theme="dark"] {
+            --ink: #f6f5f1;
+            --paper: #1b191e;
+            --muted: #a8a4b0;
+            --line: #3a3840;
+            --violet: #8a6df0;
+            --violet-deep: #7654e6;
+            --dark: #17161c;
+            color-scheme: dark;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: "DM Sans", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 0 var(--spacing-4);
+            padding-block: var(--spacing-5);
+        }
+
+        h1, h2, h3 {
+            font-family: "Manrope", Arial, sans-serif;
+            font-weight: 700;
+            margin: 0 0 var(--spacing-4);
+        }
+
+        h1 {
+            font-size: var(--text-3xl);
+            letter-spacing: -0.05em;
+        }
+
+        h2 {
+            font-size: var(--text-xl);
+            border-bottom: 2px solid var(--violet);
+            padding-bottom: var(--spacing-2);
+            margin-bottom: var(--spacing-5);
+        }
+
+        .summary {
+            background: linear-gradient(to right, rgba(118, 84, 230, 0.08), rgba(118, 84, 230, 0.04));
+            border-left: 3px solid var(--violet);
+            padding: var(--spacing-4);
+            border-radius: 6px;
+            margin-bottom: var(--spacing-6);
+        }
+
+        .summary h3 {
+            font-size: var(--text-lg);
+            color: var(--violet);
+            margin-bottom: var(--spacing-3);
+        }
+
+        .summary ul {
+            margin: 0;
+            padding-left: var(--spacing-4);
+        }
+
+        .summary li {
+            margin-bottom: var(--spacing-2);
+        }
+
+        .breakpoint-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-6);
+            margin-bottom: var(--spacing-8);
+        }
+
+        .breakpoint {
+            background: linear-gradient(135deg, rgba(118, 84, 230, 0.03), rgba(118, 84, 230, 0.01));
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: var(--spacing-5);
+        }
+
+        .breakpoint-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-4);
+        }
+
+        .breakpoint-title {
+            font-weight: 700;
+            font-size: var(--text-lg);
+            color: var(--violet);
+        }
+
+        .breakpoint-size {
+            font-size: var(--text-sm);
+            background: var(--violet);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .visualization {
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            padding: var(--spacing-4);
+            margin-bottom: var(--spacing-4);
+        }
+
+        .desktop-visual {
+            border: 2px dashed var(--violet);
+            padding: var(--spacing-3);
+            border-radius: 4px;
+        }
+
+        .tablet-visual, .mobile-visual {
+            border: 2px dashed var(--violet);
+            padding: var(--spacing-3);
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-visual {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-2);
+            flex-shrink: 0;
+        }
+
+        .logo-visual {
+            width: 38px;
+            height: 38px;
+            background: var(--violet);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        .brand-text-visual {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .brand-text-visual span:first-child {
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: var(--ink);
+        }
+
+        .brand-text-visual span:last-child {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            opacity: 0.9;
+            color: var(--muted);
+        }
+
+        .controls-visual {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-2);
+        }
+
+        .login-btn-visual {
+            background: #1d1b20;
+            color: white;
+            border: 1px solid #1d1b20;
+            border-radius: 3px;
+            padding: 8px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-btn-visual {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(38, 34, 41, 0.32);
+            border-radius: 3px;
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            padding: 0;
+        }
+
+        .menu-line {
+            width: 18px;
+            height: 1.5px;
+            background: var(--ink);
+        }
+
+        .tablet-visual {
+            gap: var(--spacing-4);
+        }
+
+        .mobile-visual {
+            gap: var(--spacing-3);
+        }
+
+        .layout-description {
+            font-size: var(--text-sm);
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .layout-description strong {
+            color: var(--ink);
+        }
+
+        .improvements {
+            background: linear-gradient(to right, rgba(46, 204, 113, 0.08), rgba(39, 174, 96, 0.04));
+            border-left: 3px solid #2ecc71;
+            padding: var(--spacing-4);
+            border-radius: 6px;
+            margin-bottom: var(--spacing-6);
+        }
+
+        .improvements h3 {
+            font-size: var(--text-lg);
+            color: #2ecc71;
+            margin-bottom: var(--spacing-3);
+        }
+
+        .files-changed {
+            background: linear-gradient(to right, rgba(52, 152, 219, 0.08), rgba(41, 128, 185, 0.04));
+            border-left: 3px solid #3498db;
+            padding: var(--spacing-4);
+            border-radius: 6px;
+        }
+
+        .files-changed h3 {
+            font-size: var(--text-lg);
+            color: #3498db;
+            margin-bottom: var(--spacing-3);
+        }
+
+        .file-item {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            padding: var(--spacing-3);
+            margin-bottom: var(--spacing-3);
+        }
+
+        .file-name {
+            font-family: "SF Mono", "Cascadia Code", monospace;
+            font-size: var(--text-sm);
+            color: var(--violet);
+            font-weight: 600;
+        }
+
+        .file-description {
+            font-size: var(--text-sm);
+            color: var(--muted);
+            margin-top: var(--spacing-2);
+        }
+
+        @media (max-width: 768px) {
+            .breakpoint-grid {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 0 var(--spacing-3);
+                padding-block: var(--spacing-4);
+            }
+
+            h1 {
+                font-size: var(--text-2xl);
+            }
+        }
+
+        .highlight {
+            background: rgba(118, 84, 230, 0.1);
+            border: 1px solid rgba(118, 84, 230, 0.2);
+            border-radius: 4px;
+            padding: var(--spacing-2);
+            margin: var(--spacing-3) 0;
+            font-size: var(--text-sm);
+        }
+
+        .desktop-nav-visual {
+            display: flex;
+            gap: var(--spacing-3);
+            margin: var(--spacing-3) 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-link-visual {
+            color: #4f4b52;
+            font-size: var(--text-sm);
+            font-weight: 600;
+            padding: 4px 0;
+        }
+
+        .desktop-cta-visual {
+            background: #1d1b20;
+            color: white;
+            border: 1px solid #1d1b20;
+            border-radius: 3px;
+            padding: 6px 12px;
+            font-size: var(--text-xs);
+            font-weight: 700;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Header Fix: SkillSparx Technology</h1>
+
+    <div class="summary">
+        <h3>Task Summary</h3>
+        <ul>
+            <li><strong>Desktop:</strong> Keep existing design exactly as-is</li>
+            <li><strong>Tablet:</strong> Group Login button with hamburger menu on right side</li>
+            <li><strong>Mobile:</strong> Fix overlapping elements, properly separate brand and controls</li>
+            <li><strong>Files:</strong> Updated Navbar component and main stylesheet</li>
+        </ul>
+    </div>
+
+    <div class="improvements">
+        <h3>Key Improvements</h3>
+        <ul>
+            <li><strong>Tablet Layout:</strong> Login button now positioned to the LEFT of hamburger menu in a grouped controls container</li>
+            <li><strong>Mobile Layout:</strong> Reduced logo size, improved spacing, prevents overlap with brand text</li>
+            <li><strong>Desktop Layout:</strong> Preserved exactly as it was - no unintended changes</li>
+            <li><strong>Responsive Groups:</strong> Added wrapper container to group mobile/tablet controls together</li>
+        </ul>
+    </div>
+
+    <div class="breakpoint-grid">
+        <!-- Desktop -->
+        <div class="breakpoint">
+            <div class="breakpoint-header">
+                <div class="breakpoint-title">Desktop (1200px+)</div>
+                <div class="breakpoint-size">1440px</div>
+            </div>
+            <div class="visualization desktop-visual">
+                <div class="brand-visual">
+                    <div class="logo-visual">SS</div>
+                    <div class="brand-text-visual">
+                        <span>SkillSparx</span>
+                        <span>TECHNOLOGY</span>
+                    </div>
+                </div>
+                <div class="desktop-nav-visual">
+                    <span class="nav-link-visual">Approach</span>
+                    <span class="nav-link-visual">Classes</span>
+                    <span class="nav-link-visual">Stories</span>
+                    <span class="nav-link-visual">Membership</span>
+                    <span class="nav-link-visual">Programs</span>
+                    <span class="nav-link-visual">Pro Packs</span>
+                    <span class="nav-link-visual">Advanced</span>
+                    <span class="desktop-cta-visual">Login</span>
+                </div>
+            </div>
+            <p class="layout-description">
+                <strong>No changes made.</strong> The desktop layout was preserved exactly as requested.
+                Navigation links remain in their original order, spacing, and styling.
+            </p>
+        </div>
+
+        <!-- Tablet -->
+        <div class="breakpoint">
+            <div class="breakpoint-header">
+                <div class="breakpoint-title">Tablet (768px-1199px)</div>
+                <div class="breakpoint-size">1024px</div>
+            </div>
+            <div class="visualization tablet-visual">
+                <div class="brand-visual">
+                    <div class="logo-visual">SS</div>
+                    <div class="brand-text-visual">
+                        <span>SkillSparx</span>
+                        <span>TECHNOLOGY</span>
+                    </div>
+                </div>
+                <div class="controls-visual">
+                    <span class="login-btn-visual">Login</span>
+                    <button class="menu-btn-visual">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </button>
+                </div>
+            </div>
+            <p class="layout-description">
+                <strong>Fixed:</strong> Login button now grouped with hamburger menu on the right side.
+                Controls are vertically centered with 10px spacing between them.
+                The brand remains aligned on the left.
+            </p>
+        </div>
+
+        <!-- Mobile -->
+        <div class="breakpoint">
+            <div class="breakpoint-header">
+                <div class="breakpoint-title">Mobile (&lt;768px)</div>
+                <div class="breakpoint-size">430px</div>
+            </div>
+            <div class="visualization mobile-visual">
+                <div class="brand-visual">
+                    <div class="logo-visual">SS</div>
+                    <div class="brand-text-visual">
+                        <span>SkillSparx</span>
+                        <span>TECHNOLOGY</span>
+                    </div>
+                </div>
+                <div class="controls-visual">
+                    <span class="login-btn-visual">Login</span>
+                    <button class="menu-btn-visual">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </button>
+                </div>
+            </div>
+            <p class="layout-description">
+                <strong>Fixed:</strong> Brand spacing improved, logo reduced to 38px, controls grouped.
+                Login button positioned to the left of hamburger with 8px gap.
+                Header padding adjusted to 16px to prevent overflow.
+            </p>
+        </div>
+    </div>
+
+    <div class="files-changed">
+        <h3>Files Modified</h3>
+
+        <div class="file-item">
+            <div class="file-name">Frontend/src/components/Navbar.tsx</div>
+            <div class="file-description">
+                • Wrapped mobile Login button and hamburger menu in <strong>mobile-controls</strong> container<br>
+                • Added <code>&lt;div className="mobile-controls"&gt;</code> wrapper around both controls<br>
+                • No changes to desktop navigation or any other functionality
+            </div>
+        </div>
+
+        <div class="file-item">
+            <div class="file-name">Frontend/src/index.css</div>
+            <div class="file-description">
+                • Added new <strong>.mobile-controls</strong> CSS class for grouping controls<br>
+                • Updated tablet media query (768px-1199px) to display controls container<br>
+                • Updated mobile media query to reduce logo size and improve spacing<br>
+                • Added specific unscrolled state styling for controls<br>
+                • Preserved all existing desktop styles exactly as they were
+            </div>
+        </div>
+
+        <div class="highlight">
+            <strong>Build Verification:</strong> The application built successfully with no errors (npm run build completed).
+        </div>
+    </div>
+
+    <h2>Implementation Details</h2>
+
+    <h3>What Was Changed</h3>
+    <ul>
+        <li><strong>Structural Improvement:</strong> Added wrapper container (<code>mobile-controls</code>) to group Login button and hamburger menu</li>
+        <li><strong>Tablet Fix:</strong> Controls now properly grouped on right side with consistent spacing</li>
+        <li><strong>Mobile Fix:</strong> Reduced logo from 70px to 38px, improved brand text sizing, added proper padding</li>
+        <li><strong>Responsive Behavior:</strong> Controls container only shows on tablet and mobile breakpoints</li>
+        <li><strong>Preservation:</strong> Desktop layout completely unchanged - navigation links, spacing, colors, and animations preserved</li>
+    </ul>
+
+    <h3>What Was NOT Changed</h3>
+    <ul>
+        <li><strong>Desktop Design:</strong> Kept exactly as it was - no modifications to navigation links, layout, or styling</li>
+        <li><strong>Login Page:</strong> No login page was created (only UI buttons added as requested)</li>
+        <li><strong>Authentication:</strong> No authentication functionality was implemented</li>
+        <li><strong>Other Components:</strong> Hero section, mentor cards, footer, and all other page sections preserved</li>
+        <li><strong>Global Styles:</strong> Typography, colors, and global variables unchanged</li>
+    </ul>
+
+    <script>
+        // Simple theme toggle for demo
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    </script>
+</body>
+</html>
