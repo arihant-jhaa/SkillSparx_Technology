@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { ArrowUpRight, ChevronDown, Key } from "lucide-react";
 import Brand from "./Brand";
 
 const navigation = [
@@ -151,11 +151,15 @@ export default function Navbar() {
           })}
         </nav>
         <a className="nav-cta" href="#login">
-          Login
+          <Key size={14} strokeWidth={2.5} className="login-key-icon" aria-hidden="true" />
+          <span className="login-text-full">Mentor/Student Login</span>
+          <span className="login-text-short">Login</span>
         </a>
         <div className="mobile-controls">
           <button className="mobile-login-btn" type="button" aria-label="Login">
-            Login
+            <Key size={14} strokeWidth={2.5} className="login-key-icon" aria-hidden="true" />
+            <span className="login-text-full">Mentor/Student Login</span>
+            <span className="login-text-short">Login</span>
           </button>
           <button
             className={`menu-toggle ${menuOpen ? "is-open" : ""}`}

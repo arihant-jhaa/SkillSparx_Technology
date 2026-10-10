@@ -39,6 +39,30 @@
   --spacing-8: 64px;
 }
 
+.login-key-icon {
+  display: inline-block;
+  opacity: 0.8;
+  margin-right: 6px;
+}
+.login-text-short {
+  display: none;
+}
+.login-text-full {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .login-text-short {
+    display: inline;
+  }
+  .login-text-full {
+    display: none;
+  }
+  .login-key-icon {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
