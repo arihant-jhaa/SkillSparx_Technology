@@ -11,7 +11,6 @@
   background-color: #030816;
   overflow-y: auto;
   overflow-x: hidden;
-  overscroll-behavior-y: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +18,6 @@
   color: #f8fafc;
 }
 
-/* Layer 1: Outer page background - Full viewport background image */
 .login-bg-img {
   position: absolute;
   inset: 0;
@@ -171,7 +169,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 48px 40px 60px 40px;
   overflow: hidden;
@@ -388,7 +386,7 @@
 .liquid-signup-link { color: #60a5fa; font-weight: 600; text-decoration: none; background: none; border: none; cursor: pointer; transition: color 0.2s ease; font-size: 13px; }
 .liquid-signup-link:hover { color: #93c5fd; text-decoration: underline; }
 
-.liquid-alert { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border-radius: 12px; font-size: 13px; line-height: 1.45; margin-bottom: 16px; }
+.liquid-alert { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 12px; font-size: 13px; line-height: 1.45; margin-bottom: 16px; }
 .liquid-alert-error { background: rgba(220, 38, 38, 0.08); border: 1px solid rgba(220, 38, 38, 0.15); color: #fecaca; }
 .liquid-alert-success { background: rgba(22, 163, 74, 0.08); border: 1px solid rgba(22, 163, 74, 0.15); color: #bbf7d0; }
 .liquid-alert-info { background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.12); color: #bfdbfe; }
@@ -500,7 +498,7 @@
 
   .login-header-row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
     margin-bottom: 20px;
   }
@@ -514,7 +512,7 @@
   .login-brand-wrapper {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .liquid-login-card {
