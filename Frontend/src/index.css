@@ -4,7 +4,7 @@
 :root {
   font-family: "DM Sans", Arial, sans-serif;
   color: #1b191e;
-  background: #f6f5f1;
+  background: #030816;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -69,12 +69,14 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  background: #030816;
 }
 body {
   margin: 0;
   min-width: 320px;
   overflow-x: clip;
-  background: var(--paper);
+  background: #030816;
+  min-height: 100dvh;
 }
 body,
 button,

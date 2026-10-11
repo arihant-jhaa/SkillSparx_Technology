@@ -9,7 +9,9 @@
   min-height: 100dvh;
   width: 100%;
   background-color: #030816;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,6 +131,7 @@
   flex-direction: column;
   padding: 48px 40px 40px 56px;
   overflow: hidden;
+  min-height: 100%;
 }
 
 /* Mobile header row: separate Back button and Branding rows using Flexbox */
@@ -173,6 +176,7 @@
   padding: 48px 40px 60px 40px;
   overflow: hidden;
   background: radial-gradient(circle at 60% 40%, rgba(30, 58, 138, 0.2) 0%, transparent 70%);
+  min-height: 100%;
 }
 
 .login-panel-footer {
@@ -444,12 +448,44 @@
   .login-right-panel { display: none; }
 }
 
-/* Specific Mobile Optimization for Small Viewports (320px - 768px) */
-@media (max-width: 768px) {
-  .login-page-wrapper {
-    padding: 16px;
-    align-items: flex-start;
-    overflow-y: auto;
+/* --- Mobile Chatbot Modal Specific Fixes --- */
+@media (max-width: 480px) {
+  .liquid-mobile-modal-content {
+    padding: 16px 16px 16px 16px !important;
+    border-radius: 20px !important;
+  }
+
+  .liquid-chat-title {
+    font-size: 24px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .liquid-chips-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .liquid-chip {
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    height: 36px !important;
+  }
+
+  .liquid-composer {
+    padding: 10px !important;
+    border-radius: 16px !important;
+  }
+
+  .liquid-composer-input {
+    font-size: 13px !important;
+    min-height: 48px !important;
+  }
+
+  .liquid-composer-actions {
+    gap: 4px !important;
+    padding-top: 8px !important;
   }
 
   .liquid-outer-container {
