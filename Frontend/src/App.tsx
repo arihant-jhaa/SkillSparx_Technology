@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustSection from "./components/TrustSection";
@@ -14,6 +14,7 @@ import PricingSection from "./components/PricingSection";
 import CommunitySection from "./components/CommunitySection";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+import LoginPage from "./components/login/LoginPage";
 import { useScrollReveals } from "./hooks/useScrollReveals";
 import { ScrollTrigger } from "./motion/gsap";
 
@@ -44,7 +45,16 @@ function ScrollProgress() {
 }
 
 export default function App() {
-  useScrollReveals();
+  const [isLoginView, setIsLoginView] = useState(window.location.hash === "#login");
+  useScrollReveals(!isLoginView);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setIsLoginView(window.location.hash === "#login");
+    };
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   useEffect(() => {
     let mounted = true;
@@ -56,6 +66,16 @@ export default function App() {
       window.removeEventListener("load", refresh);
     };
   }, []);
+
+  if (isLoginView) {
+    return (
+      <LoginPage
+        onNavigateHome={() => {
+          window.location.hash = "";
+        }}
+      />
+    );
+  }
 
   return (
     <>

@@ -156,7 +156,7 @@ export default function Navbar() {
           <span className="login-text-short">Login</span>
         </a>
         <div className="mobile-controls">
-          <button className="mobile-login-btn" type="button" aria-label="Login">
+          <button className="mobile-login-btn" type="button" aria-label="Login" onClick={() => { window.location.hash = "#login"; }}>
             <Key size={14} strokeWidth={2.5} className="login-key-icon" aria-hidden="true" />
             <span className="login-text-full">Mentor/Student Login</span>
             <span className="login-text-short">Login</span>
