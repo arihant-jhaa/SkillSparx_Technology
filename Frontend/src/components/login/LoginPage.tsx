@@ -15,26 +15,28 @@ export default function LoginPage({ onNavigateHome }: LoginPageProps) {
     <div className="login-page-wrapper">
       <img src="/images/login-bg.png" alt="" className="login-bg-img" />
 
-      {/* Floating Back to Home Navigation */}
-      <button
-        type="button"
-        onClick={onNavigateHome}
-        className="login-nav-back"
-        aria-label="Back to home page"
-      >
-        <ArrowLeft size={16} />
-        <span>Back to Home</span>
-      </button>
-
       {/* Main Liquid Glass Container */}
       <div className="liquid-outer-container">
         {/* Content Grid */}
         <div className="login-page-grid">
           {/* Left Panel: Branding & LoginForm */}
           <div className="login-left-panel">
-            <div className="mb-4">
-              <Brand onClick={onNavigateHome} />
+            {/* Header row with Back button and Branding to prevent overlapping on mobile */}
+            <div className="login-header-row">
+              <button
+                type="button"
+                onClick={onNavigateHome}
+                className="login-nav-back"
+                aria-label="Back to home page"
+              >
+                <ArrowLeft size={16} />
+                <span>Back to Home</span>
+              </button>
+              <div className="login-brand-wrapper">
+                <Brand light onClick={onNavigateHome} />
+              </div>
             </div>
+
             <LoginForm onSuccess={onNavigateHome} />
 
             <div className="login-panel-footer">

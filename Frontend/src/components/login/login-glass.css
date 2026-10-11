@@ -2,7 +2,7 @@
    SkillSparx Technology - Liquid Glass Login & AI Chatbot Styles
    ========================================================================== */
 
-/* Main page layout */
+/* Main page layout - Layer 1: Outer Page Background */
 .login-page-wrapper {
   position: relative;
   min-height: 100vh;
@@ -17,16 +17,48 @@
   color: #f8fafc;
 }
 
+/* Layer 1: Outer page background - Full viewport background image */
 .login-bg-img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.35;
+  opacity: 0.4;
   z-index: 0;
   pointer-events: none;
-  filter: blur(1px);
+  filter: blur(0.5px);
+}
+
+/* Layer 2: Login-side background (Left panel) */
+.login-left-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/IMG_0159.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 32px 0 0 32px;
+  filter: blur(0.5px);
+}
+
+/* Layer 3: Chatbot-side background (Right panel) */
+.login-right-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/IMG_0158.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(0.5px);
 }
 
 /* Back to Home Button floating top */
@@ -66,15 +98,15 @@
   width: 100%;
   max-width: 1180px;
   min-height: 720px;
-  background: rgba(10, 21, 46, 0.52);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
-  border: 1px solid rgba(255, 255, 255, 0.26);
-  border-radius: 28px;
+  background: rgba(10, 21, 46, 0.38);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 32px;
   box-shadow:
-    0 25px 60px -10px rgba(0, 0, 0, 0.7),
-    0 0 0 1px rgba(147, 197, 253, 0.12),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(147, 197, 253, 0.08),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -90,22 +122,57 @@
   width: 100%;
 }
 
+/* Left Panel: Branding & LoginForm */
 .login-left-panel {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 36px 36px 32px 36px;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  position: relative;
+  padding: 48px 40px 40px 56px;
+  overflow: hidden;
 }
 
+/* Mobile header row: separate Back button and Branding rows using Flexbox */
+.login-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.login-brand-wrapper {
+  flex-shrink: 0;
+}
+
+.login-form-wrapper {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.login-left-panel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+
+/* Right Panel: Chatbot */
+/* Right Panel: Chatbot - positioned above midpoint */
 .login-right-panel {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 40px 36px;
-  position: relative;
-  background: radial-gradient(circle at 60% 40%, rgba(30, 58, 138, 0.15) 0%, transparent 70%);
+  padding: 48px 40px 60px 40px;
+  overflow: hidden;
+  background: radial-gradient(circle at 60% 40%, rgba(30, 58, 138, 0.2) 0%, transparent 70%);
 }
 
 .login-panel-footer {
@@ -122,16 +189,15 @@
   width: 100%;
   max-width: 410px;
   margin: 0 auto;
-  background: rgba(14, 27, 58, 0.56);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 22px;
-  padding: 32px 28px;
+  background: rgba(10, 21, 46, 0.5);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  padding: 36px 32px;
   box-shadow:
-    0 18px 38px -8px rgba(0, 0, 0, 0.55),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.32),
-    inset 0 0 20px rgba(37, 99, 235, 0.08);
+    0 20px 40px -10px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
 }
 
 .liquid-card-title {
@@ -155,68 +221,313 @@
 .liquid-form-group { margin-bottom: 16px; }
 .liquid-form-label { display: block; color: #f1f5f9; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
 .liquid-text-input {
-  width: 100%; height: 44px; background: #ffffff; color: #0f172a;
-  border: 1px solid rgba(203, 213, 225, 0.8); border-radius: 10px; padding: 0 14px;
-  font-size: 13.5px; font-family: inherit; transition: all 0.2s ease;
+  width: 100%; height: 48px; background: rgba(255, 255, 255, 0.03); color: #f1f5f9;
+  border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 0 48px 0 16px;
+  font-size: 13.5px; font-family: inherit; transition: all 0.2s ease; outline: none;
 }
-.liquid-text-input:focus { outline: none; border-color: #8b5cf6; box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.22); }
-.liquid-password-toggle { position: absolute; right: 12px; background: transparent; border: none; padding: 4px; color: #64748b; cursor: pointer; }
+.liquid-text-input:focus { border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12); }
+.liquid-text-input::placeholder { color: rgba(148, 163, 184, 0.7); }
+.liquid-password-toggle {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  background: transparent; border: none; padding: 6px; color: #64748b; cursor: pointer;
+  width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s ease; z-index: 5;
+}
+.liquid-password-toggle:hover { color: #3b82f6; background: rgba(59, 130, 246, 0.1); }
+.liquid-password-toggle:focus-visible { outline: 2px solid rgba(59, 130, 246, 0.3); outline-offset: 2px; }
+.liquid-password-toggle:active { transform: translateY(-50%) scale(0.95); }
 
 /* Buttons */
 .liquid-primary-btn {
-  width: 100%; height: 46px; margin-top: 18px; border-radius: 11px;
-  background: linear-gradient(135deg, #6c3ef6 0%, #8754f7 50%, #7540ea 100%);
-  color: #ffffff; font-size: 15px; font-weight: 600; cursor: pointer;
-  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%;
+  height: 48px;
+  margin-top: 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.liquid-primary-btn:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
 .liquid-social-btn {
-  width: 100%; height: 44px; margin-bottom: 10px; background: #ffffff;
-  color: #1e293b; border-radius: 11px; font-size: 13.5px; font-weight: 600;
+  width: 100%; height: 44px; margin-bottom: 10px; background: rgba(255, 255, 255, 0.05);
+  color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 11px; font-size: 13.5px; font-weight: 600;
   display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.liquid-social-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Chatbot Interface */
-.liquid-chat-container { width: 100%; max-width: 580px; display: flex; flex-direction: column; align-items: center; }
+/* Chatbot vertical positioning - content group positioned in upper-middle */
+.liquid-chat-container { width: 100%; max-width: 580px; display: flex; flex-direction: column; align-items: center; padding-top: 16px; }
+.liquid-chat-title { color: #ffffff; font-size: 32px; font-weight: 700; text-align: center; margin: 0 0 24px 0; letter-spacing: -0.02em; }
 .liquid-chat-title { color: #ffffff; font-size: 34px; font-weight: 700; text-align: center; margin: 0 0 20px 0; }
-.liquid-chips-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 24px; width: 100%; }
+/* Suggestion Chips */
+.liquid-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 28px;
+  width: 100%;
+}
+
 .liquid-chip {
-  display: inline-flex; align-items: center; gap: 7px; padding: 7px 15px;
-  border-radius: 999px; background: rgba(16, 29, 62, 0.65); border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #f1f5f9; font-size: 12.5px; font-weight: 500; cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.liquid-chip:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.liquid-chip:active {
+  transform: translateY(0);
 }
 .liquid-chat-stream { width: 100%; max-height: 220px; overflow-y: auto; margin-bottom: 16px; display: flex; flex-direction: column; gap: 12px; }
 .liquid-msg { display: flex; gap: 10px; max-width: 88%; font-size: 13.5px; padding: 10px 16px; border-radius: 16px; }
-.liquid-msg-user { align-self: flex-end; background: rgba(109, 40, 217, 0.45); color: #ffffff; }
-.liquid-msg-bot { align-self: flex-start; background: rgba(15, 29, 65, 0.7); color: #e2e8f0; }
+.liquid-msg-user { align-self: flex-end; background: rgba(59, 130, 246, 0.6); color: #ffffff; }
+.liquid-msg-bot { align-self: flex-start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.05); color: #e2e8f0; }
 
 .liquid-composer {
-  width: 100%; background: rgba(13, 25, 54, 0.68); border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 20px; padding: 16px 18px 12px 18px; display: flex; flex-direction: column; gap: 12px;
+  width: 100%; background: rgba(10, 21, 46, 0.6); border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px; padding: 16px; backdrop-filter: blur(15px);
 }
 .liquid-composer-input { width: 100%; background: transparent; border: none; color: #ffffff; font-size: 14px; resize: none; outline: none; }
-.liquid-composer-actions { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 6px; }
+.liquid-composer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 10px;
+}
+
+/* Tool Badges */
+.liquid-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+  font-size: 11.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.liquid-pill-badge:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Round Action Buttons */
+.liquid-round-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.liquid-round-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.liquid-input-wrap { position: relative; width: 100%; }
+.liquid-forgot-row { margin-top: 10px; text-align: right; }
+.liquid-forgot-link { color: rgba(148, 163, 184, 0.85); font-size: 12px; font-weight: 500; text-decoration: none; transition: color 0.2s ease; }
+.liquid-forgot-link:hover { color: #60a5fa; text-decoration: underline; }
+
+.liquid-divider { display: flex; align-items: center; gap: 16px; margin: 24px 0 18px 0; color: rgba(203, 213, 225, 0.65); font-size: 12px; font-weight: 500; }
+.liquid-divider::before, .liquid-divider::after { content: ""; flex: 1; height: 1px; background: rgba(255, 255, 255, 0.1); }
+
+.liquid-signup-prompt { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 8px; color: rgba(203, 213, 225, 0.75); font-size: 13px; }
+.liquid-signup-link { color: #60a5fa; font-weight: 600; text-decoration: none; background: none; border: none; cursor: pointer; transition: color 0.2s ease; font-size: 13px; }
+.liquid-signup-link:hover { color: #93c5fd; text-decoration: underline; }
+
+.liquid-alert { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border-radius: 12px; font-size: 13px; line-height: 1.45; margin-bottom: 16px; }
+.liquid-alert-error { background: rgba(220, 38, 38, 0.08); border: 1px solid rgba(220, 38, 38, 0.15); color: #fecaca; }
+.liquid-alert-success { background: rgba(22, 163, 74, 0.08); border: 1px solid rgba(22, 163, 74, 0.15); color: #bbf7d0; }
+.liquid-alert-info { background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.12); color: #bfdbfe; }
+
+.liquid-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #3b82f6;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.liquid-submit-btn:hover:not(:disabled) {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+.liquid-submit-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 
 /* Mobile Modal */
 .liquid-mobile-modal-backdrop {
-  position: fixed; inset: 0; background: rgba(3, 7, 18, 0.65); backdrop-filter: blur(8px);
+  position: fixed; inset: 0; background: rgba(3, 7, 18, 0.75); backdrop-filter: blur(12px);
   z-index: 60; display: flex; align-items: flex-end; justify-content: center; padding: 16px;
 }
 .liquid-mobile-modal-content {
   width: 100%; max-width: 520px; max-height: 85vh;
-  background: rgba(10, 21, 46, 0.92); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 28px;
-  display: flex; flex-direction: column; padding: 20px; overflow-y: hidden; color: #ffffff;
+  background: rgba(10, 21, 46, 0.95); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 32px;
+  display: flex; flex-direction: column; padding: 24px; overflow-y: hidden; color: #ffffff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
 /* Floating Launcher */
 .liquid-floating-launcher {
   position: fixed; bottom: 24px; right: 24px; z-index: 50; width: 64px; height: 64px; border-radius: 50%;
-  background: rgba(16, 28, 62, 0.72); border: 1.5px solid rgba(147, 197, 253, 0.5);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.liquid-floating-launcher:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
 }
 
 @media (max-width: 1024px) {
   .login-page-grid { grid-template-columns: 1fr; }
   .login-left-panel { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .login-left-panel::after { display: none; }
   .login-right-panel { display: none; }
 }
+
+/* Specific Mobile Optimization for Small Viewports (320px - 768px) */
+@media (max-width: 768px) {
+  .login-page-wrapper {
+    padding: 16px;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .liquid-outer-container {
+    min-height: auto;
+    border-radius: 20px;
+    margin: 12px 0;
+  }
+
+  .login-left-panel {
+    padding: 24px 20px;
+  }
+
+  .login-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .login-nav-back {
+    position: static;
+    display: inline-flex;
+    align-self: flex-start;
+  }
+
+  .login-brand-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .liquid-login-card {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+
+  .liquid-card-title {
+    font-size: 22px;
+  }
+
+  .liquid-card-subtitle {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .liquid-text-input {
+    height: 44px;
+    font-size: 13px;
+  }
+
+  .liquid-primary-btn {
+    height: 44px;
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  .liquid-social-btn {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .liquid-divider {
+    margin: 18px 0 14px 0;
+  }
+}
+
+/* Extra small screens like 320px */
+@media (max-width: 380px) {
+  .login-page-wrapper {
+    padding: 8px;
+  }
+
+  .liquid-login-card {
+    padding: 18px 12px;
+  }
+
+  .liquid-card-title {
+    font-size: 20px;
+  }
+}
+

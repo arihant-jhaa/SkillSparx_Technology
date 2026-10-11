@@ -186,7 +186,7 @@ export default function ChatbotPanel({ isMobileModal = false }: ChatbotPanelProp
 
         <div className="liquid-composer-actions">
           {/* Tool actions on left */}
-          <div className="liquid-tool-group">
+          <div className="flex items-center gap-3">
             <button
               type="button"
               className="liquid-round-btn"
@@ -222,8 +222,8 @@ export default function ChatbotPanel({ isMobileModal = false }: ChatbotPanelProp
             </button>
           </div>
 
-          {/* Right action buttons */}
-          <div className="liquid-tool-group">
+          {/* Right action buttons with clear gap between audio and send */}
+          <div className="flex items-center gap-3">
             <button
               type="button"
               className="liquid-round-btn opacity-70 hover:opacity-100"
