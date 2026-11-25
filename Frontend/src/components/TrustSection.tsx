@@ -1,57 +1,28 @@
-import { useRef } from "react";
-import { gsap, prefersReducedMotion, useGSAP } from "../motion/gsap";
+import { courses, courseCategories } from "../data/courses";
 
-// Concept social proof should be replaced with verified launch data.
 const stats = [
-  { value: 12, suffix: "k+", label: "curious makers" },
-  { value: 46, suffix: "", label: "countries connected" },
-  { value: 200, suffix: "+", label: "hands-on lessons" },
+  { value: courses.length, suffix: "", label: "course outlines" },
+  { value: courseCategories.length, suffix: "", label: "subject areas" },
+  { value: courses.reduce((total, course) => total + course.modules.length, 0), suffix: "", label: "syllabus sections" },
 ];
 
 export default function TrustSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useGSAP(
-    () => {
-      if (prefersReducedMotion()) return;
-      const counters = gsap.utils.toArray<HTMLElement>("[data-counter]");
-      const timeline = gsap.timeline({ scrollTrigger: { trigger: ".trust-stats", start: "top 84%", once: true } });
-
-      counters.forEach((element, index) => {
-        const count = { value: 0 };
-        element.textContent = `0${element.dataset.suffix ?? ""}`;
-        timeline.to(count, {
-          value: Number(element.dataset.counter),
-          duration: 1.45,
-          ease: "power2.out",
-          onUpdate: () => {
-            element.textContent = `${Math.round(count.value)}${element.dataset.suffix ?? ""}`;
-          },
-        }, index * 0.12);
-      });
-    },
-    { scope: sectionRef },
-  );
-
   return (
-    <section ref={sectionRef} className="trust-section" aria-labelledby="trust-heading">
+    <section className="trust-section" aria-labelledby="trust-heading">
       <div className="page-container">
         <div className="trust-partners" data-reveal>
-          <span className="eyebrow">IN GOOD COMPANY</span>
-          <div className="partner-names" aria-label="Independent creative studios in our community">
-            <span className="partner-north">north<span className="partner-dot">.</span></span>
-            <span className="partner-offgrid">OFFGRID</span>
-            <span className="partner-margin">margins</span>
-            <span className="partner-studio">STUDIO / O3</span>
+          <span className="eyebrow">THE CURRENT CATALOGUE</span>
+          <div className="partner-names subject-area-ribbon" aria-label="Course subject areas">
+            {courseCategories.map((category) => <span key={category}>{category}</span>)}
           </div>
         </div>
         <div className="trust-main">
           <div className="trust-copy" data-reveal>
-            <p className="eyebrow eyebrow-purple">THE WORK IS THE PROOF</p>
-            <h2 id="trust-heading">A community<br />with momentum<span className="purple-period">.</span></h2>
-            <p>Different disciplines. Shared curiosity. One place to keep moving forward.</p>
+            <p className="eyebrow eyebrow-purple">A CATALOGUE TO EXPLORE</p>
+            <h2 id="trust-heading">Start with a subject.<br />Follow your curiosity<span className="purple-period">.</span></h2>
+            <p>Browse the supplied course outlines and see the topics each one covers.</p>
           </div>
-          <div className="trust-stats" aria-label="SkillSparx Technology community at a glance">
+          <div className="trust-stats" aria-label="Course catalogue at a glance">
             {stats.map((stat, index) => (
               <div className="trust-stat" key={stat.label} data-reveal style={{ transitionDelay: `${index * 90}ms` }}>
                 <span className="stat-value" data-counter={stat.value} data-suffix={stat.suffix}>{stat.value}{stat.suffix}</span>

@@ -3,18 +3,30 @@
 
 :root {
   font-family: "DM Sans", Arial, sans-serif;
-  color: #1b191e;
-  background: #030816;
+  color: var(--color-text-dark);
+  background: var(--color-dark);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --ink: #1b191e;
-  --paper: #f6f5f1;
-  --muted: #77737b;
-  --line: #d9d7d4;
-  --violet: #7654e6;
-  --violet-deep: #6845d6;
-  --dark: #121116;
+  --color-primary: #8b5cf6;
+  --color-secondary: #a78bfa;
+  --color-dark: #111014;
+  --color-dark-surface: #1d1a24;
+  --color-light: #f7f6fa;
+  --color-light-surface: #ffffff;
+  --color-text-dark: #18151f;
+  --color-text-light: #f9f8fc;
+  --color-muted-dark: #625d69;
+  --color-muted-light: #c2bdca;
+  --color-border-light: #e6e2ec;
+  --color-border-dark: #34313b;
+  --ink: var(--color-text-dark);
+  --paper: var(--color-light);
+  --muted: var(--color-muted-dark);
+  --line: var(--color-border-light);
+  --violet: var(--color-primary);
+  --violet-deep: #7544dc;
+  --dark: var(--color-dark);
   --gutter: clamp(24px, 5vw, 96px);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   /* Typography scale */
@@ -69,13 +81,14 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  background: #030816;
+  overflow-x: clip;
+  background: var(--color-dark);
 }
 body {
   margin: 0;
   min-width: 320px;
   overflow-x: clip;
-  background: #030816;
+  background: var(--color-dark);
   min-height: 100dvh;
 }
 body,

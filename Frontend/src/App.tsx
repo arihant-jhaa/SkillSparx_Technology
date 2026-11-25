@@ -1,103 +1,75 @@
-import { useEffect, useRef, useState } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import TrustSection from "./components/TrustSection";
-import ManifestoSection from "./components/ManifestoSection";
-import LearningSection from "./components/LearningSection";
-import ShowcaseSection from "./components/ShowcaseSection";
-import ProgramsSection from "./components/ProgramsSection";
-import AdvancedProgramsSection from "./components/AdvancedProgramsSection";
-import ProPacksSection from "./components/ProPacksSection";
-import StorySection from "./components/StorySection";
-import VoicesSection from "./components/VoicesSection";
-import PricingSection from "./components/PricingSection";
-import CommunitySection from "./components/CommunitySection";
-import FinalCTA from "./components/FinalCTA";
-import Footer from "./components/Footer";
-import LoginPage from "./components/login/LoginPage";
-import { useScrollReveals } from "./hooks/useScrollReveals";
-import { ScrollTrigger } from "./motion/gsap";
+import { Component, lazy, Suspense, type ErrorInfo, type ReactNode } from "react";
 
-function ScrollProgress() {
-  const barRef = useRef<HTMLSpanElement>(null);
+const HomePage = lazy(() => import("./pages/HomePage"));
+const CourseDetailPage = lazy(() => import("./pages/CourseDetailPage"));
+const LoginPage = lazy(() => import("./components/login/LoginPage"));
 
-  useEffect(() => {
-    let frame = 0;
-    const update = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const distance = document.documentElement.scrollHeight - window.innerHeight;
-        const progress = distance > 0 ? Math.min(1, window.scrollY / distance) : 0;
-        if (barRef.current) barRef.current.style.transform = `scaleX(${progress})`;
-      });
-    };
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
-    return () => {
-      cancelAnimationFrame(frame);
-      window.removeEventListener("scroll", update);
-      window.removeEventListener("resize", update);
-    };
-  }, []);
+type BoundaryProps = { children: ReactNode };
+type BoundaryState = { hasError: boolean };
 
-  return <div className="scroll-progress" aria-hidden="true"><span ref={barRef} /></div>;
+class AppErrorBoundary extends Component<BoundaryProps, BoundaryState> {
+  state: BoundaryState = { hasError: false };
+
+  static getDerivedStateFromError(): BoundaryState {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error: Error, info: ErrorInfo) {
+    console.error("Page failed to render", error, info.componentStack);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <main className="route-fallback" role="alert">
+          <p className="eyebrow eyebrow-purple">SKILLSPARX TECHNOLOGY</p>
+          <h1>This page could not be displayed.</h1>
+          <p>Return to the course list and try again.</p>
+          <a className="button button-primary" href="/#classes">Back to classes</a>
+        </main>
+      );
+    }
+    return this.props.children;
+  }
+}
+
+function LoadingPage() {
+  return <main className="route-fallback" aria-live="polite">Loading page…</main>;
 }
 
 export default function App() {
-  const [isLoginView, setIsLoginView] = useState(window.location.hash === "#login");
-  useScrollReveals(!isLoginView);
+  const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
 
-  useEffect(() => {
-    const handleHashChange = () => {
-      setIsLoginView(window.location.hash === "#login");
-    };
-    window.addEventListener("hashchange", handleHashChange);
-    return () => window.removeEventListener("hashchange", handleHashChange);
-  }, []);
+  if (window.location.hash === "#login" && pathname === "/") {
+    return <AppErrorBoundary><Suspense fallback={<LoadingPage />}><LoginPage onNavigateHome={() => { window.location.hash = ""; }} /></Suspense></AppErrorBoundary>;
+  }
 
-  useEffect(() => {
-    let mounted = true;
-    const refresh = () => ScrollTrigger.refresh();
-    document.fonts?.ready.then(() => { if (mounted) refresh(); });
-    window.addEventListener("load", refresh);
-    return () => {
-      mounted = false;
-      window.removeEventListener("load", refresh);
-    };
-  }, []);
-
-  if (isLoginView) {
+  const courseRoute = pathname.match(/^\/courses(?:\/([^/]+))?$/);
+  if (courseRoute) {
     return (
-      <LoginPage
-        onNavigateHome={() => {
-          window.location.hash = "";
-        }}
-      />
+      <AppErrorBoundary>
+        <Suspense fallback={<LoadingPage />}>
+          <CourseDetailPage slug={courseRoute[1] ?? ""} />
+        </Suspense>
+      </AppErrorBoundary>
+    );
+  }
+
+  if (pathname !== "/") {
+    return (
+      <AppErrorBoundary>
+        <Suspense fallback={<LoadingPage />}>
+          <CourseDetailPage slug="" />
+        </Suspense>
+      </AppErrorBoundary>
     );
   }
 
   return (
-    <>
-      <a className="skip-link" href="#main-content">Skip to content</a>
-      <ScrollProgress />
-      <Navbar />
-      <main id="main-content">
-        <Hero />
-        <TrustSection />
-        <ManifestoSection />
-        <LearningSection />
-        <ShowcaseSection />
-        <ProgramsSection />
-        <AdvancedProgramsSection />
-        <ProPacksSection />
-        <StorySection />
-        <VoicesSection />
-        <PricingSection />
-        <CommunitySection />
-        <FinalCTA />
-      </main>
-      <Footer />
-    </>
+    <AppErrorBoundary>
+      <Suspense fallback={<LoadingPage />}>
+        <HomePage />
+      </Suspense>
+    </AppErrorBoundary>
   );
 }

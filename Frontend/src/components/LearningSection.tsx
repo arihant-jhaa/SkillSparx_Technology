@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, BookOpen, Grid2X2, Layers3, Play, UsersRound } from "lucide-react";
 import { features } from "../data/site";
+import { courseCategories, courses } from "../data/courses";
 
 export default function LearningSection() {
   const [selected, setSelected] = useState(0);
@@ -36,7 +37,7 @@ export default function LearningSection() {
           <div id="learning-preview" className="studio-shell" aria-live="polite" data-reveal="scale">
             <div className="studio-topbar">
               <div className="studio-topbrand"><span className="studio-mini-mark">S<span>.</span></span><span className="studio-top-divider" /> <span>YOUR STUDIO</span></div>
-              <div className="studio-top-actions"><span>MY LEARNING</span><span className="studio-avatar">M</span></div>
+              <div className="studio-top-actions"><span>COURSE CATALOGUE</span><span className="studio-avatar" aria-hidden="true">S</span></div>
             </div>
             <div className="studio-layout">
               <div className="studio-rail" aria-hidden="true">
@@ -60,10 +61,9 @@ export default function LearningSection() {
                   <span className="studio-art-caption">MAKE SPACE FOR THE PROCESS</span>
                 </div>
                 <div className="studio-bottom-row">
-                  <div><span className="studio-bottom-label">YOUR JOURNEY</span><strong>{feature.progressLabel}</strong></div>
-                  <span className="studio-percent">{feature.progress}%</span>
+                  <div><span className="studio-bottom-label">AVAILABLE OUTLINES</span><strong>{courses.length} course outlines</strong></div>
+                  <span className="studio-percent">{courseCategories.length} areas</span>
                 </div>
-                <div className="studio-progress"><span style={{ width: `${feature.progress}%` }} /></div>
               </div>
             </div>
           </div>

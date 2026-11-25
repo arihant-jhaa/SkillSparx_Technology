@@ -1,0 +1,130 @@
+{
+  "android-app-development": {
+    "src": "/images/courses/android-app-development.svg",
+    "alt": "Android mobile application interface with layered app screens and navigation controls"
+  },
+  "artificial-intelligence": {
+    "src": "/images/courses/artificial-intelligence.svg",
+    "alt": "Neural network visualization with connected nodes and an intelligent system core"
+  },
+  "artificial-intelligence-generative-agentic": {
+    "src": "/images/courses/artificial-intelligence-generative-agentic.svg",
+    "alt": "Autonomous AI agents connected through a reasoning and tool-use network"
+  },
+  "autocad": {
+    "src": "/images/courses/autocad.svg",
+    "alt": "Architectural CAD blueprint with perspective construction lines and measured geometry"
+  },
+  "automobile-car-design": {
+    "src": "/images/courses/automobile-car-design.svg",
+    "alt": "Automotive concept design with a sculpted car silhouette and studio sketch arcs"
+  },
+  "business-analytics": {
+    "src": "/images/courses/business-analytics.svg",
+    "alt": "Business analytics dashboard with trend lines, comparison bars, and KPI panels"
+  },
+  "clinical-trial-and-research": {
+    "src": "/images/courses/clinical-trial-and-research.svg",
+    "alt": "Clinical research study concept with a patient record, trial pathway, and molecular structure"
+  },
+  "cloud-computing": {
+    "src": "/images/courses/cloud-computing.svg",
+    "alt": "Cloud infrastructure with distributed server racks and connected computing nodes"
+  },
+  "cyber-security-and-ethical-hacking": {
+    "src": "/images/courses/cyber-security-and-ethical-hacking.svg",
+    "alt": "Cybersecurity network with a protected shield and monitored connection points"
+  },
+  "data-analytics": {
+    "src": "/images/courses/data-analytics.svg",
+    "alt": "Data analytics visualization with structured records, a plotted trend, and summary bars"
+  },
+  "data-science": {
+    "src": "/images/courses/data-science.svg",
+    "alt": "Data science workbench with a statistical scatter plot, distribution, and analytical matrix"
+  },
+  "devops": {
+    "src": "/images/courses/devops.svg",
+    "alt": "DevOps delivery pipeline connecting source control, automated tests, containers, and deployment"
+  },
+  "digital-marketing": {
+    "src": "/images/courses/digital-marketing.svg",
+    "alt": "Digital marketing strategy funnel linking audience channels, campaign content, and conversion analytics"
+  },
+  "dsa-with-python": {
+    "src": "/images/courses/dsa-with-python.svg",
+    "alt": "Algorithm and data structures visualization with a branching graph and ordered nodes"
+  },
+  "embedded-systems": {
+    "src": "/images/courses/embedded-systems.svg",
+    "alt": "Embedded systems microcontroller board with circuit traces, pins, and sensor connectors"
+  },
+  "finance": {
+    "src": "/images/courses/finance.svg",
+    "alt": "Financial analysis workspace with ledger columns, portfolio allocation, and trend line"
+  },
+  "full-stack-web-development": {
+    "src": "/images/courses/full-stack-web-development.svg",
+    "alt": "Full stack web architecture with interface, API service, and database layers"
+  },
+  "human-resources-and-management": {
+    "src": "/images/courses/human-resources-and-management.svg",
+    "alt": "Organizational management chart connecting teams and people across departments"
+  },
+  "hybrid-and-electric-vehicles": {
+    "src": "/images/courses/hybrid-and-electric-vehicles.svg",
+    "alt": "Hybrid and electric vehicle powertrain showing battery pack, motor, and charging current"
+  },
+  "iot-and-robotics": {
+    "src": "/images/courses/iot-and-robotics.svg",
+    "alt": "Industrial robotics arm reaching toward connected IoT sensors and machine nodes"
+  },
+  "machine-learning": {
+    "src": "/images/courses/machine-learning.svg",
+    "alt": "Machine learning model with predictive curve, training points, and decision regions"
+  },
+  "medical-coding": {
+    "src": "/images/courses/medical-coding.svg",
+    "alt": "Medical coding record with structured clinical documents and a health information marker"
+  },
+  "nanotechnology": {
+    "src": "/images/courses/nanotechnology.svg",
+    "alt": "Nanoscale material lattice with molecular bonds and a semiconductor wafer surface"
+  },
+  "programming-in-java": {
+    "src": "/images/courses/programming-in-java.svg",
+    "alt": "Enterprise Java software architecture with modular service layers and virtual machine stack"
+  },
+  "programming-in-python": {
+    "src": "/images/courses/programming-in-python.svg",
+    "alt": "Python programming workspace with code blocks, iteration loop, and data structures"
+  },
+  "project-and-product-management": {
+    "src": "/images/courses/project-and-product-management.svg",
+    "alt": "Product roadmap with milestones, user research, delivery phases, and progress tracking"
+  },
+  "psychology": {
+    "src": "/images/courses/psychology.svg",
+    "alt": "Cognitive psychology concept with perception pathways, memory nodes, and behavioral patterns"
+  },
+  "startup-and-entrepreneurship": {
+    "src": "/images/courses/startup-and-entrepreneurship.svg",
+    "alt": "Startup growth model with a product prototype, financial projection, and rising market curve"
+  },
+  "stock-market": {
+    "src": "/images/courses/stock-market.svg",
+    "alt": "Market chart with candlesticks, trading range, and price movement indicators"
+  },
+  "supply-chain-management": {
+    "src": "/images/courses/supply-chain-management.svg",
+    "alt": "Supply chain logistics network connecting supplier, warehouse, transport, and delivery nodes"
+  },
+  "ui-ux-design": {
+    "src": "/images/courses/ui-ux-design.svg",
+    "alt": "UI and UX design workspace with wireframes, interface panels, and a connected prototype flow"
+  },
+  "vlsi": {
+    "src": "/images/courses/vlsi.svg",
+    "alt": "VLSI integrated circuit die with logic gates, transistor paths, and dense chip connections"
+  }
+}

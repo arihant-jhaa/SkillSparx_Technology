@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Brand from "./Brand";
 import Modal from "./Modal";
+import { buildWhatsAppUrl } from "../utils/whatsapp";
 
 const footerGroups = [
   {
@@ -16,7 +17,7 @@ const footerGroups = [
     title: "RESOURCES",
     links: [
       { label: "Our story", href: "#manifesto" },
-      { label: "Maker stories", href: "#stories" },
+      { label: "Subject areas", href: "#subject-areas" },
       { label: "Community", href: "#community" },
     ],
   },
@@ -24,7 +25,7 @@ const footerGroups = [
     title: "COMPANY",
     links: [
       { label: "About SkillSparx", href: "#manifesto" },
-      { label: "Say hello", href: "mailto:hello@skillsparx.technology" },
+      { label: "Say hello", href: "whatsapp" },
       { label: "Our letter", href: "#newsletter" },
     ],
   },
@@ -107,12 +108,12 @@ export default function Footer() {
                 {group.links.map((link) => (
                   <a
                     key={link.label}
-                    href={link.href}
+                    href={link.href === "whatsapp" ? buildWhatsAppUrl() : link.href}
                     target={
-                      link.href.startsWith("https://") ? "_blank" : undefined
+                      link.href.startsWith("https://") || link.href === "whatsapp" ? "_blank" : undefined
                     }
                     rel={
-                      link.href.startsWith("https://")
+                      link.href.startsWith("https://") || link.href === "whatsapp"
                         ? "noreferrer"
                         : undefined
                     }
@@ -173,7 +174,7 @@ export default function Footer() {
             ) : (
               <p>
                 Class and membership details are presented for exploration.
-                Membership enquiries open your email application, and no
+                Enquiries open WhatsApp, and no
                 payments are collected through this website. Please contact
                 hello@skillsparx.technology with any questions.
               </p>

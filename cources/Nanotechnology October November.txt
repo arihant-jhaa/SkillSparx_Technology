@@ -1,0 +1,77 @@
+﻿Nanotechnology
+	Module 1: 
+	• Introduction to Nanotechnology
+• Definition & Scope
+• History & Milestones
+• Nanoscale Fundamentals
+• Importance in Modern Engineering
+	03th November  (07:10-08:10)
+	Module 2: 
+	* Types of Nanomaterials
+* Carbon Nanotubes (CNT)
+* Graphene
+* Metal Nanoparticles
+* Quantum Dots
+* Nanocomposites 
+	04th November  (07:10-08:10)
+
+05th November  (07:10-08:10)
+	Module 3:
+	* Synthesis Techniques
+* Top-Down Approach 
+* Bottom-Up Approach 
+* Chemical Vapor Deposition (CVD)
+* Sol-Gel Method 
+* Ball Milling
+	05th November  (07:10-08:10)
+
+
+	Module 4:
+	* Characterization Technique
+* SEM • TEM • AFM • XRD • UV-Visible Spectroscopy 
+	06th November  (07:10-08:10) *
+
+
+
+	Module 5:
+	Nanotechnology in Electronics • Nano-transistors • Nano Sensors • Flexible Electronics • Semiconductor Nanotechnology
+	
+07th November  (07:10-08:10)
+
+
+	Module 6:
+	Nanotechnology in Medicine • Nano Drug Delivery Systems • Cancer Therapy using Nanoparticles • Tissue Engineering • Biosensors
+	
+
+
+08th November  (07:10-08:10)
+
+	Module 7:
+	Nanotechnology in Energy Sector • Nano Solar Cells • Lithium-ion Batteries • Hydrogen Storage • Supercapacitors
+	
+
+09th November  (07:10-08:10)
+	Module 8:
+	Nanotechnology in Environmental Engineering • Water Purification using Nanofilters • Air Pollution Control • Waste Treatment • Environmental Remediation
+	
+14th November  (07:10-08:10)
+
+	Module 9:
+	Nano Fabrication & Clean Room Concepts • Lithography Techniques • Thin Film Deposition • Etching Process • Clean Room Standards
+	15th November  (07:10-08:10)
+
+
+	Module 10:
+	Nano Robotics & SJulyt Materials • Nano Robots • Self-Healing Materials • Shape Memory Alloys • Intelligent Materials
+	16th November  (07:10-08:10)
+
+
+	Module 11:
+	Simulation & Computational Nanotechnology • Introduction to Nano Simulation Tools • Molecular Modeling Basics • Density Functional Theory (Basics) • MATLAB/Python in Nanotech Research
+	18th November  (07:10-08:10)
+
+
+	Module 12:
+	Capstone Project & Industry Exposure • Project Development • Case Study Discussion • Research Paper Review • Presentation & Viva • Career Opportunities in Nanotechnology
+
+	20th November  (07:10-08:10)

@@ -1,0 +1,4601 @@
+[
+  {
+    "id": "android-app-development",
+    "slug": "android-app-development",
+    "title": "Android App Development",
+    "category": "Technology",
+    "sourceFile": "Android App Development October November (1).pdf",
+    "modules": [
+      {
+        "title": "Introduction to Android & Setup",
+        "lessons": [
+          "Introduction to Android OS",
+          "History of Android",
+          "Installing Android Studio",
+          "Setting up Emulator",
+          "Understanding Project Structure",
+          "First “Hello World” App 🔹"
+        ],
+        "schedule": "3rd November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Java & Kotlin Basics for Android",
+        "lessons": [
+          "Introduction to Java",
+          "Introduction to Kotlin",
+          "Variables, Data Types",
+          "Conditions & Loops",
+          "Functions",
+          "Why Kotlin is Preferred 🔹"
+        ],
+        "schedule": "4th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Android Project Structure & XML",
+        "lessons": [
+          "Understanding Manifest File",
+          "Layout Files (XML)",
+          "Resource Folder",
+          "Views & ViewGroups",
+          "LinearLayout, RelativeLayout, ConstraintLayout 🔹"
+        ],
+        "schedule": "06th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "UI Components (Part 1)",
+        "lessons": [
+          "TextView",
+          "EditText",
+          "Button",
+          "ImageView",
+          "Toast & Log",
+          "Handling Click Events 🔹"
+        ],
+        "schedule": "08th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "UI Components (Part 2)",
+        "lessons": [
+          "RecyclerView",
+          "CardView",
+          "ListView",
+          "Adapter Concept",
+          "Building a Simple List App 🔹"
+        ],
+        "schedule": "09th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Activities & Intents",
+        "lessons": [
+          "Activity Lifecycle",
+          "Explicit & Implicit Intents",
+          "Passing Data Between Activities",
+          "Opening Camera & Browser 🔹"
+        ],
+        "schedule": "10th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Fragments & Navigation",
+        "lessons": [
+          "What is Fragment?",
+          "Fragment Lifecycle",
+          "Navigation Component",
+          "Bottom Navigation Bar App 🔹"
+        ],
+        "schedule": "12th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Material Design & UI Enhancement",
+        "lessons": [
+          "Material Design Principles",
+          "Using Material Components",
+          "Themes & Styles",
+          "Splash Screen Design",
+          "Dark Mode 🔹"
+        ],
+        "schedule": "15th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Data Storage (Local)",
+        "lessons": [
+          "SharedPreferences",
+          "SQLite Database",
+          "Room Database",
+          "Creating Notes App (Mini Project) 🔹"
+        ],
+        "schedule": "17th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Firebase Integration",
+        "lessons": [
+          "Introduction to Firebase",
+          "Authentication (Email/Password)",
+          "Realtime Database",
+          "Firestore",
+          "Hosting 🔹"
+        ],
+        "schedule": "20th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "REST API Integration",
+        "lessons": [
+          "What is API?",
+          "JSON Parsing",
+          "Using Retrofit Library",
+          "Fetching Data from API",
+          "Weather App Example 🔹"
+        ],
+        "schedule": "25th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Background Tasks & Notifications",
+        "lessons": [
+          "Services",
+          "Broadcast Receiver",
+          "Push Notifications",
+          "Firebase Cloud Messaging 🔹"
+        ],
+        "schedule": "28th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Location & Google Maps",
+        "lessons": [
+          "Location Permissions",
+          "Google Maps API Integration",
+          "Tracking Current Location",
+          "Building Location Tracker App 🔹"
+        ],
+        "schedule": "30th November 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Testing & Debugging",
+        "lessons": [
+          "Logcat",
+          "Debugging Techniques",
+          "Exception Handling",
+          "App Optimization",
+          "Performance Improvement 🔹"
+        ],
+        "schedule": "02nd December 2026 (06:00-07:00)"
+      },
+      {
+        "title": "Final Project + Deployment. 04ht December 2026 (06:00-07:00)",
+        "lessons": [
+          "Capstone Project (Choose One):",
+          "E-Learning App",
+          "Food Delivery App",
+          "Expense Tracker App"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "artificial-intelligence",
+    "slug": "artificial-intelligence",
+    "title": "Artificial Intelligence",
+    "category": "Technology",
+    "sourceFile": "Artificial Intelligence October November.pdf",
+    "modules": [
+      {
+        "title": "Python (Internals, do’s and don’ts) Architecture, Data Structure",
+        "lessons": [
+          "Installation of Anaconda Prompt",
+          "Jupyter Notebook-An Overview",
+          "Shortcut keys in Jupyter Notebook",
+          "Data Types in Python"
+        ]
+      },
+      {
+        "title": "Python, Reading & Writing files in Python",
+        "lessons": [
+          "Rules for Naming the Variables",
+          "List, Tuple, Set, Dictionary",
+          "Introduction to Files and Directories",
+          "Introduction to the Command Prompt or Terminal",
+          "Paths",
+          "Text Files: Reading from a Text File (using with)"
+        ]
+      },
+      {
+        "title": "Loops and conditionals in python",
+        "lessons": [
+          "If, Elif, and Else Conditions",
+          "For and While Loops"
+        ]
+      },
+      {
+        "title": "Data Analysis , Manipulation with numpy",
+        "lessons": [
+          "Machine Learning Libraries",
+          "Numpy-Hands on"
+        ]
+      },
+      {
+        "title": "Pandas Python data science package to manipulate, calculate and analyze data.",
+        "lessons": [
+          "\"Pandas-Hands on\""
+        ]
+      },
+      {
+        "title": "Exploratory Data Visualization in Python with matplotlib",
+        "lessons": [
+          "Exploring & Extracting Insights from Data",
+          "Data Visualization Basics",
+          "Matplotlib – Hands-on",
+          "Seaborn – Hands-on"
+        ]
+      },
+      {
+        "title": "Statistical Thinking in Python (Part 1) Build the foundation",
+        "lessons": [
+          "Thinking Statistically – Introduction",
+          "Measures of Central Tendency",
+          "Measures of Dispersion",
+          "IQR Statistics – Hands-On"
+        ]
+      },
+      {
+        "title": "Supervised Learning & Un-Supervised Learning",
+        "lessons": [
+          "Classification vs Regression",
+          "Supervised vs Unsupervised Learning",
+          "Linear Regression – Hands-on",
+          "Metrics in Linear Regression – Hands-on",
+          "Fine-Tuning Your Model"
+        ]
+      },
+      {
+        "title": "Logistic regression",
+        "lessons": [
+          "Introduction to Logistic Regression",
+          "Hands-on with Logistic Regression",
+          "Metrics in Logistic Regression"
+        ]
+      },
+      {
+        "title": "Linear Regression",
+        "lessons": [
+          "Introduction to Linear Regression",
+          "Hands-On with Linear Regression using Python",
+          "Metrics in Linear Regression"
+        ],
+        "schedule": "03rd December (07:10-08:10) 06th December (07:10-08:10)"
+      },
+      {
+        "title": "Pre-processing for Machine Learning in Python",
+        "lessons": [
+          "Introduction to Data Preprocessing",
+          "Exploratory Data Analysis (EDA)",
+          "Missing Values",
+          "Outliers",
+          "Standardizing Data / Scaling Techniques",
+          "Feature Scaling and Feature Selection"
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "Tree Based Models Classification and Regression Tree",
+        "lessons": [
+          "Decision Tree",
+          "Boosting Random Forest",
+          "Bagging"
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals of Neural Network",
+        "lessons": [
+          "Neural Network"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10)"
+      },
+      {
+        "title": "POWER BI",
+        "lessons": [
+          "Introduction to Power BI desktop",
+          "ETL pipeline in Power BI",
+          "Calculating fields with DAX",
+          "Visualising data with reports",
+          "AI functionalities of Power BI"
+        ],
+        "schedule": "28th December (07:10-08:10) 29th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "artificial-intelligence-generative-agentic",
+    "slug": "artificial-intelligence-generative-agentic",
+    "title": "Artificial Intelligence (Generative + Agentic)",
+    "category": "Technology",
+    "sourceFile": "AI(Generative + Agentic) November October.pdf",
+    "modules": [
+      {
+        "title": "OVERVIEW OF ARTIFICIAL INTELLIGENCE",
+        "lessons": [
+          "Definition, goals & scope of AI,",
+          "Evolution: Symbolic →",
+          "Statistical → Deep Learning →",
+          "Generative → Agentic,",
+          "Branches of AI,",
+          "Narrow AI vs AGI vs",
+          "Superintelligence,",
+          "AI development lifecycle,",
+          "AI in industry & future trends"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      },
+      {
+        "title": "Intelligent Agents & Rational Decision Making",
+        "lessons": [
+          "Agent definition &",
+          "environments",
+          "Rational agents & utility",
+          "Types of environments",
+          "PEAS framework",
+          "Agent architectures overview"
+        ],
+        "schedule": "04th November (07:10-08:10) 05th November (07:10-08:10)"
+      },
+      {
+        "title": "Problem Solving & State Space Search",
+        "lessons": [
+          "Problem formulation",
+          "State space representation",
+          "Tree vs Graph search",
+          "Complexity of search"
+        ],
+        "schedule": "05th November (07:10-08:10)"
+      },
+      {
+        "title": "Search Algorithms",
+        "lessons": [
+          "Breadth First Search (BFS)",
+          "Depth First Search (DFS)",
+          "Uniform Cost Search",
+          "Informed Search Concepts",
+          "A* Algorithm"
+        ],
+        "schedule": "06th November (07:10-08:10)"
+      },
+      {
+        "title": "Knowledge Representation",
+        "lessons": [
+          "Propositional Logic",
+          "First Order Logic",
+          "Inference Systems",
+          "Automated Reasoning"
+        ],
+        "schedule": "07th November (07:10-08:10)"
+      },
+      {
+        "title": "Knowledge-Based Systems",
+        "lessons": [
+          "Forward Chaining",
+          "Backward Chaining",
+          "Rule-Based Systems",
+          "Knowledge Graphs"
+        ],
+        "schedule": "08th November (07:10-08:10)"
+      },
+      {
+        "title": "Reasoning Under Uncertainty",
+        "lessons": [
+          "Probability Theory in AI",
+          "Bayesian Reasoning",
+          "Conditional Independence"
+        ],
+        "schedule": "09th November (07:10-08:10)"
+      },
+      {
+        "title": "Decision Making in AI",
+        "lessons": [
+          "Utility Theory",
+          "Decision Making Under",
+          "Uncertainty",
+          "Markov Decision Processes",
+          "(Overview)"
+        ],
+        "schedule": "14th November (07:10-08:10)"
+      },
+      {
+        "title": "Reinforcement Learning Fundamentals",
+        "lessons": [
+          "RL Framework",
+          "Exploration vs Exploitation",
+          "Real-World Applications"
+        ],
+        "schedule": "15th November (07:10-08:10)"
+      },
+      {
+        "title": "Neural Networks",
+        "lessons": [
+          "Perceptron Algorithm",
+          "Activation Functions",
+          "Backpropagation (Conceptual)",
+          "Gradient Descent"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Deep Learning Architectures",
+        "lessons": [
+          "CNN Overview",
+          "RNN & LSTM Overview",
+          "Representation Learning",
+          "Introduction to Transformers"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to Generative AI",
+        "lessons": [
+          "Generative vs Discriminative",
+          "Models",
+          "Foundation Models",
+          "Self-Supervised Learning"
+        ],
+        "schedule": "20th November (07:10-08:10)"
+      },
+      {
+        "title": "Transformer Architecture",
+        "lessons": [
+          "Pretraining Objectives",
+          "Fine-Tuning Methods",
+          "Alignment & RLHF",
+          "Emergent Abilities"
+        ],
+        "schedule": "23th November (07:10-08:10)"
+      },
+      {
+        "title": "Large Language Models (LLMs)",
+        "lessons": [
+          "Pretraining Objectives",
+          "Fine-Tuning Methods",
+          "Alignment & RLHF",
+          "Emergent Abilities"
+        ],
+        "schedule": "25th November (07:10-08:10) 28th November (07:10-08:10"
+      },
+      {
+        "title": "Advanced Generative Models",
+        "lessons": [
+          "GANs",
+          "VAEs",
+          "Diffusion Models",
+          "Multimodal Models"
+        ],
+        "schedule": "30th November (07:10-08:10) 02nd December (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to Agentic AI",
+        "lessons": [
+          "AI Agents vs LLMs",
+          "Tool Usage",
+          "Reasoning Loops",
+          "Planning & Memory in Agents"
+        ],
+        "schedule": "03th December (07:10-08:10)"
+      },
+      {
+        "title": "Agent Architectures & Reasoning",
+        "lessons": [
+          "ReAct Framework",
+          "Chain-of-Thought Reasoning",
+          "Tree-of-Thought Reasoning"
+        ],
+        "schedule": "04th December (07:10-08:10) 05th December (07:10-08:10)"
+      },
+      {
+        "title": "Agent Memory & Knowledge Systems",
+        "lessons": [
+          "Agent Memory Systems",
+          "Vector Databases",
+          "Retrieval-Augmented",
+          "Generation (RAG)"
+        ],
+        "schedule": "05th December (07:10-08:10)"
+      },
+      {
+        "title": "Multi-Agent Systems",
+        "lessons": [
+          "Multi-Agent Collaboration",
+          "Communication & Coordination"
+        ],
+        "schedule": "06th November (07:10-08:10)"
+      },
+      {
+        "title": "Autonomous AI Systems & Future",
+        "lessons": [
+          "Planner–Executor,",
+          "Architectures,Long-Horizon",
+          "Reasoning Challenges",
+          "Alignment Challenges",
+          "Evaluation of LLM Systems",
+          "Scaling & Optimization of AI",
+          "Systems"
+        ],
+        "schedule": "07th November (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "autocad",
+    "slug": "autocad",
+    "title": "AutoCAD",
+    "category": "Engineering",
+    "sourceFile": "AutoCad November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to AUTOCAD",
+        "lessons": [
+          "Taking the AutoCAD Tour",
+          "Working with files",
+          "Creating basic drawings",
+          "Creating basic Objects"
+        ],
+        "schedule": "12th November (07:10-08:10) 16th November (07:10-08:10)"
+      },
+      {
+        "title": "Using Object Snaps / Working with Units",
+        "lessons": [
+          "About Object Snap",
+          "Object Snaps & Using Object Snap",
+          "Using Polar Tracking and Polar Snap",
+          "About Object Snap Tracking",
+          "Using Object Snap Tracking",
+          "Exercise: Use Object Snap Tracking",
+          "Working with Units / About Units / Setting Units",
+          "Exercise: Use Architectural Units",
+          "Exercise: Use Surveyor's Units"
+        ],
+        "schedule": "18th November (07:10-08:10) 22th November (07:10-08:10)"
+      },
+      {
+        "title": "Manipulating Objects",
+        "lessons": [
+          "Moving Objects",
+          "Creating New Objects from Existing Objects",
+          "Rotating Objects",
+          "Mirroring Objects",
+          "Creating Object Patterns",
+          "Creating an Array of Objects",
+          "Scaling Objects",
+          "Challenge Exercise: Grips / Challenge Exercise:",
+          "Architectural / Challenge Exercise: Mechanical"
+        ],
+        "schedule": "26th November (07:10-08:10) 30th November (07:10-08:10)"
+      },
+      {
+        "title": "Drawing Organization and Inquiry Commands",
+        "lessons": [
+          "Organizing Objects with Layers",
+          "Default Layer / Layer Tools",
+          "Changing Object Properties",
+          "About Object Properties",
+          "Matching Object Properties",
+          "Using the Properties Palette",
+          "Drawing Organization and Inquiry Commands",
+          "Using Linetypes / About Linetypes",
+          "Using Inquiry Commands"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "About Measuring",
+        "lessons": [
+          "Using Measure Tools",
+          "Obtaining Object Information",
+          "Exercise: Obtain Geometric Information",
+          "Exercise: Measure Objects",
+          "Challenge Exercise: Architectural",
+          "Challenge Exercise: Mechanical",
+          "Altering Objects"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Alteration in AUTOCAD",
+        "lessons": [
+          "Trimming and Extending Objects to Defined",
+          "Boundaries",
+          "Joining Objects",
+          "Breaking an Object into Two Objects",
+          "Applying a Radius Corner to Two Objects",
+          "Changing Part of an Object's shape"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Creating Multiline Text",
+          "About Multiline Text",
+          "MText Columns and Grips",
+          "Creating Single Line Text",
+          "About Single Line Text",
+          "Editing Text",
+          "Using Text Styles"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Creating Dimensions",
+          "Creating Dimensions on Linear Objects",
+          "Creating Dimensions on Curved Objects",
+          "Enhancing Dimensions",
+          "Using Dimension Styles",
+          "Creating and Modifying Dimension Styles",
+          "Using Multi leaders"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Hatching Objects",
+          "Introduction to Hatch Patterns and Gradient Fills",
+          "Associative Hatch Patterns",
+          "Creating Hatched Objects",
+          "Editing Hatch Objects",
+          "Maintaining Associative Properties when Editing",
+          "Hatches"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Using Tool Palette Tools",
+          "Exercise: Add Content from Tool Palettes",
+          "Challenge Exercise: Architectural",
+          "Challenge Exercise: Mechanical"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Using Page Setups",
+          "Applying Page Setups to Layouts",
+          "Creating Page Setups",
+          "Plotting Drawings",
+          "Plotting from Model Space",
+          "Plotting from Layouts",
+          "Plot Command",
+          "Preview Command"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Creating Drawing Templates",
+          "About Drawing Templates",
+          "Drawing Template Options",
+          "Exercise: Create a Drawing Template"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "automobile-car-design",
+    "slug": "automobile-car-design",
+    "title": "Automobile / Car Design",
+    "category": "Design",
+    "sourceFile": "CAR DESIGN November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Automobile Design",
+        "lessons": [
+          "Introduction to the Automobile Industry",
+          "History & Evolution of Car Designs",
+          "Types of Automobiles",
+          "Fundamentals of Car Designing",
+          "Understanding Vehicle Anatomy",
+          "Car Segments & Categories",
+          "Design Thinking Process",
+          "Introduction to Transportation Design",
+          "Future of Automotive Design"
+        ],
+        "schedule": "12th November (07:10-08:10) 16th November (07:10-08:10)"
+      },
+      {
+        "title": "Design Fundamentals & Sketching",
+        "lessons": [
+          "Principles of Design, Shape Language in",
+          "Car Design",
+          "Understanding Car Proportions",
+          "Wheelbase & Vehicle Stance",
+          "Perspective Drawing Techniques",
+          "Basic Line Sketching",
+          "Side Profile Sketching",
+          "Front & Rear View Sketching",
+          "Lighting & Shadow Basics",
+          "Sketch Rendering Techniques",
+          "Concept Visualization"
+        ],
+        "schedule": "18th November (07:10-08:10) 22th November (07:10-08:10)"
+      },
+      {
+        "title": "Automotive Styling Concepts",
+        "lessons": [
+          "Exterior Vehicle Styling",
+          "Interior Vehicle Design Basics",
+          "Dashboard & Cabin Concepts",
+          "Aerodynamics in Automobiles",
+          "Vehicle Safety Design Basics",
+          "Sports Car Styling Concepts",
+          "SUV & Sedan Design Comparison",
+          "Color Theory in Automotive Design",
+          "Material & Texture Selection",
+          "User-Centered Design Approach"
+        ],
+        "schedule": "26th November (07:10-08:10) 30th November (07:10-08:10)"
+      },
+      {
+        "title": "Digital Car Designing Tools",
+        "lessons": [
+          "Introduction to CAD Software",
+          "Basics of AutoCAD for Car Design",
+          "Introduction to 3D Modeling",
+          "Surface Modeling Concepts",
+          "Digital Sketching Techniques",
+          "Basic Rendering Methods",
+          "Vehicle Blueprint Creation",
+          "Concept Visualization Tools",
+          "Prototype Modeling Basics",
+          "Exporting & Presentation Techniques"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Concept Car Development",
+        "lessons": [
+          "Concept Vehicle Planning",
+          "Market Research & Trend Analysis",
+          "Developing Design Ideas",
+          "Mood Board Creation",
+          "Sustainable Vehicle Design",
+          "Electric Vehicle Design Concepts",
+          "Smart Mobility Solutions",
+          "Autonomous Vehicle Basics",
+          "Futuristic Vehicle Concepts",
+          "Design Presentation Workflow"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dynamic Car Angles",
+          "Speed Form Sketching",
+          "Marker Rendering Basics",
+          "Light Reflection Techniques",
+          "Advanced Perspective Concepts",
+          "Design Detailing"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dashboard Layout Design",
+          "Steering & Control Placement",
+          "Seating Ergonomics",
+          "Cabin Space Planning",
+          "User Comfort Design",
+          "Luxury Interior Concepts"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Front Grill Styling",
+          "Headlight & Taillight Design",
+          "Door & Window Design",
+          "Aerodynamic Curves",
+          "Body Surface Flow",
+          "Vehicle Branding Elements"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "EV Design Fundamentals",
+          "Battery Placement Concepts",
+          "Lightweight Vehicle Design",
+          "Sustainable Materials",
+          "Smart Mobility Features",
+          "EV Future Trends"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Digital Rendering Basics",
+          "Color & Texture Rendering",
+          "Shadow & Reflection Effects",
+          "Presentation Techniques",
+          "Visualization Workflow",
+          "Design Enhancement Methods"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Autonomous Vehicle Concepts",
+          "AI in Automobile Design",
+          "Smart Vehicle Features",
+          "Hypercar Design Concepts",
+          "Sustainable Transportation",
+          "Future Industry Opportunities"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Automotive Design Workflow",
+          "Industry Design Standards",
+          "Portfolio Structuring",
+          "Project Documentation",
+          "Design Presentation Skills",
+          "Career Path Guidance"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Analysis of Iconic Vehicle Designs",
+          "Design Success & Failure Stories",
+          "Brand Design Identity",
+          "Evolution of Modern Car Styling",
+          "Consumer Preferences in Vehicle Design",
+          "Lessons from Global Automotive Brands"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "business-analytics",
+    "slug": "business-analytics",
+    "title": "Business Analytics",
+    "category": "Business",
+    "sourceFile": "Business Analytics October November.pdf",
+    "modules": [
+      {
+        "title": "Python (Internals, do’s and don’ts) Architecture, Data Structure",
+        "lessons": [
+          "Installation of Anaconda Prompt",
+          "Jupyter Notebook-An Overview",
+          "Shorcut Lkeys in Jupyter Notebook",
+          "Data Types in Python"
+        ]
+      },
+      {
+        "title": "Python, Reading & Writing files in Python",
+        "lessons": [
+          "Rules for Naming the Variables",
+          "List, Tuple, Set, Dictionary",
+          "Introduction to Files and Directories",
+          "Introduction to the Command Prompt or",
+          "Terminal Paths",
+          "Text Files: Reading from a Text File (using with)"
+        ]
+      },
+      {
+        "title": "Loops and conditionals in python",
+        "lessons": [
+          "If, Elif, and Else Conditions",
+          "For and While Loops"
+        ]
+      },
+      {
+        "title": "Data Analysis , Manipulation with numpy",
+        "lessons": [
+          "Machine Learning Libraries",
+          "Numpy-Hands on"
+        ]
+      },
+      {
+        "title": "Pandas Python data science package to manipulate, calculate and analyze data.",
+        "lessons": [
+          "\"Pandas-Hands on\""
+        ]
+      },
+      {
+        "title": "Exploratory Data Visualization in Python with matplotlib",
+        "lessons": [
+          "Exploring & Extracting Insights from Data",
+          "Data Visualization Basics",
+          "Matplotlib – Hands-on",
+          "Seaborn – Hands-on"
+        ]
+      },
+      {
+        "title": "Statistical Thinking in Python (Part 1) Build the foundation",
+        "lessons": [
+          "Thinking Statistically – Introduction",
+          "Measures of Central Tendency",
+          "Measures of Dispersion",
+          "IQR Statistics – Hands-On"
+        ]
+      },
+      {
+        "title": "Supervised Learning & Un-Supervised Learning",
+        "lessons": [
+          "Classification vs Regression",
+          "Supervised vs Unsupervised Learning",
+          "Linear Regression – Hands-on",
+          "Metrics in Linear Regression – Hands-on",
+          "Fine-Tuning Your Model"
+        ]
+      },
+      {
+        "title": "Logistic regression",
+        "lessons": [
+          "Introduction to Logistic Regression",
+          "Hands-on with Logistic Regression",
+          "Metrics in Logistic Regression"
+        ]
+      },
+      {
+        "title": "Linear Regression",
+        "lessons": [
+          "Introduction to Linear Regression",
+          "Hands-On with Linear Regression using Python",
+          "Metrics in Linear Regression"
+        ],
+        "schedule": "03rd December (07:10-08:10) 06th December (07:10-08:10)"
+      },
+      {
+        "title": "Pre-processing for Machine Learning in Python",
+        "lessons": [
+          "Introduction to Data Preprocessing",
+          "Exploratory Data Analysis (EDA)",
+          "Missing Values",
+          "Outliers",
+          "Standardizing Data / Scaling Techniques",
+          "Feature Scaling and Feature Selection"
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "Tree Based Models Classification and Regression Tree",
+        "lessons": [
+          "Decision Tree",
+          "Boosting Random Forest",
+          "Bagging"
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals of Neural Network",
+        "lessons": [
+          "Neural Network"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10)"
+      },
+      {
+        "title": "POWER BI",
+        "lessons": [
+          "Introduction to Power BI desktop",
+          "ETL pipeline in Power BI",
+          "Calculating fields with DAX",
+          "Visualising data with reports",
+          "AI functionalities of Power BI"
+        ],
+        "schedule": "28th December (07:10-08:10) 29th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "clinical-trial-and-research",
+    "slug": "clinical-trial-and-research",
+    "title": "Clinical Trial & Research",
+    "category": "Health & Science",
+    "sourceFile": "Clinical Trial & Research November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Healthcare & Clinical Trial & Research",
+        "lessons": [
+          "Overview of Healthcare",
+          "Industry,",
+          "Role of Medical Coders,",
+          "Revenue Cycle",
+          "Management (RCM),",
+          "Coding Systems:",
+          "ICD-10-CM, CPT, HCPCS",
+          "HIPAA & Career",
+          "Opportunities"
+        ],
+        "schedule": "12th November (07:10-08:10) 16th November (07:10-08:10)"
+      },
+      {
+        "title": "Medical Terminology",
+        "lessons": [
+          "Root words, prefixes &",
+          "suffixes,",
+          "Medical abbreviations,",
+          "Clinical & diagnostic",
+          "terminology,",
+          "Pharmacology basics"
+        ],
+        "schedule": "18th November (07:10-08:10) 22th November (07:10-08:10)"
+      },
+      {
+        "title": "Dermatology, Ophthalmology & ENT",
+        "lessons": [
+          "Skin structure & disorders,",
+          "Eye anatomy basics,",
+          "Ear, nose & throat systems",
+          "Clinical documentation"
+        ],
+        "schedule": "26th November (07:10-08:10) 30th November (07:10-08:10)"
+      },
+      {
+        "title": "Cardiology & Pulmonology",
+        "lessons": [
+          "Cardiovascular system",
+          "overview,",
+          "Respiratory system",
+          "Common diseases &",
+          "procedures,"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Gastroenterology & Urology",
+        "lessons": [
+          "Digestive system anatomy,",
+          "Urinary system overview,",
+          "Clinical documentation",
+          "interpretation"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Gynecology, Obstetrics & Endocrinology",
+        "lessons": [
+          "Reproductive system,",
+          "Pregnancy & childbirth,",
+          "Hormonal disorders"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Orthopedics & Neurology",
+        "lessons": [
+          "Musculoskeletal system,",
+          "Nervous system,",
+          "Fractures and neurological",
+          "disorders"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "ICD-10-CM Coding Fundamentals",
+        "lessons": [
+          "Structure and format of",
+          "ICD-10 codes,",
+          "Coding conventions and",
+          "guidelines,"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Nervous system disorders,",
+          "Eye & ear diseases,",
+          "Circulatory & respiratory",
+          "diseases"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Digestive diseases,",
+          "Skin diseases,",
+          "Musculoskeletal disorders,",
+          "Pregnancy and childbirth",
+          "coding"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Congenital conditions,",
+          "Symptoms and abnormal",
+          "findings,",
+          "Injury and poisoning,",
+          "External causes and special",
+          "codes"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "CPT code structure and",
+          "categories,",
+          "Evaluation & Management",
+          "coding,",
+          "Surgery coding,",
+          "Radiology, Pathology and",
+          "Medicine coding,",
+          "CPT modifiers"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "HCPCS Level II overview,",
+          "Durable Medical Equipment",
+          "and supplies,",
+          "Insurance plans and payers,",
+          "Claim lifecycle and claim",
+          "forms,",
+          "Denials and rejections",
+          "handling"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "ICD + CPT + HCPCS",
+          "integration,",
+          "Real coding workflow",
+          "overview,",
+          "Compliance and auditing"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ],
+    "sourceNote": "The supplied outline focuses largely on healthcare and medical coding topics, including ICD-10-CM, CPT, and HCPCS."
+  },
+  {
+    "id": "cloud-computing",
+    "slug": "cloud-computing",
+    "title": "Cloud Computing",
+    "category": "Technology",
+    "sourceFile": "Cloud Computing November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Cloud",
+        "lessons": [
+          "Introduction to Cloud"
+        ],
+        "schedule": "12th November (07:10-08:10)"
+      },
+      {
+        "title": "Cloud Fundamentals",
+        "lessons": [
+          "What is Benefits of Cloud"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Cloud Fundamentals",
+        "lessons": [
+          "Types/Models of Cloud"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals",
+        "lessons": [
+          "Introduction to",
+          "\" Service",
+          "Tour Subscription\""
+        ],
+        "schedule": "22th November (07:10-08:10)"
+      },
+      {
+        "title": "Networking",
+        "lessons": [
+          "Understanding How",
+          "Why VPN (Hands-On)",
+          "What is Region",
+          "What is a Vnet"
+        ],
+        "schedule": "26th November (07:10-08:10)"
+      },
+      {
+        "title": "Networking",
+        "lessons": [
+          "Using N-Tier Architecture",
+          "Network Security Groups",
+          "Load balancer",
+          "Availability and High Availability",
+          "Application Gateway",
+          "DNS",
+          "Traffic Manager"
+        ],
+        "schedule": "30th November (07:10-08:10)"
+      },
+      {
+        "title": "Compute",
+        "lessons": [
+          "Virtual machines - Containers",
+          "App Service",
+          "Serverless computing",
+          "Scaling VMs in",
+          "Scaling Availability Sets",
+          "VM Types and Sizes Containers",
+          "Kubernetes Services",
+          "App Services"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Usage Scenarios",
+          "Identity and ACloudess Management,",
+          "Encryption",
+          "Certificates",
+          "Protect Network",
+          "Protect Shared Documents",
+          "Advanced",
+          "Threat Protection"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Setting up Monitoring Service Health",
+          "Policy",
+          "Define IT compliance with",
+          "Organize policy with",
+          "initiatives",
+          "Enterprise governance management",
+          "Define standard resources with",
+          "Blueprints",
+          "Explore your service compliance with",
+          "Compliance",
+          "Manager"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Vaults",
+          "Scheduling Backups for VM's",
+          "Configure DR, Cost Optimization and",
+          "Spending"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "cyber-security-and-ethical-hacking",
+    "slug": "cyber-security-and-ethical-hacking",
+    "title": "Cyber Security & Ethical Hacking",
+    "category": "Technology",
+    "sourceFile": "Cyber Security & Ethical Hacking October November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Cyber Security",
+        "lessons": [
+          "Definition, importance, and scope",
+          "Types of Cyber Threats",
+          "Basic Concepts of CIA",
+          "Cybersecurity Ethics, Principles and",
+          "Best",
+          "Practices"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to Linux",
+        "lessons": [
+          "Basic commands",
+          "Networking commands",
+          "Service and logs.",
+          "System Administration Commands",
+          "Linux File system / Directory’s"
+        ],
+        "schedule": "04th November (07:10-08:10) 05th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to Windows",
+        "lessons": [
+          "Access Control Types, Permissions,",
+          "and UAC",
+          "Windows Firewall and Windows",
+          "Defender",
+          "Windows Remote Management and",
+          "RDP",
+          "Basic CMD Commands and Batch",
+          "Scripting",
+          "Introduction to PowerShell",
+          "Using CMD and PowerShell for System",
+          "Administration and Basic Security",
+          "Tasks"
+        ],
+        "schedule": "06th November (07:10-08:10) 07th November (07:10-08:10) 08th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to Networking",
+        "lessons": [
+          "Types of networks",
+          "Understanding network topologies",
+          "Introduction to Network Protocols and",
+          "Ports",
+          "IP Addressing and Subnetting",
+          "Firewall and its configuration."
+        ],
+        "schedule": "09th November (07:10-08:10) * 14th November (07:10-08:10) 15th November (07:10-08:10)"
+      },
+      {
+        "title": "Ethical Hacking",
+        "lessons": [
+          "Footprinting, Reconnaissance, and",
+          "Enumeration",
+          "Vulnerability Assessment and",
+          "Reporting.",
+          "Windows and Linux System Hacking",
+          "Password Cracking and hashing",
+          "Wireshark and Network testing",
+          "Wireless Network Hacking",
+          "Digital Forensics.",
+          "Cloud Computing and Security",
+          "AWS/Azure",
+          "Tor, Anonymous and Proxy service"
+        ],
+        "schedule": "16th November (07:10-08:10) 18th November (07:10-08:10) 20th November (07:10-08:10) 23th November (07:10-08:10)"
+      },
+      {
+        "title": "Web App Security / Pentesting",
+        "lessons": [
+          "Introduction to Web Hacking",
+          "Introduction to Burp Suite",
+          "Fuzzing & Directory Enumeration",
+          "Subdomain Enumeration",
+          "Authentication Bypass",
+          "File inclusion Vulnerability.",
+          "File upload vulnerability.",
+          "Cross-site Scripting XSS",
+          "Command Injection",
+          "Sql Injection",
+          "OWASP TOP 10-2041"
+        ],
+        "schedule": "25th November (07:10-08:10) 28th November (07:10-08:10) 30th November (07:10-08:10)"
+      },
+      {
+        "title": "SOC and SIEM",
+        "lessons": [
+          "Security Operations Center (SOC)",
+          "Security Incident and Event",
+          "Management SIEM)",
+          "Tools, installation, and configuration",
+          "Building IDS, Firewalls, and Honeypots",
+          "Deployment and monitoring",
+          "Documenting and Reporting."
+        ],
+        "schedule": "03rd December (07:10-08:10) 06th December (07:10-08:10)"
+      },
+      {
+        "title": "Red/Blue/Purple Team Scenarios",
+        "lessons": [
+          "Blue Team Defense.",
+          "Red Team Offensive testing.",
+          "Purple Team Organization Task."
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "Offensive Penetration Testing",
+        "lessons": [
+          "Attacking real world Vulnerable",
+          "Service’s",
+          "Testing web application for Vulnerability",
+          "Finding.",
+          "Anonymity, Dark web, and secure",
+          "communication."
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Security Auditing",
+        "lessons": [
+          "Comprehensive Security Checklists for",
+          "Auditing,"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10) 28th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "data-analytics",
+    "slug": "data-analytics",
+    "title": "Data Analytics",
+    "category": "Technology",
+    "sourceFile": "Data Analytics October November.pdf",
+    "modules": [
+      {
+        "title": "Python (Internals, do’s and don’ts) Architecture, Data Structure",
+        "lessons": [
+          "Installation of Anaconda Prompt",
+          "Jupyter Notebook-An Overview",
+          "Shorcut Lkeys in Jupyter Notebook",
+          "Data Types in Python"
+        ]
+      },
+      {
+        "title": "Python, Reading & Writing files in Python",
+        "lessons": [
+          "Rules for Naming the Variables",
+          "List, Tuple, Set, Dictionary",
+          "Introduction to Files and Directories",
+          "Introduction to the Command Prompt or Terminal",
+          "Paths",
+          "Text Files: Reading from a Text File (using with)"
+        ]
+      },
+      {
+        "title": "Loops and conditionals in python",
+        "lessons": [
+          "If, Elif, and Else Conditions",
+          "For and While Loops"
+        ]
+      },
+      {
+        "title": "Data Analysis , Manipulation with numpy",
+        "lessons": [
+          "Machine Learning Libraries",
+          "Numpy-Hands on"
+        ]
+      },
+      {
+        "title": "Pandas Python data science package to manipulate, calculate and analyze data.",
+        "lessons": [
+          "\"Pandas-Hands on\""
+        ]
+      },
+      {
+        "title": "Exploratory Data Visualization in Python with matplotlib",
+        "lessons": [
+          "Exploring & Extracting Insights from Data",
+          "Data Visualization Basics",
+          "Matplotlib – Hands-on",
+          "Seaborn – Hands-on"
+        ]
+      },
+      {
+        "title": "Statistical Thinking in Python (Part 1) Build the foundation",
+        "lessons": [
+          "Thinking Statistically – Introduction",
+          "Measures of Central Tendency",
+          "Measures of Dispersion",
+          "IQR Statistics – Hands-On"
+        ]
+      },
+      {
+        "title": "Supervised Learning & Un-Supervised Learning",
+        "lessons": [
+          "Classification vs Regression",
+          "Supervised vs Unsupervised Learning",
+          "Linear Regression – Hands-on",
+          "Metrics in Linear Regression – Hands-on",
+          "Fine-Tuning Your Model"
+        ]
+      },
+      {
+        "title": "Logistic regression",
+        "lessons": [
+          "Introduction to Logistic Regression",
+          "Hands-on with Logistic Regression",
+          "Metrics in Logistic Regression"
+        ]
+      },
+      {
+        "title": "Linear Regression",
+        "lessons": [
+          "Introduction to Linear Regression",
+          "Hands-On with Linear Regression using Python",
+          "Metrics in Linear Regression"
+        ]
+      },
+      {
+        "title": "Tree Based Models Classification and Regression Tree",
+        "lessons": [
+          "Decision Tree",
+          "Boosting Random Forest",
+          "Bagging"
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "SQL",
+        "lessons": [
+          "SQL"
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals of Neural Network",
+        "lessons": [
+          "Neural Network"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10)"
+      },
+      {
+        "title": "POWER BI",
+        "lessons": [
+          "Introduction to Power BI desktop",
+          "ETL pipeline in Power BI",
+          "Calculating fields with DAX",
+          "Visualising data with reports",
+          "AI functionalities of Power BI"
+        ],
+        "schedule": "28th December (07:10-08:10) 29th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "data-science",
+    "slug": "data-science",
+    "title": "Data Science",
+    "category": "Technology",
+    "sourceFile": "Data Science October November.pdf",
+    "modules": [
+      {
+        "title": "Python (Internals, do’s and don’ts) Architecture, Data Structure",
+        "lessons": [
+          "Installation of Anaconda Prompt",
+          "Jupyter Notebook-An Overview",
+          "Shorcut Lkeys in Jupyter Notebook",
+          "Data Types in Python"
+        ]
+      },
+      {
+        "title": "Python, Reading & Writing files in Python",
+        "lessons": [
+          "Rules for Naming the Variables",
+          "List, Tuple, Set, Dictionary",
+          "Introduction to Files and Directories",
+          "Introduction to the Command Prompt or Terminal",
+          "Paths",
+          "Text Files: Reading from a Text File (using with)"
+        ]
+      },
+      {
+        "title": "Loops and conditionals in python",
+        "lessons": [
+          "If, Elif, and Else Conditions",
+          "For and While Loops"
+        ]
+      },
+      {
+        "title": "Data Analysis , Manipulation with numpy",
+        "lessons": [
+          "Machine Learning Libraries",
+          "Numpy-Hands on"
+        ]
+      },
+      {
+        "title": "Pandas Python data science package to manipulate, calculate and analyze data.",
+        "lessons": [
+          "\"Pandas-Hands on\""
+        ]
+      },
+      {
+        "title": "Exploratory Data Visualization in Python with matplotlib",
+        "lessons": [
+          "Exploring & Extracting Insights from Data",
+          "Data Visualization Basics",
+          "Matplotlib – Hands-on",
+          "Seaborn – Hands-on"
+        ]
+      },
+      {
+        "title": "Statistical Thinking in Python (Part 1) Build the foundation",
+        "lessons": [
+          "Thinking Statistically – Introduction",
+          "Measures of Central Tendency",
+          "Measures of Dispersion",
+          "IQR Statistics – Hands-On"
+        ]
+      },
+      {
+        "title": "Supervised Learning & Un-Supervised Learning",
+        "lessons": [
+          "Classification vs Regression",
+          "Supervised vs Unsupervised Learning",
+          "Linear Regression – Hands-on",
+          "Metrics in Linear Regression – Hands-on",
+          "Fine-Tuning Your Model"
+        ]
+      },
+      {
+        "title": "Logistic regression",
+        "lessons": [
+          "Introduction to Logistic Regression",
+          "Hands-on with Logistic Regression",
+          "Metrics in Logistic Regression"
+        ]
+      },
+      {
+        "title": "Linear Regression",
+        "lessons": [
+          "Introduction to Linear Regression",
+          "Hands-On with Linear Regression using Python",
+          "Metrics in Linear Regression"
+        ],
+        "schedule": "03rd December (07:10-08:10) 06th December (07:10-08:10)"
+      },
+      {
+        "title": "Tree Based Models Classification and Regression Tree",
+        "lessons": [
+          "Decision Tree",
+          "Boosting Random Forest",
+          "Bagging"
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "SQL",
+        "lessons": [
+          "SQL"
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals of Neural Network",
+        "lessons": [
+          "Neural Network"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10)"
+      },
+      {
+        "title": "POWER BI",
+        "lessons": [
+          "Introduction to Power BI desktop",
+          "ETL pipeline in Power BI",
+          "Calculating fields with DAX",
+          "Visualising data with reports",
+          "AI functionalities of Power BI"
+        ],
+        "schedule": "28th December (07:10-08:10) 29th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "devops",
+    "slug": "devops",
+    "title": "DevOps",
+    "category": "Technology",
+    "sourceFile": "DeVops November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to DeVops",
+        "lessons": [
+          "Introduction to DeVops"
+        ],
+        "schedule": "12th November (07:10-08:10)"
+      },
+      {
+        "title": "DeVops Fundamentals",
+        "lessons": [
+          "What is Benefits of",
+          "DeVops"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "DeVops Fundamentals",
+        "lessons": [
+          "Types/Models of DeVops"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals",
+        "lessons": [
+          "Introduction to",
+          "\" Service",
+          "Tour Subscription\""
+        ],
+        "schedule": "22th November (07:10-08:10)"
+      },
+      {
+        "title": "Networking",
+        "lessons": [
+          "Understanding How",
+          "Why VPN (Hands-On)",
+          "What is Region",
+          "What is a Vnet"
+        ],
+        "schedule": "26th November (07:10-08:10)"
+      },
+      {
+        "title": "Networking",
+        "lessons": [
+          "Using N-Tier Architecture",
+          "Network Security Groups",
+          "Load balancer",
+          "Availability and High",
+          "Availability",
+          "Application Gateway",
+          "DNS",
+          "Traffic Manager"
+        ],
+        "schedule": "30th November (07:10-08:10)"
+      },
+      {
+        "title": "Compute",
+        "lessons": [
+          "Virtual machines",
+          "Containers",
+          "App Service",
+          "Serverless computing",
+          "Scaling VMs in",
+          "Scaling Availability Sets",
+          "VM Types and Sizes",
+          "Kubernetes Services",
+          "App Services"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Usage Scenarios",
+          "Identity and ADeVopsess",
+          "Management,",
+          "Encryption",
+          "Certificates",
+          "Protect Network",
+          "Protect Shared Documents",
+          "Advanced",
+          "Threat Protection"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Setting up Monitoring",
+          "Service Health",
+          "Policy",
+          "Define IT compliance with",
+          "Organize policy with",
+          "initiatives",
+          "Enterprise governance",
+          "management",
+          "Define standard resources",
+          "with Blueprints",
+          "Explore your service",
+          "compliance with",
+          "Compliance",
+          "Manager"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Vaults",
+          "Scheduling Backups for",
+          "VM's",
+          "Configure DR, Cost",
+          "Optimization and Spending"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "digital-marketing",
+    "slug": "digital-marketing",
+    "title": "Digital Marketing",
+    "category": "Business",
+    "sourceFile": "Digital Marketing November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Digital Marketing:",
+        "lessons": [
+          "Digital Marketing Basics",
+          "Purpose of Marketing",
+          "Segmentation & 4Ps of",
+          "Marketing Marketing Funnel"
+        ],
+        "schedule": "12th November (07:10-08:10)"
+      },
+      {
+        "title": "Digital Branding & Website Building",
+        "lessons": [
+          "Basics of Branding",
+          "Building a Brand Identity",
+          "Online Presence",
+          "Storytelling in Digital Branding",
+          "Domain & Hosting",
+          "Wordpress Website Building"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Keyword Research",
+        "lessons": [
+          "Keyword Types & Research Tools",
+          "Competitive Analysis",
+          "Keyword Mapping"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Search Engine Optimization",
+        "lessons": [
+          "How Search Engines work",
+          "On-Page",
+          "Technical",
+          "Off-Page",
+          "Mobile & Local SEO",
+          "Google Algorithm & Black Hat",
+          "SEO",
+          "Case Studies"
+        ],
+        "schedule": "22th November (07:10-08:10)"
+      },
+      {
+        "title": "Paid Advertising",
+        "lessons": [
+          "Introduction to Google Ads",
+          "Types of Ad Campaigns",
+          "Ad Campaign Creation",
+          "Optimization & Reporting",
+          "Bidding Strategies &",
+          "Terminologies",
+          "Case Studies"
+        ],
+        "schedule": "26th November (07:10-08:10)"
+      },
+      {
+        "title": "Analytics",
+        "lessons": [
+          "Setting Up Analytics",
+          "Key Metrics and KPIs",
+          "Advanced Analytics Techniques",
+          "Custom Reports and Dashboards"
+        ],
+        "schedule": "30th November (07:10-08:10)"
+      },
+      {
+        "title": "Social Media Optimization",
+        "lessons": [
+          "Profile Creation & Optimization",
+          "Hashtag Strategies",
+          "Content Calendar",
+          "Social Media Trends",
+          "Analytics & Measurement"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Types of Email Marketing",
+          "campaigns",
+          "Building email list",
+          "Email Content Creation",
+          "Email marketing Tool",
+          "Analytics & Reporting"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Affiliate Marketing Models",
+          "Affiliate Networks",
+          "Performance Tracking and",
+          "Analytics"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Understanding the basics of ORM",
+          "Building a Strong Online",
+          "Presence",
+          "Tools for monitoring online",
+          "mentions"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Content Planning",
+          "Blog Creation",
+          "Content Generation & Distribution",
+          "Content Marketing Tools",
+          "Case Studies"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "dsa-with-python",
+    "slug": "dsa-with-python",
+    "title": "DSA with Python",
+    "category": "Technology",
+    "sourceFile": "DSA with Python October November.pdf",
+    "modules": [
+      {
+        "title": "Python (Internals, do’s and don’ts) Architecture, Data Structure",
+        "lessons": [
+          "Installation of Anaconda Prompt",
+          "Jupyter Notebook-An Overview",
+          "Shorcut Lkeys in Jupyter Notebook",
+          "Data Types in Python"
+        ]
+      },
+      {
+        "title": "Python, Reading & Writing files in Python",
+        "lessons": [
+          "Rules for Naming the Variables",
+          "List, Tuple, Set, Dictionary",
+          "Introduction to Files and Directories",
+          "Introduction to the Command Prompt or",
+          "Terminal Paths",
+          "Text Files: Reading from a Text File (using",
+          "with)"
+        ]
+      },
+      {
+        "title": "Loops and conditionals in python",
+        "lessons": [
+          "If, Elif, and Else Conditions",
+          "For and While Loops"
+        ]
+      },
+      {
+        "title": "Data Analysis , Manipulation with numpy",
+        "lessons": [
+          "Machine Learning Libraries",
+          "Numpy-Hands on"
+        ]
+      },
+      {
+        "title": "Pandas Python data science package to manipulate, calculate and analyze data.",
+        "lessons": [
+          "\"Pandas-Hands on\""
+        ]
+      },
+      {
+        "title": "Exploratory Data Visualization in Python with matplotlib",
+        "lessons": [
+          "Exploring & Extracting Insights from Data",
+          "Data Visualization Basics",
+          "Matplotlib – Hands-on",
+          "Seaborn – Hands-on"
+        ]
+      },
+      {
+        "title": "Statistical Thinking in Python (Part 1) Build the foundation",
+        "lessons": [
+          "Thinking Statistically – Introduction",
+          "Measures of Central Tendency",
+          "Measures of Dispersion",
+          "IQR Statistics – Hands-On"
+        ]
+      },
+      {
+        "title": "Supervised Learning & Un-Supervised Learning",
+        "lessons": [
+          "Classification vs Regression",
+          "Supervised vs Unsupervised Learning",
+          "Linear Regression – Hands-on",
+          "Metrics in Linear Regression – Hands-on",
+          "Fine-Tuning Your Model"
+        ]
+      },
+      {
+        "title": "Logistic regression",
+        "lessons": [
+          "Introduction to Logistic Regression",
+          "Hands-on with Logistic Regression",
+          "Metrics in Logistic Regression"
+        ]
+      },
+      {
+        "title": "Linear Regression",
+        "lessons": [
+          "Introduction to Linear Regression",
+          "Hands-On with Linear Regression using",
+          "Python",
+          "Metrics in Linear Regression"
+        ],
+        "schedule": "03rd December (07:10-08:10) 06th December (07:10-08:10)"
+      },
+      {
+        "title": "Pre-processing for Machine Learning in Python",
+        "lessons": [
+          "Introduction to Data Preprocessing",
+          "Exploratory Data Analysis (EDA)",
+          "Missing Values",
+          "Outliers",
+          "Standardizing Data / Scaling Techniques",
+          "Feature Scaling and Feature Selection"
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "Tree Based Models Classification and Regression Tree",
+        "lessons": [
+          "Decision Tree",
+          "Boosting Random Forest",
+          "Bagging"
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals of Neural Network",
+        "lessons": [
+          "Neural Network"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10)"
+      },
+      {
+        "title": "POWER BI",
+        "lessons": [
+          "Introduction to Power BI desktop",
+          "ETL pipeline in Power BI",
+          "Calculating fields with DAX",
+          "Visualising data with reports",
+          "AI functionalities of Power BI"
+        ],
+        "schedule": "28th December (07:10-08:10) 29th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "embedded-systems",
+    "slug": "embedded-systems",
+    "title": "Embedded Systems",
+    "category": "Engineering",
+    "sourceFile": "Embedded Systems November.pdf",
+    "modules": [
+      {
+        "title": "Embedded SystemsIntroduction of Microprocessor & Microcontroller",
+        "lessons": [
+          "Introduction of Architecture of",
+          "Microprocessor &",
+          "Microcontroller"
+        ],
+        "schedule": "12th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction of embedded system, Features of embedded system.",
+        "lessons": [
+          "Application of embedded system",
+          "Practical Examples",
+          "Characteristics",
+          "Types of Embedded Systems"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Hardware Software Co- design",
+        "lessons": [
+          "Challenges in embedded",
+          "computing design Co-design Process",
+          "Why co-design",
+          "Architecture"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to ATmega/Arduino",
+        "lessons": [
+          "Arduino Boards, which Arduino is",
+          "best?",
+          "Memory map of Arduino, pin",
+          "configuration",
+          "ATmega328 features"
+        ],
+        "schedule": "22th November (07:10-08:10)"
+      },
+      {
+        "title": "Register map ATmega328",
+        "lessons": [
+          "Arduino C functions vs register",
+          "commands"
+        ],
+        "schedule": "26th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to simulation software/editors",
+        "lessons": [
+          "Proteus: know-how",
+          "TinkerCAD introduction"
+        ],
+        "schedule": "30th November (07:10-08:10)"
+      },
+      {
+        "title": "Basics Programs with Atmega/ Arduino",
+        "lessons": [
+          "LED interfacing in proteus and",
+          "TinkerCAD",
+          "Controlling LED with a Switch"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Basics Programs with Atmega/ Arduino",
+        "lessons": [
+          "LED with serial-port",
+          "LED with switch + serial port"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Advanced Programming: Interfacing 8 LEDs with a single port of ATmega/Arduino and displaying 10+ different patterns:",
+        "lessons": [
+          "All on-off",
+          "First four on-off",
+          "Odd-Even",
+          "Left-shift and right-shift",
+          "Curtain effect: left and right",
+          "Converge and Diverge"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Advanced Programming: Seven Segment Display Theory and Practical Use of millis function instead of delay and its advantages",
+        "lessons": [
+          "Concept of LCD",
+          "The internal architecture of LCD",
+          "with pin configuration",
+          "Internal registers of LCD",
+          "Algorithm to send data and",
+          "commands to LCD from",
+          "Microcontroller",
+          "Difference between 4-bit and 8-bit",
+          "LCD operation"
+        ]
+      },
+      {
+        "title": "Advanced Programming: Interfacing LCD with Arduino to:",
+        "lessons": [
+          "Displaying various patterns and",
+          "Effects",
+          "Process of creating custom",
+          "characters on LCD",
+          "Hex commands of LCD"
+        ]
+      },
+      {
+        "title": "Introduction to motors and actuators",
+        "lessons": [
+          "Interfacing different types of",
+          "motors with",
+          "Arduino/ATmega"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finance",
+    "slug": "finance",
+    "title": "Finance",
+    "category": "Business",
+    "sourceFile": "Finance November.pdf",
+    "modules": [
+      {
+        "title": "Basic Accounting Assumptions. Understanding of Accounting Cycle – Journal, Ledger, Trial Balance and Final Accounts. Creation of Income Statement, Balance Sheet and Cash flow statement.",
+        "lessons": [
+          "Basic Accounting Assumptions.",
+          "Understanding of Accounting Cycle – Journal,",
+          "Ledger, Trial Balance and Final Accounts.",
+          "Creation of Income Statement, Balance Sheet",
+          "and Cash flow statement."
+        ],
+        "schedule": "12th November (07:10-08:10) 16th November (07:10-08:10)"
+      },
+      {
+        "title": "Financial Statement Analysis and its methods Common size statement analysis. Comparative statement Analysis. Ratio Analysis. Trend analysis.",
+        "lessons": [
+          "Financial Statement Analysis and its methods",
+          "Common size statement analysis.",
+          "Comparative statement Analysis.",
+          "Ratio Analysis.",
+          "Trend analysis."
+        ],
+        "schedule": "18th November (07:10-08:10) 22th November (07:10-08:10)"
+      },
+      {
+        "title": "Creation of Three statement model in Excel. Interlinking of Profit & Loss Statement, Balance sheet and Cash flow statement.(Integrated Financial Model) Assumption techniques(Extrapolation) and Forecasting future income statement, Balance sheet and cash flow statement in Excel.(Forward looking integrated financial model)",
+        "lessons": [
+          "Creation of Three statement model in Excel.",
+          "Interlinking of Profit & Loss Statement, Balance",
+          "sheet and Cash flow statement.(Integrated",
+          "Financial Model)",
+          "Assumption techniques(Extrapolation) and",
+          "Forecasting future income statement, Balance",
+          "sheet and cash flow statement in Excel.(Forward",
+          "looking integrated financial model)"
+        ],
+        "schedule": "26th November (07:10-08:10) 30th November (07:10-08:10)"
+      },
+      {
+        "title": "Forecasting forward looking Balance sheet, income statement and cash flow statement by using Ratios in Excel. Determination of Unlevered Cash flow and concept of NOPAT(Net operating profit after tax).(Discounted Cash Flow Modeling in Excel) Time value of Money concept. Understanding of discounting future cash flows. CAPM concept and Basic understanding of Weighted Average Cost of Capital (WACC). Determining Terminal Value.",
+        "lessons": [
+          "Forecasting forward looking Balance sheet,",
+          "income statement and cash flow",
+          "statement by using Ratios in Excel.",
+          "Determination of Unlevered Cash flow and",
+          "concept of NOPAT(Net operating profit",
+          "after tax).(Discounted Cash Flow Modeling",
+          "in Excel)",
+          "Time value of Money concept.",
+          "Understanding of discounting future cash",
+          "flows.",
+          "CAPM concept and Basic understanding of",
+          "Weighted Average Cost of Capital (WACC).",
+          "Determining Terminal Value."
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Book Value Method of Valuation Adjusted Book Value Method of Valuation.",
+        "lessons": [
+          "Book Value Method of Valuation",
+          "Adjusted Book Value Method of Valuation."
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Concept of Enterprise Value Calculation of Enterprise Value Concept of EBITDA Calculation of EBITDA",
+        "lessons": [
+          "Concept of Enterprise Value",
+          "Calculation of Enterprise Value",
+          "Concept of EBITDA",
+          "Calculation of EBITDA"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Introduction to Relative Valuation/Comparable company valuation EV/EBITDA multiple EV/Revenue multiple Price to EPS valuation",
+        "lessons": [
+          "Introduction to Relative Valuation/Comparable",
+          "company valuation",
+          "EV/EBITDA multiple",
+          "EV/Revenue multiple",
+          "Price to EPS valuation"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this",
+          "topics",
+          "will notified",
+          "you soon after getting the time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this topics",
+          "will notified",
+          "you soon after getting the time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this topics",
+          "will notified",
+          "you soon after getting the time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this topics",
+          "will notified",
+          "you soon after getting the time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "full-stack-web-development",
+    "slug": "full-stack-web-development",
+    "title": "Full-Stack Web Development",
+    "category": "Technology",
+    "sourceFile": "Full-Stack Web Development October November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Web Technologies",
+        "lessons": [
+          "Careers in Web Technologies and Job Roles",
+          "How Does the Website Work?",
+          "Client and Server Scripting Languages",
+          "Difference between a Web Designer and Web",
+          "Developer",
+          "Types of Websites (Static and Dynamic",
+          "Websites)",
+          "Responsive design and layout"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      },
+      {
+        "title": "HTML",
+        "lessons": [
+          "What is Markup Language",
+          "Basic Structure of HTML",
+          "HTML Elements",
+          "Working with Forms",
+          "Adding Special Characters",
+          "Block Oriented Elements",
+          "List, Attributes of list",
+          "Uniform Resource Locators",
+          "Hypertext Links",
+          "Images, Tables",
+          "Introduction to style Sheets",
+          "Changing the Background",
+          "Creating Style Classes"
+        ],
+        "schedule": "04th November (07:10-08:10) 05th November (07:10-08:10)"
+      },
+      {
+        "title": "CSS",
+        "lessons": [
+          "CSS Introduction",
+          "CSS Syntax",
+          "CSS Id & Cass",
+          "Types of CSS inks",
+          "Colors and Backgrounds",
+          "Text and Fonts",
+          "Lists, Tables",
+          "CSS Selectors",
+          "CSS Box Model",
+          "CSS Advanced"
+        ],
+        "schedule": "06th November (07:10-08:10) 07th November (07:10-08:10)"
+      },
+      {
+        "title": "Java-Script",
+        "lessons": [
+          "Introduction to JavaScript",
+          "Enabling in various, browsers, Popup Boxes",
+          "Variables",
+          "Operators",
+          "Conditional Statements",
+          "Loops",
+          "Functions",
+          "Events",
+          "Cookies",
+          "Page redirection",
+          "Built-in Objects"
+        ],
+        "schedule": "08th November (07:10-08:10) * 09th November (07:10-08:10)"
+      },
+      {
+        "title": "Advanced javascript",
+        "lessons": [
+          "Form Validations",
+          "Basics of Form Validation",
+          "Validating Radio Buttons",
+          "Validating Check-boxes",
+          "Validating Select Menus",
+          "JS Document Object",
+          "Model (DOM)"
+        ],
+        "schedule": "14th November (07:10-08:10) 15th November (07:10-08:10)"
+      },
+      {
+        "title": "Bootstrap Framework",
+        "lessons": [
+          "Adding Header & Navigation",
+          "Adding Logo in Navigation Bar &",
+          "Adding Banner",
+          "Adding Jumbotron",
+          "Adding Rows, Columns & Containers",
+          "Adding Column Width using offset",
+          "Ordering Columns using push or pull",
+          "Nesting Columns in Bootstrap",
+          "Adding Footer top Website",
+          "Typography in Bootstrap",
+          "Adding glyphicons",
+          "Styling Tables",
+          "Adding Responsive or Utilities in Bootstrap",
+          "Styling Button using between classes",
+          "Styling Images and making images Responsive",
+          "Adding description list in bootstrap",
+          "Adding Panels"
+        ],
+        "schedule": "16th November (07:10-08:10) 18th November (07:10-08:10)"
+      },
+      {
+        "title": "React Basics :",
+        "lessons": [
+          "Utilize reusable components in React to render",
+          "dynamic views with changing data over time.",
+          "Organize React projects effectively for improved",
+          "scalability and maintainability of websites and",
+          "applications.",
+          "Pass data between components using props to",
+          "create dynamic and interactive user interfaces.",
+          "Implement form components to enable user",
+          "interaction and build fully functional React"
+        ],
+        "schedule": "20th November (07:10-08:10) 23th November (07:10-08:10)"
+      },
+      {
+        "title": "React Advanced",
+        "lessons": [
+          "Develop resilient and reusable components using",
+          "advanced methodologies, and explore diverse",
+          "patterns for reusing shared functionality.",
+          "Engage with a remote server, facilitating data",
+          "retrieval and submission through an API",
+          "seamlessly.",
+          "Effortlessly conduct testing on React applications",
+          "utilizing React Testing Library.",
+          "Seamlessly incorporate popular React libraries to",
+          "optimize the development process of your",
+          "applications"
+        ],
+        "schedule": "25th November (07:10-08:10) 28th November (07:10-08:10)"
+      },
+      {
+        "title": "Projects",
+        "lessons": [
+          "Live Website Design Project"
+        ],
+        "schedule": "30th November (07:10-08:10) 02nd December (07:10-08:10)"
+      },
+      {
+        "title": "Data-base MySQL",
+        "lessons": [
+          "Introduction to MySQL",
+          "basic queries",
+          "DB model design",
+          "Normalization",
+          "select queries",
+          "joins"
+        ],
+        "schedule": "03rd December (07:10-08:10) 06th December (07:10-08:10)"
+      },
+      {
+        "title": "Database MongoDB",
+        "lessons": [
+          "Introduction to MongoDB,",
+          "CRUD operations",
+          "basic cursor methods",
+          "Aggregation",
+          "Server-side vs Client-side",
+          "rendering"
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "Node.js",
+        "lessons": [
+          "Node.js Basics",
+          "Node & MongoDB Connectivity :",
+          "Connection to MongoDB(local & atlas)",
+          "frontend + backend connectivity",
+          "Introduction to Node.js, Npm packages",
+          "Node.js & Express.js",
+          "What is Express",
+          "API methods",
+          "Request & response objects",
+          "URL & Query parameters"
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Node & MongoDB Connectivity: Node. js Deployment",
+        "lessons": [
+          "Connection to MongoDB(local & atlas)",
+          "frontend + backend connectivity Dotenv",
+          "Deployment, frontend + backend",
+          "connectivity"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10)"
+      },
+      {
+        "title": "Authentication & JWT",
+        "lessons": [
+          "Authentication, bcrypt",
+          "frontend + backend connectivity JWT",
+          "custom middleware, authorization",
+          "frontend + backend connectivity"
+        ],
+        "schedule": "28th December (07:10-08:10) 29th December (07:10-08:10)"
+      },
+      {
+        "title": "Projects",
+        "lessons": [
+          "Projects"
+        ],
+        "schedule": "30th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "human-resources-and-management",
+    "slug": "human-resources-and-management",
+    "title": "Human Resources & Management",
+    "category": "Management",
+    "sourceFile": "HRM November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Strategic HRM",
+        "lessons": [
+          "Linking HRM to",
+          "Organisation",
+          "Management",
+          "Introduction to Strategic",
+          "HRM"
+        ],
+        "schedule": "12th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to Strategic HRM",
+        "lessons": [
+          "Deriving HR Strategy",
+          "from Organisational",
+          "Strategy",
+          "Digital Transformation in",
+          "HR, Challenges"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Workforce planning, Job Analysis, Job evaluation",
+        "lessons": [
+          "Demand & Supply of",
+          "Manpower",
+          "Process of HRP"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Workforce planning, Job Analysis, Job evaluation",
+        "lessons": [
+          "Types: Job Description &",
+          "Job Specification"
+        ],
+        "schedule": "22th November (07:10-08:10)"
+      },
+      {
+        "title": "Workforce planning, Job Analysis, Job evaluation",
+        "lessons": [
+          "How to design a job",
+          "Methods of JE"
+        ],
+        "schedule": "26th November (07:10-08:10)"
+      },
+      {
+        "title": "Work-force planning, Job Analysis, Job evaluation",
+        "lessons": [
+          "Demand & Supply of",
+          "Manpower",
+          "Process of HRP",
+          "Types: Job Description &",
+          "Job Specification",
+          "How to design a job",
+          "Methods of JE"
+        ],
+        "schedule": "30th November (07:10-08:10)"
+      },
+      {
+        "title": "Talent Acquisition",
+        "lessons": [
+          "Recruitment and",
+          "Selection",
+          "Understanding Individual",
+          "Differences: Personality,",
+          "Attitudes, Motivation etc.",
+          "Use of AI & ML in",
+          "HR Metrics in Talent",
+          "Acquisition"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Career Planning & Talent Development",
+        "lessons": [
+          "Training & Development",
+          "Understanding and",
+          "Managing Careers",
+          "Individual &",
+          "Organisational view",
+          "Employee Engagement",
+          "and Contemporary",
+          "Themes"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Managing people"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Compensation Management"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Labour Law/ Social Security",
+          "Law"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Change management"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Compensation Management"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "AI in HR"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "hybrid-and-electric-vehicles",
+    "slug": "hybrid-and-electric-vehicles",
+    "title": "Hybrid & Electric Vehicles",
+    "category": "Engineering",
+    "sourceFile": "HEV November.pdf",
+    "modules": [
+      {
+        "title": "Introduction : why EV?",
+        "lessons": [
+          "Why EV?",
+          "Why HEV?",
+          "Why PHEV?",
+          "Hybridisation Ratio",
+          "Architectures of HEV",
+          "Comparison of IC & EV"
+        ],
+        "schedule": "12th November (07:10-08:10) 16th November (07:10-08:10)"
+      },
+      {
+        "title": "Batteries",
+        "lessons": [
+          "Battery Parameters",
+          "Lithium Batteries",
+          "Metal- Air Batteries",
+          "Hybrid Batteries Super- Capacitors",
+          "Comparison b/w Hybrid batteries &",
+          "super-capacitors",
+          "C-rates"
+        ],
+        "schedule": "18th November (07:10-08:10) 22th November (07:10-08:10)"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this",
+          "topics",
+          "will notified",
+          "you soon after getting the",
+          "time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this",
+          "topics",
+          "will notified",
+          "you soon after getting the",
+          "time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this",
+          "topics",
+          "will notified",
+          "you soon after getting the",
+          "time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ],
+    "sourceNote": "The supplied outline includes automotive design topics after its initial hybrid and electric vehicle sections."
+  },
+  {
+    "id": "iot-and-robotics",
+    "slug": "iot-and-robotics",
+    "title": "IoT & Robotics",
+    "category": "Engineering",
+    "sourceFile": "IoT & Robotics November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to IOT",
+        "lessons": [
+          "M2M towards IOT-the global",
+          "context",
+          "IOTProducts by Indian",
+          "Companies"
+        ],
+        "schedule": "12th November (07:10-08:10)"
+      },
+      {
+        "title": "Hardware Layer -Arduino",
+        "lessons": [
+          "Industrial Internet of Things",
+          "Getting started with ArduinoUno",
+          "R3",
+          "Switch Interfacing with Arduino"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Hardware Layer –Sensor Interfacing",
+        "lessons": [
+          "Introduction to basic sensors",
+          "Sensor 1: Working & Interfacing",
+          "of IR Proximity Sensor",
+          "Sensor 2: DHT11 Interfacing,",
+          "working principle"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to NodeMCU& Device Data/ Control",
+        "lessons": [
+          "Arduino–OpensourceHardware",
+          "Platform",
+          "Pin Configuration and",
+          "functionalities",
+          "Accessing UI in a local network"
+        ],
+        "schedule": "22th November (07:10-08:10)"
+      },
+      {
+        "title": "Network Layer –Wireless Communication Protocols",
+        "lessons": [
+          "IPv4 VsIPv6",
+          "Introduction to 6LowPAN",
+          "IOTPhysical Layer Protocols",
+          "Bluetooth/ WiFi/ LoRAWAN/",
+          "NFC"
+        ],
+        "schedule": "26th November (07:10-08:10)"
+      },
+      {
+        "title": "Introduction to MQTT, Basic MQTT concepts, Working with online MQTT Brokers",
+        "lessons": [
+          "Introduction to MQTT, Basic MQTT concepts, Working with online MQTT Brokers"
+        ],
+        "schedule": "30th November (07:10-08:10)"
+      },
+      {
+        "title": "replace Raspberrypi with ESP8266",
+        "lessons": [
+          "replace Raspberrypi with ESP8266"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Using MQTT broker for: Controlling actuators connected to one NodeMCU based on data from another NodeMCU. Wireless sensor network using multiple NodeMCUs. Node to Node talk.",
+        "lessons": [
+          "Using MQTT broker for: Controlling actuators connected to one NodeMCU based on data from another NodeMCU. Wireless sensor network using multiple NodeMCUs. Node to Node talk."
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Webserver with ESP8266 websockets",
+        "lessons": [
+          "Webserver with ESP8266 websockets"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Communication technology:",
+          "Wired and wireless Internet of",
+          "Things: Different wireless",
+          "technologies",
+          "Low Power Wide Area Network",
+          "(LPWAN)"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Industrial Internet of Things",
+          "Smart Factory Concept",
+          "Automation to Digitalization"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "machine-learning",
+    "slug": "machine-learning",
+    "title": "Machine Learning",
+    "category": "Technology",
+    "sourceFile": "Machine Learning October November.pdf",
+    "modules": [
+      {
+        "title": "Python (Internals, do’s and don’ts) Architecture, Data Structure",
+        "lessons": [
+          "Installation of Anaconda Prompt",
+          "Jupyter Notebook-An Overview",
+          "Shorcut Lkeys in Jupyter Notebook",
+          "Data Types in Python"
+        ]
+      },
+      {
+        "title": "Python, Reading & Writing files in Python",
+        "lessons": [
+          "Rules for Naming the Variables",
+          "List, Tuple, Set, Dictionary",
+          "Introduction to Files and Directories",
+          "Introduction to the Command Prompt or Terminal",
+          "Paths",
+          "Text Files: Reading from a Text File (using with)"
+        ]
+      },
+      {
+        "title": "Loops and conditionals in python",
+        "lessons": [
+          "If, Elif, and Else Conditions",
+          "For and While Loops"
+        ]
+      },
+      {
+        "title": "Data Analysis , Manipulation with numpy",
+        "lessons": [
+          "Machine Learning Libraries",
+          "Numpy-Hands on"
+        ]
+      },
+      {
+        "title": "Pandas Python data science package to manipulate, calculate and analyze data.",
+        "lessons": [
+          "\"Pandas-Hands on\""
+        ]
+      },
+      {
+        "title": "Exploratory Data Visualization in Python with matplotlib",
+        "lessons": [
+          "Exploring & Extracting Insights from Data",
+          "Data Visualization Basics",
+          "Matplotlib – Hands-on",
+          "Seaborn – Hands-on"
+        ]
+      },
+      {
+        "title": "Statistical Thinking in Python (Part 1) Build the foundation",
+        "lessons": [
+          "Thinking Statistically – Introduction",
+          "Measures of Central Tendency",
+          "Measures of Dispersion",
+          "IQR Statistics – Hands-On"
+        ]
+      },
+      {
+        "title": "Supervised Learning & Un-Supervised Learning",
+        "lessons": [
+          "Classification vs Regression",
+          "Supervised vs Unsupervised Learning",
+          "Linear Regression – Hands-on",
+          "Metrics in Linear Regression – Hands-on",
+          "Fine-Tuning Your Model"
+        ]
+      },
+      {
+        "title": "Logistic regression",
+        "lessons": [
+          "Introduction to Logistic Regression",
+          "Hands-on with Logistic Regression",
+          "Metrics in Logistic Regression"
+        ]
+      },
+      {
+        "title": "Linear Regression",
+        "lessons": [
+          "Introduction to Linear Regression",
+          "Hands-On with Linear Regression using Python",
+          "Metrics in Linear Regression"
+        ],
+        "schedule": "03rd December (07:10-08:10) 06th December (07:10-08:10)"
+      },
+      {
+        "title": "Pre-processing for Machine Learning in Python",
+        "lessons": [
+          "Introduction to Data Preprocessing",
+          "Exploratory Data Analysis (EDA)",
+          "Missing Values",
+          "Outliers",
+          "Standardizing Data / Scaling Techniques",
+          "Feature Scaling and Feature Selection"
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "Tree Based Models Classification and Regression Tree",
+        "lessons": [
+          "Decision Tree",
+          "Boosting Random Forest",
+          "Bagging"
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals of Neural Network",
+        "lessons": [
+          "Neural Network"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10)"
+      },
+      {
+        "title": "POWER BI",
+        "lessons": [
+          "Introduction to Power BI desktop",
+          "ETL pipeline in Power BI",
+          "Calculating fields with DAX",
+          "Visualising data with reports",
+          "AI functionalities of Power BI"
+        ],
+        "schedule": "28th December (07:10-08:10) 29th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "medical-coding",
+    "slug": "medical-coding",
+    "title": "Medical Coding",
+    "category": "Health & Science",
+    "sourceFile": "MEDICAL CODING November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Healthcare & Medical Coding",
+        "lessons": [
+          "Overview of Healthcare",
+          "Industry,",
+          "Role of Medical Coders,",
+          "Revenue Cycle",
+          "Management (RCM),",
+          "Coding Systems:",
+          "ICD-10-CM, CPT, HCPCS",
+          "HIPAA & Career",
+          "Opportunities"
+        ],
+        "schedule": "12th November (07:10-08:10) 16th November (07:10-08:10)"
+      },
+      {
+        "title": "Medical Terminology",
+        "lessons": [
+          "Root words, prefixes &",
+          "suffixes,",
+          "Medical abbreviations,",
+          "Clinical & diagnostic",
+          "terminology,",
+          "Pharmacology basics"
+        ],
+        "schedule": "18th November (07:10-08:10) 22th November (07:10-08:10)"
+      },
+      {
+        "title": "Dermatology, Ophthalmology & ENT",
+        "lessons": [
+          "Skin structure & disorders,",
+          "Eye anatomy basics,",
+          "Ear, nose & throat systems",
+          "Clinical documentation"
+        ],
+        "schedule": "26th November (07:10-08:10) 30th November (07:10-08:10)"
+      },
+      {
+        "title": "Cardiology & Pulmonology",
+        "lessons": [
+          "Cardiovascular system",
+          "overview,",
+          "Respiratory system",
+          "Common diseases &",
+          "procedures,"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Gastroenterology & Urology",
+        "lessons": [
+          "Digestive system anatomy,",
+          "Urinary system overview,",
+          "Clinical documentation",
+          "interpretation"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Gynecology, Obstetrics & Endocrinology",
+        "lessons": [
+          "Reproductive system,",
+          "Pregnancy & childbirth,",
+          "Hormonal disorders"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Orthopedics & Neurology",
+        "lessons": [
+          "Musculoskeletal system,",
+          "Nervous system,",
+          "Fractures and neurological",
+          "disorders"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "ICD-10-CM Coding Fundamentals",
+        "lessons": [
+          "Structure and format of",
+          "ICD-10 codes,",
+          "Coding conventions and",
+          "guidelines,"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Nervous system disorders,",
+          "Eye & ear diseases,",
+          "Circulatory & respiratory",
+          "diseases"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Digestive diseases,",
+          "Skin diseases,",
+          "Musculoskeletal disorders,",
+          "Pregnancy and childbirth",
+          "coding"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Congenital conditions,",
+          "Symptoms and abnormal",
+          "findings,",
+          "Injury and poisoning,",
+          "External causes and special",
+          "codes"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "CPT code structure and",
+          "categories,",
+          "Evaluation & Management",
+          "coding,",
+          "Surgery coding,",
+          "Radiology, Pathology and",
+          "Medicine coding,",
+          "CPT modifiers"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "HCPCS Level II overview,",
+          "Durable Medical Equipment",
+          "and supplies,",
+          "Insurance plans and payers,",
+          "Claim lifecycle and claim",
+          "forms,",
+          "Denials and rejections",
+          "handling"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "ICD + CPT + HCPCS",
+          "integration,",
+          "Real coding workflow",
+          "overview,",
+          "Compliance and auditing"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "nanotechnology",
+    "slug": "nanotechnology",
+    "title": "Nanotechnology",
+    "category": "Health & Science",
+    "sourceFile": "Nanotechnology October November.txt",
+    "modules": [
+      {
+        "title": "Introduction to Nanotechnology",
+        "lessons": [
+          "Definition & Scope",
+          "History & Milestones",
+          "Nanoscale Fundamentals",
+          "Importance in Modern Engineering"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      },
+      {
+        "title": "Types of Nanomaterials",
+        "lessons": [
+          "Carbon Nanotubes (CNT)",
+          "Graphene",
+          "Metal Nanoparticles",
+          "Quantum Dots",
+          "Nanocomposites"
+        ],
+        "schedule": "04th November (07:10-08:10)"
+      },
+      {
+        "title": "Synthesis Techniques",
+        "lessons": [
+          "Top-Down Approach",
+          "Bottom-Up Approach",
+          "Chemical Vapor Deposition (CVD)",
+          "Sol-Gel Method",
+          "Ball Milling"
+        ],
+        "schedule": "05th November (07:10-08:10)"
+      },
+      {
+        "title": "Characterization Technique",
+        "lessons": [
+          "SEM",
+          "TEM",
+          "AFM",
+          "XRD",
+          "UV-Visible Spectroscopy"
+        ],
+        "schedule": "06th November (07:10-08:10)"
+      },
+      {
+        "title": "Nanotechnology in Electronics",
+        "lessons": [
+          "Nano-transistors",
+          "Nano Sensors",
+          "Flexible Electronics",
+          "Semiconductor Nanotechnology"
+        ],
+        "schedule": "07th November (07:10-08:10)"
+      },
+      {
+        "title": "Nanotechnology in Medicine",
+        "lessons": [
+          "Nano Drug Delivery Systems",
+          "Cancer Therapy using Nanoparticles",
+          "Tissue Engineering",
+          "Biosensors"
+        ],
+        "schedule": "08th November (07:10-08:10)"
+      },
+      {
+        "title": "Nanotechnology in Energy Sector",
+        "lessons": [
+          "Nano Solar Cells",
+          "Lithium-ion Batteries",
+          "Hydrogen Storage",
+          "Supercapacitors"
+        ],
+        "schedule": "09th November (07:10-08:10)"
+      },
+      {
+        "title": "Nanotechnology in Environmental Engineering",
+        "lessons": [
+          "Water Purification using Nanofilters",
+          "Air Pollution Control",
+          "Waste Treatment",
+          "Environmental Remediation"
+        ],
+        "schedule": "14th November (07:10-08:10)"
+      },
+      {
+        "title": "Nano Fabrication & Clean Room Concepts",
+        "lessons": [
+          "Lithography Techniques",
+          "Thin Film Deposition",
+          "Etching Process",
+          "Clean Room Standards"
+        ],
+        "schedule": "15th November (07:10-08:10)"
+      },
+      {
+        "title": "Nano Robotics & SJulyt Materials",
+        "lessons": [
+          "Nano Robots",
+          "Self-Healing Materials",
+          "Shape Memory Alloys",
+          "Intelligent Materials"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Simulation & Computational Nanotechnology",
+        "lessons": [
+          "Introduction to Nano Simulation Tools",
+          "Molecular Modeling Basics",
+          "Density Functional Theory (Basics)",
+          "MATLAB/Python in Nanotech Research"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Capstone Project & Industry Exposure",
+        "lessons": [
+          "Project Development",
+          "Case Study Discussion",
+          "Research Paper Review",
+          "Presentation & Viva",
+          "Career Opportunities in Nanotechnology"
+        ],
+        "schedule": "20th November (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "programming-in-java",
+    "slug": "programming-in-java",
+    "title": "Programming in Java",
+    "category": "Technology",
+    "sourceFile": "Programming in Java October November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to JAVA",
+        "lessons": [
+          "Overview and Features of Java",
+          "Programming Language",
+          "Architecture Of Java",
+          "JDK, JVM, JRE overview",
+          "Discussion on Source Code and Bytecode",
+          "“Hello World” on JAVA",
+          "Editors and Eclipse IDE"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      },
+      {
+        "title": "Basics of JAVA programming language",
+        "lessons": [
+          "Data types and Variables",
+          "Keywords in JAVA",
+          "Common Operators in JAVA",
+          "Primitive Datatypes",
+          "Introduction to Strings datatype",
+          "Datatypes Casting - Widening & Narrowing",
+          "Conversions",
+          "For, While loops",
+          "Switch case and if blocks",
+          "Basic Programs using the learned",
+          "concepts."
+        ],
+        "schedule": "05th November (07:10-08:10)"
+      },
+      {
+        "title": "Methods/Functional programming in JAVA",
+        "lessons": [
+          "Methods, & Classes overview",
+          "Discussion on industry standards",
+          "Method Structure MARlaration"
+        ],
+        "schedule": "07th November (07:10-08:10)"
+      },
+      {
+        "title": "Methods/Functional programming in JAVA",
+        "lessons": [
+          "Method calls type and return type.",
+          "Method Parameters Scope",
+          "Static methods and Intro to static keyword",
+          "Packages and Static imports"
+        ],
+        "schedule": "08th November (07:10-08:10)"
+      },
+      {
+        "title": "Arrays and Strings",
+        "lessons": [
+          "Intro to Arrays",
+          "Properties and functionality of an array",
+          "Strings Methods and Properties",
+          "Basic Programs on Strings and Arrays",
+          "Mutable and Immutable Strings",
+          "String Buffer and String Builder",
+          "Command-line arguments using args[]"
+        ],
+        "schedule": "09th November (07:10-08:10)"
+      },
+      {
+        "title": "OOPs (Object Orientation Programming)",
+        "lessons": [
+          "Overview",
+          "Need and Benefits of OOP",
+          "Pillars of OOPs",
+          "“new” Keyword",
+          "Discussion on HEAP memory and Garbage",
+          "Collector",
+          "Constructors",
+          "Super and This Keyword",
+          "“static” keyword w.r.t. to OOP"
+        ],
+        "schedule": "14th November (07:10-08:10)"
+      },
+      {
+        "title": "Pillar 1: Encapsulation",
+        "lessons": [
+          "Access modifiers",
+          "Setter and getters",
+          "Final keyword"
+        ],
+        "schedule": "15th November (07:10-08:10)"
+      },
+      {
+        "title": "Pillar 2: Inheritance",
+        "lessons": [
+          "Importance of Inheritance and Types of",
+          "Inheritance",
+          "Single Inheritance Multi-Level Inheritance",
+          "Hierarchical",
+          "Super keyword w.r.t. to Inheritance",
+          "Access modifier w.r.t. to Inheritance",
+          "Intro to Object Class Methods"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Pillar 3: Polymorphism",
+        "lessons": [
+          "Method Overloading",
+          "Method Overriding",
+          "Runtime and Compile time polymorphism",
+          "toString, equals method manual overriding",
+          "Override Annotation"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Pillar 4: Abstraction",
+        "lessons": [
+          "Discussion for Abstraction",
+          "Abstract keyword",
+          "Difference between concrete and abstract",
+          "Methods",
+          "Interfaces",
+          "Marker Interface and its usage",
+          "Intro to Functional Interface",
+          "Lambda /Innerclasses and Functional"
+        ],
+        "schedule": "20th November (07:10-08:10)"
+      },
+      {
+        "title": "Exception handling",
+        "lessons": [
+          "Exceptions and Errors in JAVA",
+          "Exception class Hierarchy",
+          "Try, catch and finally block",
+          "Try with Resource and Autocloseables",
+          "Throw and throws keywords",
+          "Default Exception Handler",
+          "Custom User Defined Exception Handler",
+          "Corner cases and best pratices."
+        ],
+        "schedule": "23th November (07:10-08:10)"
+      },
+      {
+        "title": "Collection Framework in JAVA",
+        "lessons": [
+          "Collection Interface hierarchy",
+          "ArrayList",
+          "Set",
+          "LinkedList",
+          "Traversing using Iterators",
+          "Fail-Safe and Fail-Fast Way of using",
+          "Collection",
+          "Comparator and Comparable usage",
+          "Map Interface Hierarchy",
+          "HashMap",
+          "Purpose of various Collection Classes"
+        ],
+        "schedule": "25th November (07:10-08:10) 28th November (07:10-08:10"
+      },
+      {
+        "title": "File Handling and I/O",
+        "lessons": [
+          "Various File Types",
+          "Common filetype and Usage",
+          "File operations using Java",
+          "InputStream and OutputStream in Java",
+          "Read and Write Operation on a text file",
+          "using Stream",
+          "Serialization and Deserialization and best",
+          "pratices."
+        ],
+        "schedule": "30th November (07:10-08:10) 02nd December (07:10-08:10)"
+      },
+      {
+        "title": "Multi-Threading",
+        "lessons": [
+          "Parallel Processing Computation and its",
+          "Advantage",
+          "Thread in JAVA",
+          "Achieving Multi-Threading in JAVA using",
+          "Thread class",
+          "and Runnable interface",
+          "Thread Pool",
+          "Thread State and its Lifecycle",
+          "Deadlock event",
+          "Concurrency and Thread Safety",
+          "Synchronization",
+          "Volatilite keyword for visibility",
+          "Atomic Integer"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "programming-in-python",
+    "slug": "programming-in-python",
+    "title": "Programming in Python",
+    "category": "Technology",
+    "sourceFile": "Programming in Python October November.pdf",
+    "modules": [
+      {
+        "title": "Python (Internals, do’s and don’ts) Architecture, Data Structure",
+        "lessons": [
+          "Installation of Anaconda Prompt",
+          "Jupyter Notebook-An Overview",
+          "Shorcut Lkeys in Jupyter Notebook",
+          "Data Types in Python"
+        ]
+      },
+      {
+        "title": "Python, Reading & Writing files in Python",
+        "lessons": [
+          "Rules for Naming the Variables",
+          "List, Tuple, Set, Dictionary",
+          "Introduction to Files and Directories",
+          "Introduction to the Command Prompt or Terminal",
+          "Paths",
+          "Text Files: Reading from a Text File (using with)"
+        ]
+      },
+      {
+        "title": "Loops and conditionals in python",
+        "lessons": [
+          "If, Elif, and Else Conditions",
+          "For and While Loops"
+        ]
+      },
+      {
+        "title": "Data Analysis , Manipulation with numpy",
+        "lessons": [
+          "Machine Learning Libraries",
+          "Numpy-Hands on"
+        ]
+      },
+      {
+        "title": "Pandas Python data science package to manipulate, calculate and analyze data.",
+        "lessons": [
+          "\"Pandas-Hands on\""
+        ]
+      },
+      {
+        "title": "Exploratory Data Visualization in Python with matplotlib",
+        "lessons": [
+          "Exploring & Extracting Insights from Data",
+          "Data Visualization Basics",
+          "Matplotlib – Hands-on",
+          "Seaborn – Hands-on"
+        ]
+      },
+      {
+        "title": "Statistical Thinking in Python (Part 1) Build the foundation",
+        "lessons": [
+          "Thinking Statistically – Introduction",
+          "Measures of Central Tendency",
+          "Measures of Dispersion",
+          "IQR Statistics – Hands-On"
+        ]
+      },
+      {
+        "title": "Supervised Learning & Un-Supervised Learning",
+        "lessons": [
+          "Classification vs Regression",
+          "Supervised vs Unsupervised Learning",
+          "Linear Regression – Hands-on",
+          "Metrics in Linear Regression – Hands-on",
+          "Fine-Tuning Your Model"
+        ]
+      },
+      {
+        "title": "Logistic regression",
+        "lessons": [
+          "Introduction to Logistic Regression",
+          "Hands-on with Logistic Regression",
+          "Metrics in Logistic Regression"
+        ]
+      },
+      {
+        "title": "Linear Regression",
+        "lessons": [
+          "Introduction to Linear Regression",
+          "Hands-On with Linear Regression using Python",
+          "Metrics in Linear Regression"
+        ],
+        "schedule": "03rd December (07:10-08:10) 06th December (07:10-08:10)"
+      },
+      {
+        "title": "Pre-processing for Machine Learning in Python",
+        "lessons": [
+          "Introduction to Data Preprocessing",
+          "Exploratory Data Analysis (EDA)",
+          "Missing Values",
+          "Outliers",
+          "Standardizing Data / Scaling Techniques",
+          "Feature Scaling and Feature Selection"
+        ],
+        "schedule": "10th December (07:10-08:10) 13th December (07:10-08:10)"
+      },
+      {
+        "title": "Tree Based Models Classification and Regression Tree",
+        "lessons": [
+          "Decision Tree",
+          "Boosting Random Forest",
+          "Bagging"
+        ],
+        "schedule": "16th December (07:10-08:10) 20th December (07:10-08:10)"
+      },
+      {
+        "title": "Fundamentals of Neural Network",
+        "lessons": [
+          "Neural Network"
+        ],
+        "schedule": "22th December (07:10-08:10) 24th December (07:10-08:10)"
+      },
+      {
+        "title": "POWER BI",
+        "lessons": [
+          "Introduction to Power BI desktop",
+          "ETL pipeline in Power BI",
+          "Calculating fields with DAX",
+          "Visualising data with reports",
+          "AI functionalities of Power BI"
+        ],
+        "schedule": "28th December (07:10-08:10) 29th December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "project-and-product-management",
+    "slug": "project-and-product-management",
+    "title": "Project & Product Management",
+    "category": "Management",
+    "sourceFile": "Project & Product Management October November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Project & Product Management",
+        "lessons": [
+          "What is Supply Management vs",
+          "Chain Management",
+          "Role of a Supply Manager (PM)",
+          "Role of a Chain Manager",
+          "Supply lifecycle vs Chain lifecycle",
+          "Agile vs Waterfall basics"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      },
+      {
+        "title": "Market Research & Problem Identification",
+        "lessons": [
+          "Identifying real-world problems",
+          "Customer persona creation",
+          "Competitor analysis",
+          "Market sizing (TAM, SAM, SOM)",
+          "User interviews basics"
+        ],
+        "schedule": "04th November (07:10-08:10) 05th November (07:10-08:10)"
+      },
+      {
+        "title": "Supply Planning & Strategy",
+        "lessons": [
+          "Supply vision & roadmap",
+          "MVP (Minimum Viable",
+          "Supply)",
+          "Feature prioritization (RICE,",
+          "MoSCoW)",
+          "Business models (B2B,",
+          "B2C, SaaS)"
+        ],
+        "schedule": "05th November (07:10-08:10)"
+      },
+      {
+        "title": "Chain Management Fundamentals",
+        "lessons": [
+          "Chain scope, time, cost triangle",
+          "Work Breakdown Structure (WBS)",
+          "Gantt charts",
+          "Risk management",
+          "Stakeholder management"
+        ],
+        "schedule": "06th November (07:10-08:10)"
+      },
+      {
+        "title": "Agile & Scrum Mastery",
+        "lessons": [
+          "Agile principles",
+          "Scrum framework",
+          "Sprint planning, daily",
+          "standups",
+          "Backlog & user stories",
+          "Jira basics"
+        ],
+        "schedule": "07th November (07:10-08:10)"
+      },
+      {
+        "title": "Execution & Team Collaboration",
+        "lessons": [
+          "Cross-functional teams",
+          "Communication skills",
+          "Conflict management",
+          "Leadership basics"
+        ],
+        "schedule": "08th November (07:10-08:10)"
+      },
+      {
+        "title": "Metrics & Analytics",
+        "lessons": [
+          "Key Supply Metrics (DAU, MAU,",
+          "Retention)",
+          "Chain KPIs",
+          "A/B testing basics",
+          "Data-driven decision making"
+        ],
+        "schedule": "09th November (07:10-08:10)"
+      },
+      {
+        "title": "Supply Launch & Go-To-Market (GTM)",
+        "lessons": [
+          "Supply launch strategy",
+          "Marketing basics",
+          "Positioning & branding",
+          "Feedback loop"
+        ],
+        "schedule": "14th November (07:10-08:10)"
+      },
+      {
+        "title": "Warehouse Operations",
+        "lessons": [
+          "Layouts",
+          "Picking & packing"
+        ],
+        "schedule": "15th November (07:10-08:10)"
+      },
+      {
+        "title": "Lean Operations",
+        "lessons": [
+          "KAIZEN, 5S, waste reduction"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Quality Management",
+        "lessons": [
+          "Control charts",
+          "Six Sigma essentials"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Supply Chain Technology",
+        "lessons": [
+          "ERP",
+          "SAP",
+          "Automation"
+        ],
+        "schedule": "20th November (07:10-08:10)"
+      },
+      {
+        "title": "Global Supply Chain",
+        "lessons": [
+          "International logistics",
+          "Incoterms basics"
+        ],
+        "schedule": "23th November (07:10-08:10)"
+      },
+      {
+        "title": "Case Studies",
+        "lessons": [
+          "Amazon, Flipkart, ZARA, Toyota"
+        ],
+        "schedule": "25th November (07:10-08:10) 28th November (07:10-08:10"
+      },
+      {
+        "title": "Final Chain + Evaluation",
+        "lessons": [
+          "SCM scenario activity",
+          "Chain submission & review"
+        ],
+        "schedule": "30th November (07:10-08:10) 02nd December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "psychology",
+    "slug": "psychology",
+    "title": "Psychology",
+    "category": "Health & Science",
+    "sourceFile": "Psychology October November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Psychology",
+        "lessons": [
+          "Overview of psychology: definition, history, and major",
+          "perspectives",
+          "Branches of psychology: clinical, cognitive, developmental,",
+          "social,",
+          "and more",
+          "Research methods in psychology: experimental, correlational,",
+          "observational",
+          "Key ethical considerations in psychological research"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      },
+      {
+        "title": "Biological Bases of Behavior",
+        "lessons": [
+          "Structure and function of the nervous system",
+          "Brain anatomy and its role in behavior and cognition",
+          "Neurotransmitters and their influence on behavior",
+          "The endocrine system and hormonal regulation",
+          "Hands-on: Case study on a neurological disorder"
+        ],
+        "schedule": "04th November (07:10-08:10) 05th November (07:10-08:10)"
+      },
+      {
+        "title": "Sensation and Perception",
+        "lessons": [
+          "Understanding sensation and perception: definitions and",
+          "distinctions",
+          "The sensory systems: vision, hearing, taste, smell, and touch",
+          "Perceptual processes: attention, organization, and",
+          "interpretation",
+          "Perceptual illusions and their significance",
+          "Hands-on: Exploring sensory perception through interactive",
+          "demonstrations"
+        ],
+        "schedule": "05th November (07:10-08:10)"
+      },
+      {
+        "title": "Learning and Conditioning",
+        "lessons": [
+          "Theories of learning: classical conditioning, operant",
+          "conditioning, and",
+          "observational learning",
+          "Key concepts: reinforcement, punishment, extinction, and",
+          "generalization",
+          "Applications of learning theories in real life",
+          "Hands-on: Designing a basic behavioral modification plan"
+        ],
+        "schedule": "06th November (07:10-08:10)"
+      },
+      {
+        "title": "Memory and Cognition",
+        "lessons": [
+          "Models of memory: sensory memory, short-term memory,",
+          "long-term",
+          "memory",
+          "Processes of memory: encoding, storage, retrieval",
+          "Factors affecting memory: forgetting, interference, and",
+          "amnesia",
+          "Cognitive processes: thinking, problem-solving,",
+          "decision-making",
+          "Hands-on: Memory enhancement techniques and cognitive",
+          "exercises"
+        ],
+        "schedule": "07th November (07:10-08:10)"
+      },
+      {
+        "title": "Developmental Psychology",
+        "lessons": [
+          "Overview of human development: prenatal, childhood,",
+          "adolescence,",
+          "adulthood",
+          "Key theories: Piaget's stages of cognitive development,",
+          "Erikson's",
+          "psychosocial stages",
+          "Physical, cognitive, and social development across the",
+          "lifespan",
+          "Hands-on: Analyzing a case study on developmental",
+          "milestones"
+        ],
+        "schedule": "08th November (07:10-08:10)"
+      },
+      {
+        "title": "7",
+        "lessons": [
+          "Personality Theories and",
+          "Assessment"
+        ],
+        "schedule": "09th November (07:10-08:10)"
+      },
+      {
+        "title": "8",
+        "lessons": [
+          "Abnormal Psychology and",
+          "Mental",
+          "Health"
+        ],
+        "schedule": "14th November (07:10-08:10)"
+      },
+      {
+        "title": "9",
+        "lessons": [
+          "Social Psychology"
+        ],
+        "schedule": "15th November (07:10-08:10)"
+      },
+      {
+        "title": "10",
+        "lessons": [
+          "Capstone Project and",
+          "Review"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "11",
+        "lessons": [
+          "Compensation",
+          "Management"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "startup-and-entrepreneurship",
+    "slug": "startup-and-entrepreneurship",
+    "title": "Startup & Entrepreneurship",
+    "category": "Business",
+    "sourceFile": "Startup & Entrepreneurship November.pdf",
+    "modules": [
+      {
+        "title": "Basic Accounting Assumptions. Understanding of Accounting Cycle – Journal, Ledger, Trial Balance and Final Accounts. Creation of Income Statement, Balance Sheet and Cash flow statement.",
+        "lessons": [
+          "Basic Accounting Assumptions.",
+          "Understanding of Accounting Cycle – Journal,",
+          "Ledger, Trial Balance and Final Accounts.",
+          "Creation of Income Statement, Balance Sheet",
+          "and Cash flow statement."
+        ],
+        "schedule": "12th November (07:10-08:10) 16th November (07:10-08:10)"
+      },
+      {
+        "title": "Financial Statement Analysis and its methods Common size statement analysis. Comparative statement Analysis. Ratio Analysis. Trend analysis.",
+        "lessons": [
+          "Financial Statement Analysis and its methods",
+          "Common size statement analysis.",
+          "Comparative statement Analysis.",
+          "Ratio Analysis.",
+          "Trend analysis."
+        ],
+        "schedule": "18th November (07:10-08:10) 22th November (07:10-08:10)"
+      },
+      {
+        "title": "Creation of Three statement model in Excel. Interlinking of Profit & Loss Statement, Balance sheet and Cash flow statement.(Integrated Financial Model) Assumption techniques(Extrapolation) and Forecasting future income statement, Balance sheet and cash flow statement in Excel.(Forward looking integrated financial model)",
+        "lessons": [
+          "Creation of Three statement model in Excel.",
+          "Interlinking of Profit & Loss Statement, Balance",
+          "sheet and Cash flow statement.(Integrated",
+          "Financial Model)",
+          "Assumption techniques(Extrapolation) and",
+          "Forecasting future income statement, Balance",
+          "sheet and cash flow statement in Excel.(Forward",
+          "looking integrated financial model)"
+        ],
+        "schedule": "26th November (07:10-08:10) 30th November (07:10-08:10)"
+      },
+      {
+        "title": "Forecasting forward looking Balance sheet, income statement and cash flow statement by using Ratios in Excel. Determination of Unlevered Cash flow and concept of NOPAT(Net operating profit after tax).(Discounted Cash Flow Modeling in Excel) Time value of Money concept. Understanding of discounting future cash flows. CAPM concept and Basic understanding of Weighted Average Cost of Capital (WACC). Determining Terminal Value.",
+        "lessons": [
+          "Forecasting forward looking Balance sheet,",
+          "income statement and cash flow",
+          "statement by using Ratios in Excel.",
+          "Determination of Unlevered Cash flow and",
+          "concept of NOPAT(Net operating profit",
+          "after tax).(Discounted Cash Flow Modeling",
+          "in Excel)",
+          "Time value of Money concept.",
+          "Understanding of discounting future cash",
+          "flows.",
+          "CAPM concept and Basic understanding of",
+          "Weighted Average Cost of Capital (WACC).",
+          "Determining Terminal Value."
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Book Value Method of Valuation Adjusted Book Value Method of Valuation.",
+        "lessons": [
+          "Book Value Method of Valuation",
+          "Adjusted Book Value Method of Valuation."
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Concept of Enterprise Value Calculation of Enterprise Value Concept of EBITDA Calculation of EBITDA",
+        "lessons": [
+          "Concept of Enterprise Value",
+          "Calculation of Enterprise Value",
+          "Concept of EBITDA",
+          "Calculation of EBITDA"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Introduction to Relative Valuation/Comparable company valuation EV/EBITDA multiple EV/Revenue multiple Price to EPS valuation",
+        "lessons": [
+          "Introduction to Relative Valuation/Comparable",
+          "company valuation",
+          "EV/EBITDA multiple",
+          "EV/Revenue multiple",
+          "Price to EPS valuation"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this",
+          "topics",
+          "will notified",
+          "you soon after getting the time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this",
+          "topics",
+          "will notified",
+          "you soon after getting the time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this topics",
+          "will notified",
+          "you soon after getting the time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Dates and timings for this topics",
+          "will notified",
+          "you soon after getting the time",
+          "slots from our",
+          "Trainer"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ],
+    "sourceNote": "The supplied outline includes accounting, financial statement analysis, Excel modeling, and valuation topics."
+  },
+  {
+    "id": "stock-market",
+    "slug": "stock-market",
+    "title": "Stock Market",
+    "category": "Business",
+    "sourceFile": "Stock Markting November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to the Stock Market",
+        "lessons": [
+          "Overview of financial markets: stock",
+          "market, bond market, commodities",
+          "Key stock market participants:",
+          "investors, traders, brokers, regulators",
+          "Understanding stock exchanges:",
+          "NYSE, NASDAQ, etc.",
+          "Stock market indices: S&P 500, Dow",
+          "Jones, NASDAQ Composite"
+        ],
+        "schedule": "12th November (07:10-08:10) 16th November (07:10-08:10)"
+      },
+      {
+        "title": "Basics of Stock Trading",
+        "lessons": [
+          "What is a stock? Types of stocks:",
+          "common vs. preferred",
+          "How to buy and sell stocks: market",
+          "orders, limit orders, stop orders",
+          "Brokerage accounts: types and how",
+          "to open one",
+          "Introduction to stock market platforms",
+          "and tools"
+        ],
+        "schedule": "18th November (07:10-08:10) 22th November (07:10-08:10)"
+      },
+      {
+        "title": "Fundamental Analysis",
+        "lessons": [
+          "Understanding financial statements:",
+          "income statement, balance sheet,",
+          "cash flow statement",
+          "Key financial ratios: P/E ratio, PEG",
+          "ratio, ROE, ROI, etc. Analyzing",
+          "company performance and industry",
+          "trends",
+          "Hands-on: Basic analysis of a",
+          "company’s financials"
+        ],
+        "schedule": "26th November (07:10-08:10) 30th November (07:10-08:10)"
+      },
+      {
+        "title": "Technical Analysis",
+        "lessons": [
+          "Introduction to technical analysis and",
+          "charting",
+          "Types of charts: line, bar, candlestick",
+          "Key technical indicators: moving",
+          "averages, RSI, MACD, Bollinger",
+          "Bands",
+          "Understanding support and",
+          "resistance levels, trends, and",
+          "patterns Hands-on: Analyzing stock",
+          "charts and indicators"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Understanding risk and return in",
+          "investing Diversification and its",
+          "importance in risk management",
+          "Asset allocation and portfolio",
+          "construction",
+          "Hands-on: Creating a diversified",
+          "investment portfolio"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Introduction to behavioral finance:",
+          "cognitive biases and market behavior",
+          "Common investor biases:",
+          "overconfidence, herd behavior, loss",
+          "aversion",
+          "Market sentiment and its impact on",
+          "stock prices",
+          "Hands-on: Identifying biases in",
+          "investing decisions"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Supply launch strategy",
+          "Marketing basics",
+          "Positioning & branding",
+          "Feedback loop"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Introduction to derivatives: options,",
+          "futures, and CFDs",
+          "Basic options strategies: calls, puts,",
+          "covered calls, protective puts",
+          "Understanding ETFs and mutual",
+          "funds",
+          "Introduction to alternative",
+          "investments: real estate,",
+          "commodities, cryptocurrencies",
+          "Hands-on: Basic analysis of an ETF",
+          "or mutual fund"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Overview of regulatory bodies: SEC,",
+          "FINRA",
+          "Key regulations impacting the stock",
+          "market",
+          "Insider trading and market",
+          "manipulation",
+          "Ethical considerations in investing",
+          "Hands-on: Case studies on market",
+          "regulations and ethics"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Comprehensive project: analyzing a",
+          "stock or creating a mock investment",
+          "portfolio",
+          "Integrating various concepts and",
+          "techniques learned",
+          "Final project presentation and critique",
+          "Review of key concepts and",
+          "takeaways",
+          "Q&A and troubleshooting"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "supply-chain-management",
+    "slug": "supply-chain-management",
+    "title": "Supply Chain Management",
+    "category": "Management",
+    "sourceFile": "Supply Chain Management October November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to Operation & Supply Chain Management",
+        "lessons": [
+          "What is Supply Management",
+          "vs Chain Management",
+          "Role of a Supply Manager",
+          "(PM)",
+          "Role of a Chain Manager",
+          "Supply lifecycle vs Chain",
+          "lifecycle",
+          "Agile vs Waterfall basics"
+        ],
+        "schedule": "03th November (07:10-08:10)"
+      },
+      {
+        "title": "Market Research & Problem Identification",
+        "lessons": [
+          "Identifying real-world",
+          "problems",
+          "Customer persona creation",
+          "Competitor analysis",
+          "Market sizing (TAM, SAM,",
+          "SOM)",
+          "User interviews basics"
+        ],
+        "schedule": "04th November (07:10-08:10) 05th November (07:10-08:10)"
+      },
+      {
+        "title": "Supply Planning & Strategy",
+        "lessons": [
+          "Supply vision &",
+          "roadmap",
+          "MVP (Minimum",
+          "Viable Supply)",
+          "Feature prioritization",
+          "(RICE, MoSCoW)",
+          "Business models",
+          "(B2B, B2C, SaaS)"
+        ],
+        "schedule": "05th November (07:10-08:10)"
+      },
+      {
+        "title": "Chain Management Fundamentals",
+        "lessons": [
+          "Chain scope, time, cost",
+          "triangle",
+          "Work Breakdown Structure",
+          "(WBS)",
+          "Gantt charts",
+          "Risk management",
+          "Stakeholder management"
+        ],
+        "schedule": "06th November (07:10-08:10)"
+      },
+      {
+        "title": "Agile & Scrum Mastery",
+        "lessons": [
+          "Agile principles",
+          "Scrum framework",
+          "Sprint planning,",
+          "daily standups",
+          "Backlog & user",
+          "stories",
+          "Jira basics"
+        ],
+        "schedule": "07th November (07:10-08:10)"
+      },
+      {
+        "title": "Execution & Team Collaboration",
+        "lessons": [
+          "Cross-functional teams",
+          "Communication skills",
+          "Conflict management",
+          "Leadership basics"
+        ],
+        "schedule": "08th November (07:10-08:10)"
+      },
+      {
+        "title": "Metrics & Analytics",
+        "lessons": [
+          "Key Supply Metrics (DAU,",
+          "MAU, Retention)",
+          "Chain KPIs",
+          "A/B testing basics",
+          "Data-driven decision making"
+        ],
+        "schedule": "09th November (07:10-08:10)"
+      },
+      {
+        "title": "Supply Launch & Go-To-Market (GTM)",
+        "lessons": [
+          "Supply launch strategy",
+          "Marketing basics",
+          "Positioning & branding",
+          "Feedback loop"
+        ],
+        "schedule": "14th November (07:10-08:10)"
+      },
+      {
+        "title": "Warehouse Operations",
+        "lessons": [
+          "Layouts",
+          "Picking & packing"
+        ],
+        "schedule": "15th November (07:10-08:10)"
+      },
+      {
+        "title": "Lean Operations",
+        "lessons": [
+          "KAIZEN, 5S, waste reduction"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Quality Management",
+        "lessons": [
+          "Control charts",
+          "Six Sigma essentials"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Supply Chain Technology",
+        "lessons": [
+          "ERP",
+          "SAP",
+          "Automation"
+        ],
+        "schedule": "20th November (07:10-08:10)"
+      },
+      {
+        "title": "Global Supply Chain",
+        "lessons": [
+          "International logistics",
+          "Incoterms basics"
+        ],
+        "schedule": "23th November (07:10-08:10)"
+      },
+      {
+        "title": "Case Studies",
+        "lessons": [
+          "Amazon, Flipkart, ZARA,",
+          "Toyota"
+        ],
+        "schedule": "25th November (07:10-08:10) 28th November (07:10-08:10"
+      },
+      {
+        "title": "Final Chain + Evaluation",
+        "lessons": [
+          "SCM scenario activity",
+          "Chain submission & review"
+        ],
+        "schedule": "30th November (07:10-08:10) 02nd December (07:10-08:10)"
+      }
+    ]
+  },
+  {
+    "id": "ui-ux-design",
+    "slug": "ui-ux-design",
+    "title": "UI/UX Design",
+    "category": "Design",
+    "sourceFile": "UI_UX November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to UI/UX",
+        "lessons": [
+          "Overview of UI/UX",
+          "Differences between UI and UX",
+          "Design Thinking and",
+          "User-Centered Design",
+          "Introduction to Design Tools",
+          "(Figma, Adobe XD"
+        ],
+        "schedule": "12th November (07:10-08:10)"
+      },
+      {
+        "title": "Understanding User Research",
+        "lessons": [
+          "Importance of User Research in",
+          "Design",
+          "Conducting User Interviews and",
+          "Surveys",
+          "Creating Personas and Empathy",
+          "Maps",
+          "Hands-on: Analyzing user needs"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "Information Architecture and Wireframing",
+        "lessons": [
+          "Structuring Information for Better",
+          "Usability",
+          "Creating Sitemaps and User",
+          "Flows",
+          "Introduction to Wireframing",
+          "Hands-on: Designing wireframes",
+          "using Figma/Adobe",
+          "XD"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Visual Design Principles",
+        "lessons": [
+          "Color Theory, Typography, and",
+          "Layout Design",
+          "Consistency and Design",
+          "Systems",
+          "Designing for Accessibility",
+          "Hands-on: Creating style guides",
+          "lor Theory, Typography, and"
+        ],
+        "schedule": "22th November (07:10-08:10)"
+      },
+      {
+        "title": "Prototyping and Interaction Design",
+        "lessons": [
+          "Creating Interactive Prototypes",
+          "Microinteractions and Animation",
+          "Basics",
+          "User Testing and Feedback",
+          "Integration",
+          "Hands-on: Developing a",
+          "clickable prototype",
+          "cy and Design Systems"
+        ],
+        "schedule": "26th November (07:10-08:10)"
+      },
+      {
+        "title": "UI Design Tools Mastery",
+        "lessons": [
+          "Deep Dive into Figma/Adobe XD",
+          "Designing Responsive Interfaces",
+          "Exporting Assets and Design",
+          "Handoff to Developers",
+          "Hands-on: Full mockup creation",
+          "signing for Accessibility"
+        ],
+        "schedule": "30th November (07:10-08:10)"
+      },
+      {
+        "title": "Usability Testing and Iteration",
+        "lessons": [
+          "Conducting Usability Tests",
+          "Analyzing User Feedback",
+          "Iteration and Improving Design",
+          "Hands-on: Conducting a usability",
+          "test on a projects",
+          "on: Creating style guides"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Advanced UI/UX Concepts"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer",
+        "lessons": [
+          "Capstone Project and Review"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  },
+  {
+    "id": "vlsi",
+    "slug": "vlsi",
+    "title": "VLSI",
+    "category": "Engineering",
+    "sourceFile": "VLSI November.pdf",
+    "modules": [
+      {
+        "title": "Introduction to VLSI",
+        "lessons": [
+          "What is VLSI? History and significance",
+          "VLSI applications in industry",
+          "VLSI design flow overview",
+          "Tools used in VLSI design (EDA tools)"
+        ],
+        "schedule": "12th November (07:10-08:10)"
+      },
+      {
+        "title": "Digital Electronics Fundamentals",
+        "lessons": [
+          "Number systems and Boolean algebra",
+          "Logic gates and truth tables",
+          "Combinational vs. Sequential logic",
+          "Basic circuits: adders, multiplexers,",
+          "flip-flops"
+        ],
+        "schedule": "16th November (07:10-08:10)"
+      },
+      {
+        "title": "CMOS Technology Basics",
+        "lessons": [
+          "Introduction to MOSFETs (NMOS &",
+          "PMOS)",
+          "CMOS inverter characteristics",
+          "CMOS logic gate design (NAND, NOR,",
+          "etc.)",
+          "Power dissipation and delay"
+        ],
+        "schedule": "18th November (07:10-08:10)"
+      },
+      {
+        "title": "Verilog/VHDL Basics",
+        "lessons": [
+          "HDL overview and applications",
+          "Verilog/VHDL syntax and data types",
+          "Modules, ports, and assignments",
+          "Writing simple combinational logic"
+        ],
+        "schedule": "22th November (07:10-08:10)"
+      },
+      {
+        "title": "Sequential Logic in Verilog/VHDL",
+        "lessons": [
+          "Flip-flops and latches in HDL",
+          "Finite State Machines (FSMs)",
+          "Writing and simulating counters, registers",
+          "Testbenches for sequential designs"
+        ],
+        "schedule": "26th November (07:10-08:10)"
+      },
+      {
+        "title": "RTL Design and Verification",
+        "lessons": [
+          "Register Transfer Level (RTL) modeling",
+          "Behavioral vs Structural design",
+          "Simulation using tools (e.g., ModelSim)",
+          "Debugging and waveform analysis"
+        ],
+        "schedule": "30th November (07:10-08:10)"
+      },
+      {
+        "title": "Synthesis Concepts",
+        "lessons": [
+          "From RTL to gates: Logic synthesis",
+          "Setup and hold times, critical path",
+          "Timing analysis basics",
+          "Area vs speed vs power trade-offs"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "FPGA Architecture and Design",
+        "lessons": [
+          "Introduction to FPGA structure",
+          "Differences between ASIC and FPGA",
+          "Toolchain overview (Vivado, Quartus)",
+          "Simple design implementation on FPGA"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      },
+      {
+        "title": "ASIC Flow Introduction",
+        "lessons": [
+          "ASIC design flow overview",
+          "Floorplanning, placement, routing (basics)",
+          "Standard cell libraries",
+          "Fabrication process overview"
+        ],
+        "schedule": "Dates and timings for this topics will notified you soon after getting the time slots from our Trainer"
+      }
+    ]
+  }
+]

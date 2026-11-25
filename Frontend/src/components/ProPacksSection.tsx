@@ -1,4 +1,5 @@
 import { ArrowUpRight, Zap, Star, ShieldCheck, PlayCircle } from "lucide-react";
+import WhatsAppLink from "./WhatsAppLink";
 
 export default function ProPacksSection() {
   return (
@@ -59,7 +60,7 @@ export default function ProPacksSection() {
               <span>&diams; Lifetime Platform Access</span>
               <span>&diams; Premium Feature Updates</span>
             </div>
-            <a href="mailto:hello@skillsparx.technology?subject=Golden%20Pass%20Enquiry" className="button button-primary">Secure Golden Pass <ArrowUpRight /></a>
+            <WhatsAppLink type="general" className="button button-primary">Ask about Golden Pass <ArrowUpRight /></WhatsAppLink>
           </div>
 
           {/* Support */}

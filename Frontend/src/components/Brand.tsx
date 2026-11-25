@@ -2,11 +2,12 @@ type BrandProps = {
   light?: boolean;
   large?: boolean;
   onClick?: () => void;
+  homeHref?: string;
 };
 
-export default function Brand({ light = false, large = false, onClick }: BrandProps) {
+export default function Brand({ light = false, large = false, onClick, homeHref = "#top" }: BrandProps) {
   return (
-    <a className={`brand ${light ? "brand-light" : ""} ${large ? "brand-large" : ""}`} href="#top" onClick={onClick} aria-label="SkillSparx Technology home">
+    <a className={`brand ${light ? "brand-light" : ""} ${large ? "brand-large" : ""}`} href={homeHref} onClick={onClick} aria-label="SkillSparx Technology home">
       <img
         src="/SkillSparx_Logo.png"
         alt="SkillSparx Technology"

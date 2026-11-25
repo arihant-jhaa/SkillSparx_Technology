@@ -1,24 +1,24 @@
 import { useRef } from "react";
-import { ArrowUpRight, Play, Sparkles, Star } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { gsap, useGSAP } from "../motion/gsap";
-import { mentors, type Mentor } from "../data/site";
+import { courses, courseCategories } from "../data/courses";
+import CourseArtwork from "./CourseArtwork";
 
-const columns: Mentor[][] = [
-  [mentors[0], mentors[4], mentors[2], mentors[1]],
-  [mentors[2], mentors[5], mentors[3], mentors[0]],
-  [mentors[4], mentors[1], mentors[5], mentors[3]],
-  [mentors[2], mentors[4], mentors[0], mentors[5]],
+const columns = [
+  [courses[0], courses[5], courses[8], courses[1]],
+  [courses[2], courses[10], courses[14], courses[4]],
+  [courses[6], courses[16], courses[20], courses[11]],
+  [courses[19], courses[24], courses[28], courses[30]],
 ];
 
-function MentorCard({ mentor }: { mentor: Mentor }) {
+function SubjectCard({ course, priority = false }: { course: (typeof courses)[number]; priority?: boolean }) {
   return (
-    <div className="mentor-card">
-      <img src={mentor.image} alt="" loading="lazy" />
+    <div className="mentor-card subject-hero-card">
+      <CourseArtwork course={course} compact priority={priority} />
       <span className="mentor-card-shade" aria-hidden="true" />
-      <span className="mentor-play" aria-hidden="true"><Play size={12} fill="currentColor" strokeWidth={0} /></span>
       <span className="mentor-meta">
-        <span className="mentor-name">{mentor.name}</span>
-        <span className="mentor-course">{mentor.course}</span>
+        <span className="mentor-name">{course.title}</span>
+        <span className="mentor-course">{course.category}</span>
       </span>
     </div>
   );
@@ -27,35 +27,29 @@ function MentorCard({ mentor }: { mentor: Mentor }) {
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
 
-  useGSAP(
-    () => {
-      const media = gsap.matchMedia();
-      media.add("(prefers-reduced-motion: no-preference)", () => {
-        gsap.timeline({ defaults: { ease: "power3.out" } })
-          .from(".hero-eyebrow", { y: 18, opacity: 0, duration: 0.6 }, 0.1)
-          .from(".hero-line-inner", { yPercent: 115, duration: 0.95, stagger: 0.1 }, 0.2)
-          .from(".hero-description", { y: 20, opacity: 0, duration: 0.6 }, 0.72)
-          .from(".hero-actions", { y: 20, opacity: 0, duration: 0.6 }, 0.84)
-          .from(".hero-subtle", { y: 10, opacity: 0, duration: 0.4 }, 0.94)
-          .from(".hero-proof", { y: 20, opacity: 0, duration: 0.6 }, 1.1)
-          .from(".hero-stage", { opacity: 0, scale: 1.04, duration: 1.1, ease: "power2.out" }, 0.1);
-      });
-      return () => media.revert();
-    },
-    { scope: heroRef },
-  );
+  useGSAP(() => {
+    const media = gsap.matchMedia();
+    media.add("(prefers-reduced-motion: no-preference)", () => {
+      gsap.timeline({ defaults: { ease: "power3.out" } })
+        .from(".hero-eyebrow", { y: 18, opacity: 0, duration: 0.6 }, 0.1)
+        .from(".hero-line-inner", { yPercent: 115, duration: 0.95, stagger: 0.1 }, 0.2)
+        .from(".hero-description", { y: 20, opacity: 0, duration: 0.6 }, 0.72)
+        .from(".hero-actions", { y: 20, opacity: 0, duration: 0.6 }, 0.84)
+        .from(".hero-subtle", { y: 10, opacity: 0, duration: 0.4 }, 0.94)
+        .from(".hero-stage", { opacity: 0, scale: 1.04, duration: 1.1, ease: "power2.out" }, 0.1);
+    });
+    return () => media.revert();
+  }, { scope: heroRef });
 
   return (
     <section id="top" ref={heroRef} className="hero-section" aria-labelledby="hero-heading">
       <div className="hero-glow" aria-hidden="true" />
       <div className="hero-marquee" aria-hidden="true">
         <div className="hero-stage">
-          {columns.map((items, index) => (
-            <div key={index} className={`marquee-col ${index % 2 === 1 ? "is-down" : ""}`}>
-              <div className="marquee-col-inner" style={{ animationDuration: `${30 + index * 6}s` }}>
-                {[...items, ...items].map((mentor, cardIndex) => (
-                  <MentorCard key={`${mentor.name}-${cardIndex}`} mentor={mentor} />
-                ))}
+          {columns.map((items, columnIndex) => (
+            <div key={columnIndex} className={`marquee-col ${columnIndex % 2 === 1 ? "is-down" : ""}`}>
+              <div className="marquee-col-inner" style={{ animationDuration: `${30 + columnIndex * 6}s` }}>
+                {[...items, ...items].map((course, cardIndex) => <SubjectCard key={`${course.slug}-${cardIndex}`} course={course} priority={columnIndex === 0 && cardIndex < 4} />)}
               </div>
             </div>
           ))}
@@ -64,30 +58,18 @@ export default function Hero() {
       <div className="hero-overlay" aria-hidden="true" />
 
       <div className="page-container hero-content">
-        <p className="eyebrow hero-eyebrow"><span className="hero-badge">New</span> Registrations are now open</p>
-        <h1 id="hero-heading" className="hero-title" aria-label="Learn from top creative mentors worldwide.">
-          <span className="hero-line"><span className="hero-line-inner">Learn from top</span></span>
-          <span className="hero-line"><span className="hero-line-inner"><span className="hero-title-accent">creative</span> mentors</span></span>
-          <span className="hero-line"><span className="hero-line-inner">worldwide<span className="purple-period">.</span></span></span>
+        <p className="eyebrow hero-eyebrow"><span className="hero-badge">32</span> syllabus-led course outlines</p>
+        <h1 id="hero-heading" className="hero-title" aria-label="Build practical skills across technology and beyond.">
+          <span className="hero-line"><span className="hero-line-inner">Build practical</span></span>
+          <span className="hero-line"><span className="hero-line-inner">skills across</span></span>
+          <span className="hero-line"><span className="hero-line-inner">fields<span className="purple-period">.</span></span></span>
         </h1>
-        <p className="hero-description">Highly demanded skills, taught through practical courses built by the people doing the real work.</p>
+        <p className="hero-description">Explore course outlines across technology, design, business, engineering, health, and management.</p>
         <div className="hero-actions">
-          <a className="button button-primary" href="#classes">View courses <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" /></a>
-          <a className="button button-ghost-light" href="#approach">Watch preview <Play size={15} fill="currentColor" strokeWidth={0} aria-hidden="true" /></a>
+          <a className="button button-primary" href="#classes">View course catalogue <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" /></a>
+          <a className="button button-ghost-light" href="#approach">Explore the approach <ArrowUpRight size={17} aria-hidden="true" /></a>
         </div>
-        <p className="hero-subtle" style={{ fontSize: '12px', opacity: 0.7, marginTop: '8px', letterSpacing: '0.1em' }}>
-          Join 500+ founders who've accelerated their careers
-        </p>
-        <div className="hero-proof">
-          <div className="hero-avatars" aria-hidden="true">
-            {mentors.slice(0, 4).map((mentor) => <img key={mentor.name} src={mentor.image} alt="" loading="lazy" />)}
-          </div>
-          <div className="hero-proof-text">
-            <strong>Loved by 500+ founders</strong>
-            <span className="hero-stars"><Star size={13} fill="currentColor" strokeWidth={0} /><Star size={13} fill="currentColor" strokeWidth={0} /><Star size={13} fill="currentColor" strokeWidth={0} /><Star size={13} fill="currentColor" strokeWidth={0} /><Star size={13} fill="currentColor" strokeWidth={0} /> 13 reviews</span>
-          </div>
-          <span className="hero-proof-chip"><Sparkles size={14} strokeWidth={1.7} aria-hidden="true" /> 12k+ makers</span>
-        </div>
+        <p className="hero-subtle">{courses.length} courses <span aria-hidden="true">·</span> {courseCategories.length} subject areas</p>
       </div>
     </section>
   );

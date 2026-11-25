@@ -5,19 +5,19 @@ import Brand from "./Brand";
 const navigation = [
   { label: "Approach", href: "#approach" },
   { label: "Classes", href: "#classes" },
-  { label: "Stories", href: "#stories" },
+  { label: "Subjects", href: "#subject-areas" },
   { label: "Membership", href: "#membership" },
   {
     label: "Programs",
     href: "#programs",
     dropdown: true,
     dropdownItems: [
-      { label: "Tech & Data", href: "#tech-data" },
-      { label: "Mechanics", href: "#mechanics" },
-      { label: "Business", href: "#business" },
-      { label: "Medical & Science", href: "#medical-science" },
-      { label: "Design", href: "#design" },
-      { label: "Other / Bootcamp", href: "#other-bootcamp" },
+      { label: "Technology", href: "#program-category-technology" },
+      { label: "Engineering", href: "#program-category-engineering" },
+      { label: "Business", href: "#program-category-business" },
+      { label: "Health & Science", href: "#program-category-health-and-science" },
+      { label: "Design", href: "#program-category-design" },
+      { label: "Management", href: "#program-category-management" },
     ]
   },
   {
@@ -32,7 +32,7 @@ const navigation = [
     ]
   },
   {
-    label: "Advanced Programs",
+    label: "Course Spotlights",
     href: "#advanced-programs",
     dropdown: true,
     dropdownItems: [
@@ -42,7 +42,7 @@ const navigation = [
   },
 ];
 
-export default function Navbar() {
+export default function Navbar({ coursePage = false }: { coursePage?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("");
@@ -88,6 +88,7 @@ export default function Navbar() {
   }, [menuOpen]);
 
   const closeMenu = () => setMenuOpen(false);
+  const linkHref = (href: string) => coursePage && href.startsWith("#") ? `/${href}` : href;
 
   const handleDropdownClick = (label: string) => {
     setOpenDropdown(openDropdown === label ? null : label);
@@ -100,7 +101,7 @@ export default function Navbar() {
   return (
     <header className={`site-header ${scrolled || menuOpen ? "is-scrolled" : ""} ${menuOpen ? "menu-open" : ""}`}>
       <div className="nav-inner page-container">
-        <Brand onClick={closeMenu} />
+        <Brand onClick={closeMenu} homeHref={coursePage ? "/#top" : "#top"} />
         <nav className="desktop-nav" aria-label="Main navigation">
           {navigation.map((item) => {
             if (item.dropdown && item.dropdownItems) {
@@ -108,7 +109,7 @@ export default function Navbar() {
                 <div key={item.label} className="nav-dropdown" onMouseEnter={() => handleDropdownClick(item.label)} onMouseLeave={handleDropdownBlur}>
                   <a
                     className={`${active === item.href ? "nav-link is-active" : "nav-link"} ${openDropdown === item.label ? "is-open" : ""}`}
-                    href={item.href}
+                    href={linkHref(item.href)}
                     aria-current={active === item.href ? "location" : undefined}
                     aria-haspopup="true"
                     aria-expanded={openDropdown === item.label}
@@ -130,7 +131,7 @@ export default function Navbar() {
                     {item.dropdownItems.map((subItem, subIndex) => (
                       <a
                         key={subItem.href}
-                        href={subItem.href}
+                        href={linkHref(subItem.href)}
                         className="dropdown-item"
                         role="menuitem"
                         onClick={closeMenu}
@@ -144,19 +145,19 @@ export default function Navbar() {
               );
             }
             return (
-              <a key={item.href} className={active === item.href ? "nav-link is-active" : "nav-link"} href={item.href} aria-current={active === item.href ? "location" : undefined}>
+              <a key={item.href} className={active === item.href ? "nav-link is-active" : "nav-link"} href={linkHref(item.href)} aria-current={active === item.href ? "location" : undefined}>
                 {item.label}
               </a>
             );
           })}
         </nav>
-        <a className="nav-cta" href="#login">
+        <a className="nav-cta" href={linkHref("#login")}>
           <Key size={14} strokeWidth={2.5} className="login-key-icon" aria-hidden="true" />
           <span className="login-text-full">Mentor/Student Login</span>
           <span className="login-text-short">Login</span>
         </a>
         <div className="mobile-controls">
-          <button className="mobile-login-btn" type="button" aria-label="Login" onClick={() => { window.location.hash = "#login"; }}>
+          <button className="mobile-login-btn" type="button" aria-label="Login" onClick={() => { window.location.href = coursePage ? "/#login" : "#login"; }}>
             <Key size={14} strokeWidth={2.5} className="login-key-icon" aria-hidden="true" />
             <span className="login-text-full">Mentor/Student Login</span>
             <span className="login-text-short">Login</span>
@@ -188,7 +189,7 @@ export default function Navbar() {
                   {openDropdown === item.label && menuOpen && (
                     <div className="mobile-dropdown-menu">
                       {item.dropdownItems.map((subItem, subIndex) => (
-                        <a key={subItem.href} href={subItem.href} style={{ transitionDelay: `${subIndex * 10}ms` }} onClick={closeMenu}>
+                        <a key={subItem.href} href={linkHref(subItem.href)} style={{ transitionDelay: `${subIndex * 10}ms` }} onClick={closeMenu}>
                           {subItem.label}
                         </a>
                       ))}
@@ -196,7 +197,7 @@ export default function Navbar() {
                   )}
                 </>
               ) : (
-                <a href={item.href} onClick={closeMenu} className="mobile-nav-item">
+                <a href={linkHref(item.href)} onClick={closeMenu} className="mobile-nav-item">
                   <span className="mobile-nav-number">0{index + 1}</span>
                   {item.label}
                   <ArrowUpRight size={25} strokeWidth={1.4} aria-hidden="true" />

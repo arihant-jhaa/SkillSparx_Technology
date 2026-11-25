@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { MessageSquare, X, Sparkles } from "lucide-react";
 import ChatbotPanel from "./ChatbotPanel";
 
