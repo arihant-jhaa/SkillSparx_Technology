@@ -10,8 +10,8 @@ import {
   Workflow,
   type LucideIcon,
 } from "lucide-react";
-import type { Course } from "../data/courses";
-import artworkMetadata from "../data/course-artwork.json";
+import type { Course } from "../../data/courses";
+import artworkMetadata from "../../data/course-artwork.json";
 
 type ArtworkInfo = { src: string; alt: string };
 const artworkByCourse = artworkMetadata as Record<string, ArtworkInfo>;

@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { courses, courseCategories, slugForCategory } from "../data/courses";
+import { courses, courseCategories, slugForCategory } from "../../data/courses";
 
 export default function SubjectAreasSection() {
   return (

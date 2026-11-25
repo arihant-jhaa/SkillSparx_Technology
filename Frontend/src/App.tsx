@@ -1,6 +1,7 @@
 import { Component, lazy, Suspense, type ErrorInfo, type ReactNode } from "react";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
+const ClassesPage = lazy(() => import("./pages/ClassesPage"));
 const CourseDetailPage = lazy(() => import("./pages/CourseDetailPage"));
 const LoginPage = lazy(() => import("./components/login/LoginPage"));
 
@@ -42,6 +43,16 @@ export default function App() {
 
   if (window.location.hash === "#login" && pathname === "/") {
     return <AppErrorBoundary><Suspense fallback={<LoadingPage />}><LoginPage onNavigateHome={() => { window.location.hash = ""; }} /></Suspense></AppErrorBoundary>;
+  }
+
+  if (pathname === "/classes" || pathname === "/courses") {
+    return (
+      <AppErrorBoundary>
+        <Suspense fallback={<LoadingPage />}>
+          <ClassesPage />
+        </Suspense>
+      </AppErrorBoundary>
+    );
   }
 
   const courseRoute = pathname.match(/^\/courses(?:\/([^/]+))?$/);

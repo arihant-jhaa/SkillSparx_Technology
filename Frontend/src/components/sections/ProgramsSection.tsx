@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUpRight, Search, Sparkles } from "lucide-react";
-import CourseArtwork from "./CourseArtwork";
-import { courseCategories, courses, slugForCategory } from "../data/courses";
+import CourseArtwork from "../courses/CourseArtwork";
+import { courseCategories, courses, slugForCategory } from "../../data/courses";
 
 const initialVisibleCount = 9;
 

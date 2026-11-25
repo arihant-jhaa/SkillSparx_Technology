@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { gsap, useGSAP } from "../motion/gsap";
+import { gsap, useGSAP } from "../../motion/gsap";
 
 export default function ManifestoSection() {
   const sectionRef = useRef<HTMLElement>(null);

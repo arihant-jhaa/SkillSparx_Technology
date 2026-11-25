@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowUpRight, Play } from "lucide-react";
-import Modal from "./Modal";
+import Modal from "../common/Modal";
 
 const videoPoster = "/images/story-studio.jpg";
 const videoSource = "https://videos.pexels.com/video-files/5475285/5475285-hd_1920_1080_30fps.mp4";

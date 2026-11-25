@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowUpRight, Check } from "lucide-react";
-import WhatsAppLink from "./WhatsAppLink";
+import WhatsAppLink from "../courses/WhatsAppLink";
 
 export default function PricingSection() {
   const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");

@@ -1,7 +1,7 @@
 import LoginForm from "./LoginForm";
 import ChatbotPanel from "./ChatbotPanel";
 import MobileChatLauncher from "./MobileChatLauncher";
-import Brand from "../Brand";
+import Brand from "../layout/Brand";
 import { ArrowLeft } from "lucide-react";
 import "./login-glass.css";
 

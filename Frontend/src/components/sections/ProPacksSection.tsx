@@ -1,5 +1,5 @@
 import { ArrowUpRight, Zap, Star, ShieldCheck, PlayCircle } from "lucide-react";
-import WhatsAppLink from "./WhatsAppLink";
+import WhatsAppLink from "../courses/WhatsAppLink";
 
 export default function ProPacksSection() {
   return (

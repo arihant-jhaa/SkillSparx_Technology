@@ -1,12 +1,12 @@
 import { ArrowUpRight, BookOpen } from "lucide-react";
-import CourseArtwork from "./CourseArtwork";
-import { courses } from "../data/courses";
+import CourseArtwork from "../courses/CourseArtwork";
+import { courses } from "../../data/courses";
 
 const spotlightCourses = ["data-science", "digital-marketing"]
   .map((slug) => courses.find((course) => course.slug === slug))
   .filter((course) => course !== undefined);
 
-export default function AdvancedProgramsSection() {
+export default function CourseSpotlightsSection() {
   return (
     <section id="advanced-programs" className="advanced-programs-section" aria-labelledby="advanced-heading">
       <div className="page-container">

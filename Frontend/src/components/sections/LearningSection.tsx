@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, BookOpen, Grid2X2, Layers3, Play, UsersRound } from "lucide-react";
-import { features } from "../data/site";
-import { courseCategories, courses } from "../data/courses";
+import { features } from "../../data/site";
+import { courseCategories, courses } from "../../data/courses";
 
 export default function LearningSection() {
   const [selected, setSelected] = useState(0);

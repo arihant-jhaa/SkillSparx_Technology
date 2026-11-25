@@ -1,23 +1,48 @@
-SkillSparx Technology — Professional Website
+# SkillSparx Technology
 
-A modern, responsive, and professional corporate website developed for SkillSparx Technology. The platform is designed to establish a strong digital presence, showcase the company’s services and expertise, highlight its projects and solutions, and provide visitors with an engaging and seamless user experience.
+SkillSparx Technology is a Vite and React single-page application for exploring the course catalogue, syllabus details, and enrollment contact options.
 
-The website focuses on a clean, modern interface, responsive design, intuitive navigation, and a professional presentation suitable for a technology-focused organization.
+## Project layout
 
-Key Features
+- `Frontend/` — Vite application, source code, public assets, and Vercel configuration.
+- `Frontend/src/components/layout/` — shared navigation, brand, and footer.
+- `Frontend/src/components/sections/` — homepage and catalogue sections.
+- `Frontend/src/components/courses/` — course artwork and WhatsApp link components.
+- `Frontend/src/components/login/` — login interface components.
+- `Frontend/src/pages/` — home, classes, and individual course pages.
+- `Frontend/src/data/` — the 32 course outlines and artwork metadata.
+- `Frontend/public/images/courses/` — local course-specific SVGs.
+- `cources/` — original syllabus source files; retained as supplied and not required at runtime.
 
-* Modern and professional corporate UI
-* Fully responsive design for desktop, tablet, and mobile
-* Company profile and service showcase
-* Projects and technology solutions presentation
-* Interactive and user-friendly navigation
-* Optimized layouts and reusable components
-* Professional branding and visual design
-* Scalable architecture for future enhancements
-* Performance-focused frontend implementation
+The checked-out project has no backend application or API routes. The course catalogue and static pages run in the frontend. No environment variables are required for the current frontend build; WhatsApp links use the configured business contact number in the frontend utility.
 
-Purpose
+## Local development
 
-This project serves as the official digital platform for SkillSparx Technology, helping the organization present its capabilities, services, technology expertise, and professional identity online.
+From `Frontend/`:
 
-Built with modern web technologies with a focus on performance, scalability, accessibility, and user experience.
+```sh
+npm ci
+npm run dev
+```
+
+Build and preview the production bundle:
+
+```sh
+npm run build
+npm run preview
+```
+
+Direct routes include `/classes` and `/courses/:slug`. Unknown course slugs show the course not-found page.
+
+## Vercel deployment
+
+When importing this repository into Vercel, set **Root Directory** to `Frontend`.
+
+- Framework Preset: **Vite**
+- Node.js Version: **24.x**
+- Install Command: `npm ci` (or Vercel's npm lockfile detection)
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Environment Variables: none required by the current frontend
+
+`Frontend/vercel.json` rewrites SPA page requests to `index.html` so direct route opens and refreshes can load the React app. There are no backend endpoints in this project; any future backend should be deployed separately and connected through a public `VITE_` URL, with private secrets kept server-side.

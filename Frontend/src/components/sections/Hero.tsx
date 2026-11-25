@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { gsap, useGSAP } from "../motion/gsap";
-import { courses, courseCategories } from "../data/courses";
-import CourseArtwork from "./CourseArtwork";
+import { gsap, useGSAP } from "../../motion/gsap";
+import { courses, courseCategories } from "../../data/courses";
+import CourseArtwork from "../courses/CourseArtwork";
 
 const columns = [
   [courses[0], courses[5], courses[8], courses[1]],

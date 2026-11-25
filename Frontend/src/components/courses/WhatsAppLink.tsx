@@ -1,5 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
-import { buildWhatsAppUrl, type WhatsAppMessageType } from "../utils/whatsapp";
+import { buildWhatsAppUrl, type WhatsAppMessageType } from "../../utils/whatsapp";
 
 type Props = {
   type?: WhatsAppMessageType;

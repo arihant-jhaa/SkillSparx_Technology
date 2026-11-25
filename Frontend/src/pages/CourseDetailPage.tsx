@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpenText, CalendarClock, Check, ChevronDown } from "lucide-react";
-import Navbar from "../components/Navbar";
-import CourseArtwork from "../components/CourseArtwork";
-import WhatsAppLink from "../components/WhatsAppLink";
+import Navbar from "../components/layout/Navbar";
+import CourseArtwork from "../components/courses/CourseArtwork";
+import WhatsAppLink from "../components/courses/WhatsAppLink";
 import { courses, findCourse, type Course } from "../data/courses";
 
 function CourseNotFound() {

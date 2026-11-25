@@ -1,19 +1,19 @@
 import { useEffect, useRef } from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import TrustSection from "../components/TrustSection";
-import ManifestoSection from "../components/ManifestoSection";
-import LearningSection from "../components/LearningSection";
-import ShowcaseSection from "../components/ShowcaseSection";
-import ProgramsSection from "../components/ProgramsSection";
-import AdvancedProgramsSection from "../components/AdvancedProgramsSection";
-import ProPacksSection from "../components/ProPacksSection";
-import StorySection from "../components/StorySection";
-import SubjectAreasSection from "../components/SubjectAreasSection";
-import PricingSection from "../components/PricingSection";
-import CommunitySection from "../components/CommunitySection";
-import FinalCTA from "../components/FinalCTA";
-import Footer from "../components/Footer";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+import Hero from "../components/sections/Hero";
+import TrustSection from "../components/sections/TrustSection";
+import ManifestoSection from "../components/sections/ManifestoSection";
+import LearningSection from "../components/sections/LearningSection";
+import ShowcaseSection from "../components/sections/ShowcaseSection";
+import ProgramsSection from "../components/sections/ProgramsSection";
+import CourseSpotlightsSection from "../components/sections/CourseSpotlightsSection";
+import ProPacksSection from "../components/sections/ProPacksSection";
+import StorySection from "../components/sections/StorySection";
+import SubjectAreasSection from "../components/sections/SubjectAreasSection";
+import PricingSection from "../components/sections/PricingSection";
+import CommunitySection from "../components/sections/CommunitySection";
+import FinalCTA from "../components/sections/FinalCTA";
 import { useScrollReveals } from "../hooks/useScrollReveals";
 import { ScrollTrigger } from "../motion/gsap";
 
@@ -69,7 +69,7 @@ export default function HomePage() {
         <LearningSection />
         <ShowcaseSection />
         <ProgramsSection />
-        <AdvancedProgramsSection />
+        <CourseSpotlightsSection />
         <ProPacksSection />
         <StorySection />
         <SubjectAreasSection />

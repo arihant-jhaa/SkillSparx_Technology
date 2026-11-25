@@ -1,4 +1,4 @@
-import { courses, courseCategories } from "../data/courses";
+import { courses, courseCategories } from "../../data/courses";
 
 const stats = [
   { value: courses.length, suffix: "", label: "course outlines" },

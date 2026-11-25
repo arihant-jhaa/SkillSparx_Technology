@@ -1,8 +1,8 @@
 import { useState, type FormEvent } from "react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Brand from "./Brand";
-import Modal from "./Modal";
-import { buildWhatsAppUrl } from "../utils/whatsapp";
+import Modal from "../common/Modal";
+import { buildWhatsAppUrl } from "../../utils/whatsapp";
 
 const footerGroups = [
   {
@@ -39,7 +39,7 @@ const footerGroups = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({ homeLinks = false }: { homeLinks?: boolean }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
   const [legal, setLegal] = useState<"Terms" | "Privacy" | null>(null);
@@ -108,7 +108,7 @@ export default function Footer() {
                 {group.links.map((link) => (
                   <a
                     key={link.label}
-                    href={link.href === "whatsapp" ? buildWhatsAppUrl() : link.href}
+                    href={link.href === "whatsapp" ? buildWhatsAppUrl() : homeLinks && link.href.startsWith("#") ? `/${link.href}` : link.href}
                     target={
                       link.href.startsWith("https://") || link.href === "whatsapp" ? "_blank" : undefined
                     }

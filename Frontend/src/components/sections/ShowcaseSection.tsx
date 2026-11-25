@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { ArrowUpRight, MoveRight } from "lucide-react";
-import { courses } from "../data/courses";
-import { gsap, ScrollTrigger, useGSAP } from "../motion/gsap";
-import CourseArtwork from "./CourseArtwork";
+import { courses } from "../../data/courses";
+import { gsap, ScrollTrigger, useGSAP } from "../../motion/gsap";
+import CourseArtwork from "../courses/CourseArtwork";
 
 export default function ShowcaseSection() {
   const sectionRef = useRef<HTMLElement>(null);

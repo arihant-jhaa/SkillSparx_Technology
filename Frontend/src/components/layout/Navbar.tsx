@@ -36,13 +36,13 @@ const navigation = [
     href: "#advanced-programs",
     dropdown: true,
     dropdownItems: [
-      { label: "Advanced Digital Marketing", href: "#advanced-digital-marketing" },
-      { label: "Advanced Data Science", href: "#advanced-data-science" },
+      { label: "Data Science", href: "/courses/data-science" },
+      { label: "Digital Marketing", href: "/courses/digital-marketing" },
     ]
   },
 ];
 
-export default function Navbar({ coursePage = false }: { coursePage?: boolean }) {
+export default function Navbar({ coursePage = false, classesPage = false }: { coursePage?: boolean; classesPage?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("");
@@ -63,6 +63,7 @@ export default function Navbar({ coursePage = false }: { coursePage?: boolean })
       { rootMargin: "-30% 0px -58% 0px" },
     );
     navigation.forEach(({ href }) => {
+      if (!href.startsWith("#")) return;
       const section = document.querySelector(href);
       if (section) observer.observe(section);
     });
@@ -88,7 +89,13 @@ export default function Navbar({ coursePage = false }: { coursePage?: boolean })
   }, [menuOpen]);
 
   const closeMenu = () => setMenuOpen(false);
-  const linkHref = (href: string) => coursePage && href.startsWith("#") ? `/${href}` : href;
+  const linkHref = (href: string) => {
+    if (coursePage) return href.startsWith("#") ? `/${href}` : href;
+    if (!classesPage) return href;
+    if (href === "#classes") return "/classes";
+    if (href === "#programs" || href.startsWith("#program-category-")) return href;
+    return href.startsWith("#") ? `/${href}` : href;
+  };
 
   const handleDropdownClick = (label: string) => {
     setOpenDropdown(openDropdown === label ? null : label);
@@ -101,7 +108,7 @@ export default function Navbar({ coursePage = false }: { coursePage?: boolean })
   return (
     <header className={`site-header ${scrolled || menuOpen ? "is-scrolled" : ""} ${menuOpen ? "menu-open" : ""}`}>
       <div className="nav-inner page-container">
-        <Brand onClick={closeMenu} homeHref={coursePage ? "/#top" : "#top"} />
+        <Brand onClick={closeMenu} homeHref={coursePage || classesPage ? "/#top" : "#top"} />
         <nav className="desktop-nav" aria-label="Main navigation">
           {navigation.map((item) => {
             if (item.dropdown && item.dropdownItems) {
@@ -157,7 +164,7 @@ export default function Navbar({ coursePage = false }: { coursePage?: boolean })
           <span className="login-text-short">Login</span>
         </a>
         <div className="mobile-controls">
-          <button className="mobile-login-btn" type="button" aria-label="Login" onClick={() => { window.location.href = coursePage ? "/#login" : "#login"; }}>
+          <button className="mobile-login-btn" type="button" aria-label="Login" onClick={() => { window.location.href = coursePage || classesPage ? "/#login" : "#login"; }}>
             <Key size={14} strokeWidth={2.5} className="login-key-icon" aria-hidden="true" />
             <span className="login-text-full">Mentor/Student Login</span>
             <span className="login-text-short">Login</span>

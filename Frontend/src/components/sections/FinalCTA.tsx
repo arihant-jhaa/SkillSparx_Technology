@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { gsap, useGSAP } from "../motion/gsap";
+import { gsap, useGSAP } from "../../motion/gsap";
 
 export default function FinalCTA() {
   const sectionRef = useRef<HTMLElement>(null);
